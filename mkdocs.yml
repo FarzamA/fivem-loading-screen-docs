@@ -18,7 +18,12 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started: setup.md
-  - Customization: customization.md
+  - Customization:
+    - Overview: customization.md
+    - Watermark: watermark.md
+    - Social Headers: socials.md
+    - Keyboard Overlay: keyboard-overlay.md
+    - Video Background: video-background.md
   - Keyboard Overlay: keyboard-overlay.md
   - Video Background: video-background.md
   - FAQ: faq.md

@@ -1,73 +1,46 @@
 # 🎨 Customization Guide
 
-Edit in `config.json`:
+You can control the look and feel of the loading screen by editing the `config.json` file. This guide walks you through the most important options.
 
-## Change overall theme color
+## Overall Theme Color
 
-Accepts both hex and rgb as value
+Customize the main highlight color used throughout the UI:
 
 ```json
 "selectedColor": "#ff007b",
 ```
 
-## Change Background
+!!! info "Color Format"
+    Accepts both hex and RGB formats.
 
-### Image
+## Background Options
 
-If you prefer a static image modify the following:
+You can use either a static image or a video background. If both are set, video will take priority.
 
-```json
-"backgroundImage": "./assets/path/to/background.png"
-```
-
-and leave the `backgroundVideo` blank
+### 📷 Static Image
 
 ```json
+"backgroundImage": "./assets/path/to/background.png",
 "backgroundVideo": ""
 ```
 
-Background movement and flickering effects are already in place for static images
+!!! info "Static Image Notes"
+    If you're using a static image, leave `"backgroundVideo"` empty.  
+    Subtle flickering and movement effects will still apply to the image for visual depth.
 
-### Video
-
-If you prefer to have a video background modify the following
+### 🎥 Video Background (MP4)
 
 ```json
 "backgroundVideo": "./assets/path/to/bg.mp4"
 ```
 
-Or for a YouTube video
+### 📺 Video Background (YouTube)
 
 ```json
 "backgroundVideo": "https://www.youtube.com/watch?v=abc123"
 ```
 
-If you populate this field the `backgroundImage` paramter will be ignored
+!!! info "Video Takes Priority"
+    If `"backgroundVideo"` is set, the static `"backgroundImage"` will be ignored.
 
-## Watermark
-
-```json
-"watermark": { 
-    "label": { "text": "The Vibe RP", "colorWordCount": 2 }, 
-    "subHeading": "Loading Screen", 
-    "logo": "./assets/png/logo.png" 
-}
-```
-
-- `text` refers to the title in the watermark
-- `colorWordCount` refers to how many words in the heading will have the `selectedColor` applied to them
-- `subHeading` refers to the text beneath the title
-- `logo` refers to the file path to your logo image that you want to use
-
-???+ note "Watermark Preview"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/WatermarkDemo.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div>
-
+---
