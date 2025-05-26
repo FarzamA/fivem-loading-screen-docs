@@ -26,7 +26,7 @@ nav:
     - 👥 Team Panel: team.md
     - 🖼️ Gallery Grid: gallery.md
     - ⌨️ Keyboard Overlay: keyboard-overlay.md
-    - Music Player: music-player.md
+    - 🎵 Music Player: music-player.md
   # - FAQ: faq.md
   - Changelog: changelog.md
 extra_css:
