@@ -12,7 +12,7 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 - Modern animations
 - Easy to configure via `config.json`
 
-[Get the Latest Release ➜](https://github.com/yourname/fivem-loading-screen/releases)
+[Get the Latest Release ➜](https://github.com/FarzamA/fivem-loading-screen-docs/releases)
 
 [See a Live Preview ➜](https://fivem-loading.vercel.app/)
 
