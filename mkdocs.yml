@@ -22,9 +22,11 @@ nav:
     - 🎨 Overview: customization.md
     - 🏷️ Watermark: watermark.md
     - 🧷 Social Headers: socials.md
-    - Rules Panel: rules.md
+    - 📜 Rules Panel: rules.md
+    - Team Panel: team.md
+    - Gallery Grid: gallery.md
     - Keyboard Overlay: keyboard-overlay.md
-    - Video Background: video-background.md
+    - Music Player: music-player.md
   - Keyboard Overlay: keyboard-overlay.md
   - Video Background: video-background.md
   - FAQ: faq.md
