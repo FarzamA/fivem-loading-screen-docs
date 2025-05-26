@@ -24,12 +24,10 @@ nav:
     - 🧷 Social Headers: socials.md
     - 📜 Rules Panel: rules.md
     - 👥 Team Panel: team.md
-    - Gallery Grid: gallery.md
-    - Keyboard Overlay: keyboard-overlay.md
+    - 🖼️ Gallery Grid: gallery.md
+    - ⌨️ Keyboard Overlay: keyboard-overlay.md
     - Music Player: music-player.md
-  - Keyboard Overlay: keyboard-overlay.md
-  - Video Background: video-background.md
-  - FAQ: faq.md
+  # - FAQ: faq.md
   - Changelog: changelog.md
 extra_css:
   - stylesheets/custom-admonitions.css
