@@ -14,4 +14,6 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 
 [Get the Latest Release ➜](https://github.com/yourname/fivem-loading-screen/releases)
 
+[See a Live Preview ➜](https://fivem-loading.vercel.app/)
+
 ---
