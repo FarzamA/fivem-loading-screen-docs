@@ -1,5 +1,6 @@
 # ⌨️ Keyboard Overlay Configuration
 
+The keyboard overlay appears on the loading screen and visually highlights keybinds to help new players learn essential controls. You can fully customize this overlay using the `keyboardShortcuts` configuration.
 
 ---
 
