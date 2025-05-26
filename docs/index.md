@@ -9,8 +9,8 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 - Full MP4 / YouTube video background support
 - Music playback with skip/progress controls
 - Keyboard overlay with customizable keybind tooltips
-- Modern animations and dark mode support
-- Easy to configure via `config.tsx`
+- Modern animations
+- Easy to configure via `config.json`
 
 [Get the Latest Release ➜](https://github.com/yourname/fivem-loading-screen/releases)
 
