@@ -1,6 +1,9 @@
 # 🎨 Customization Guide
 
-You can control the look and feel of the loading screen by editing the `config.json` file. This guide walks you through the most important options.
+You can customize the look and feel of the loading screen by editing the `config.json` file located in the `html` directory of the package. This guide walks you through the most important configuration options.
+
+> 📁 Place any images, videos, or audio files inside the `html/assets/` folder to ensure they load correctly in the UI.
+
 
 ## Overall Theme Color
 
