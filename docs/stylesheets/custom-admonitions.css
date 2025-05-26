@@ -1,0 +1,402 @@
+:root {
+  --md-admonition-icon--o-auth: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole-open-icon lucide-lock-keyhole-open"><circle cx="12" cy="16" r="1"/><rect width="18" height="12" x="3" y="10" rx="2"/><path d="M7 10V7a5 5 0 0 1 9.33-2.5"/></svg>');
+  --md-admonition-icon--e-mail-registration: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>');
+  --md-admonition-icon-e-mail-verification: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-check-icon lucide-mail-check"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="m16 19 2 2 4-4"/></svg>');
+  --md-admonition-icon-user-login: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-lock-icon lucide-user-lock"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><path d="M15 15.5V14a2 2 0 0 1 4 0v1.5"/><rect width="8" height="5" x="13" y="16" rx=".899"/></svg>');
+  --md-admonition-icon-qr-code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code-icon lucide-qr-code"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>');
+  --md-admonition-icon-search-check: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-check-icon lucide-search-check"><path d="m8 11 2 2 4-4"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>');
+  --md-admonition-icon-sun-moon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon-icon lucide-sun-moon"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>');
+  --md-admonition-icon-notebook-pen: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen-icon lucide-notebook-pen"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg>');
+  --md-admonition-icon-loader: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-icon lucide-loader"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>');
+  --md-admonition-icon-search: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>');
+  --md-admonition-icon-binoculars: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-binoculars-icon lucide-binoculars"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg>');
+  --md-admonition-icon-search-code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-code-icon lucide-search-code"><path d="m13 13.5 2-2.5-2-2.5"/><path d="m21 21-4.3-4.3"/><path d="M9 8.5 7 11l2 2.5"/><circle cx="11" cy="11" r="8"/></svg>');
+  --md-admonition-icon-move-horizontal: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal-icon lucide-move-horizontal"><path d="m18 8 4 4-4 4"/><path d="M2 12h20"/><path d="m6 8-4 4 4 4"/></svg>');
+  --md-admonition-icon-package-serach: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-search-icon lucide-package-search"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="m7.5 4.27 9 5.15"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27 22 19"/></svg>');
+  --md-admonition-icon-eye: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>');
+  --md-admonition-icon-view: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-view-icon lucide-view"><path d="M21 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2"/><path d="M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"/><circle cx="12" cy="12" r="1"/><path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0"/></svg>');
+  --md-admonition-icon-wrench: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>');
+  --md-admonition-icon-package-plus: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-plus-icon lucide-package-plus"><path d="M16 16h6"/><path d="M19 13v6"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="m7.5 4.27 9 5.15"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/></svg>');
+  --md-admonition-icon-drill: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-drill-icon lucide-drill"><path d="M10 18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3 1 1 0 0 1 1-1z"/><path d="M13 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1l-.81 3.242a1 1 0 0 1-.97.758H8"/><path d="M14 4h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3"/><path d="M18 6h4"/><path d="m5 10-2 8"/><path d="m7 18 2-8"/></svg>');
+  --md-admonition-icon-trash-2: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>');
+  --md-admonition-icon-chart-line: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-line-icon lucide-chart-line"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg>');
+}
+  
+/* Common style */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+}
+.md-typeset details summary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+/* OAuth (mint green) */
+.md-typeset .admonition.o-auth,
+.md-typeset details.o-auth {
+  border-color: #3ad29f;
+}
+.md-typeset .o-auth > .admonition-title,
+.md-typeset .o-auth > summary {
+  background-color: rgba(58, 210, 159, 0.1);
+}
+.md-typeset .o-auth > .admonition-title::before,
+.md-typeset .o-auth > summary::before {
+  background-color: #3ad29f;
+  mask-image: var(--md-admonition-icon--o-auth);
+  -webkit-mask-image: var(--md-admonition-icon--o-auth);
+}
+
+/* Email Registration (blue) */
+.md-typeset .admonition.e-mail-registration,
+.md-typeset details.e-mail-registration {
+  border-color: #4b9ce2;
+}
+.md-typeset .e-mail-registration > .admonition-title,
+.md-typeset .e-mail-registration > summary {
+  background-color: rgba(75, 156, 226, 0.1);
+}
+.md-typeset .e-mail-registration > .admonition-title::before,
+.md-typeset .e-mail-registration > summary::before {
+  background-color: #4b9ce2;
+  mask-image: var(--md-admonition-icon--e-mail-registration);
+  -webkit-mask-image: var(--md-admonition-icon--e-mail-registration);
+}
+
+/* Email Verification (teal) */
+.md-typeset .admonition.e-mail-verification,
+.md-typeset details.e-mail-verification {
+  border-color: #36cfc9;
+}
+.md-typeset .e-mail-verification > .admonition-title,
+.md-typeset .e-mail-verification > summary {
+  background-color: rgba(54, 207, 201, 0.1);
+}
+.md-typeset .e-mail-verification > .admonition-title::before,
+.md-typeset .e-mail-verification > summary::before {
+  background-color: #36cfc9;
+  mask-image: var(--md-admonition-icon-e-mail-verification);
+  -webkit-mask-image: var(--md-admonition-icon-e-mail-verification);
+}
+
+/* Username Login (purple) */
+.md-typeset .admonition.user-login,
+.md-typeset details.user-login {
+  border-color: #9b7ede;
+}
+.md-typeset .user-login > .admonition-title,
+.md-typeset .user-login > summary {
+  background-color: rgba(155, 126, 222, 0.1);
+}
+.md-typeset .user-login > .admonition-title::before,
+.md-typeset .user-login > summary::before {
+  background-color: #9b7ede;
+  mask-image: var(--md-admonition-icon-user-login);
+  -webkit-mask-image: var(--md-admonition-icon-user-login);
+}
+
+/* 2FA / QR Code (orange) */
+.md-typeset .admonition.qr-code,
+.md-typeset details.qr-code {
+  border-color: #f39c12;
+}
+.md-typeset .qr-code > .admonition-title,
+.md-typeset .qr-code > summary {
+  background-color: rgba(243, 156, 18, 0.1);
+}
+.md-typeset .qr-code > .admonition-title::before,
+.md-typeset .qr-code > summary::before {
+  background-color: #f39c12;
+  mask-image: var(--md-admonition-icon-qr-code);
+  -webkit-mask-image: var(--md-admonition-icon-qr-code);
+}
+
+/* Search Check (cyan blue) */
+.md-typeset .admonition.search-check,
+.md-typeset details.search-check {
+  border-color: #00c4cc;
+}
+
+.md-typeset .search-check > .admonition-title,
+.md-typeset .search-check > summary {
+  background-color: rgba(0, 196, 204, 0.1);
+}
+
+.md-typeset .search-check > .admonition-title::before,
+.md-typeset .search-check > summary::before {
+  background-color: #00c4cc;
+  mask-image: var(--md-admonition-icon-search-check);
+  -webkit-mask-image: var(--md-admonition-icon-search-check);
+}
+
+/* Sun-Moon (dual mode toggle - violet pink) */
+.md-typeset .admonition.sun-moon,
+.md-typeset details.sun-moon {
+  border-color: #d16be0;
+}
+
+.md-typeset .sun-moon > .admonition-title,
+.md-typeset .sun-moon > summary {
+  background-color: rgba(209, 107, 224, 0.08);
+}
+
+.md-typeset .sun-moon > .admonition-title::before,
+.md-typeset .sun-moon > summary::before {
+  background-color: #d16be0;
+  mask-image: var(--md-admonition-icon-sun-moon);
+  -webkit-mask-image: var(--md-admonition-icon-sun-moon);
+}
+
+/* Notebook Pen (lavender blue) */
+.md-typeset .admonition.notebook-pen,
+.md-typeset details.notebook-pen {
+  border-color: #7e8cea;
+}
+
+.md-typeset .notebook-pen > .admonition-title,
+.md-typeset .notebook-pen > summary {
+  background-color: rgba(126, 140, 234, 0.08);
+}
+
+.md-typeset .notebook-pen > .admonition-title::before,
+.md-typeset .notebook-pen > summary::before {
+  background-color: #7e8cea;
+  mask-image: var(--md-admonition-icon-notebook-pen);
+  -webkit-mask-image: var(--md-admonition-icon-notebook-pen);
+}
+
+/* Loader (electric indigo) */
+.md-typeset .admonition.loader,
+.md-typeset details.loader {
+  border-color: #7c3aed;
+}
+
+.md-typeset .loader > .admonition-title,
+.md-typeset .loader > summary {
+  background-color: rgba(124, 58, 237, 0.08);
+}
+
+.md-typeset .loader > .admonition-title::before,
+.md-typeset .loader > summary::before {
+  background-color: #7c3aed;
+  mask-image: var(--md-admonition-icon-loader);
+  -webkit-mask-image: var(--md-admonition-icon-loader);
+}
+
+/* Search (royal blue) */
+.md-typeset .admonition.search,
+.md-typeset details.search {
+  border-color: #4169e1;
+}
+
+.md-typeset .search > .admonition-title,
+.md-typeset .search > summary {
+  background-color: rgba(65, 105, 225, 0.08); /* subtle background */
+}
+
+.md-typeset .search > .admonition-title::before,
+.md-typeset .search > summary::before {
+  background-color: #4169e1;
+  mask-image: var(--md-admonition-icon-search);
+  -webkit-mask-image: var(--md-admonition-icon-search);
+}
+
+/* Binoculars (steel blue) */
+.md-typeset .admonition.binoculars,
+.md-typeset details.binoculars {
+  border-color: #4682b4; /* steel blue */
+}
+
+.md-typeset .binoculars > .admonition-title,
+.md-typeset .binoculars > summary {
+  background-color: rgba(70, 130, 180, 0.1); /* subtle background */
+}
+
+.md-typeset .binoculars > .admonition-title::before,
+.md-typeset .binoculars > summary::before {
+  background-color: #4682b4;
+  mask-image: var(--md-admonition-icon-binoculars);
+  -webkit-mask-image: var(--md-admonition-icon-binoculars);
+}
+
+/* Search Code (indigo) */
+.md-typeset .admonition.search-code,
+.md-typeset details.search-code {
+  border-color: #5c6ac4; /* indigo */
+}
+
+.md-typeset .search-code > .admonition-title,
+.md-typeset .search-code > summary {
+  background-color: rgba(92, 106, 196, 0.1);
+}
+
+.md-typeset .search-code > .admonition-title::before,
+.md-typeset .search-code > summary::before {
+  background-color: #5c6ac4;
+  mask-image: var(--md-admonition-icon-search-code);
+  -webkit-mask-image: var(--md-admonition-icon-search-code);
+}
+
+/* Move Horizontal (cool gray) */
+.md-typeset .admonition.move-horizontal,
+.md-typeset details.move-horizontal {
+  border-color: #6c757d; /* cool gray */
+}
+
+.md-typeset .move-horizontal > .admonition-title,
+.md-typeset .move-horizontal > summary {
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+.md-typeset .move-horizontal > .admonition-title::before,
+.md-typeset .move-horizontal > summary::before {
+  background-color: #6c757d;
+  mask-image: var(--md-admonition-icon-move-horizontal);
+  -webkit-mask-image: var(--md-admonition-icon-move-horizontal);
+}
+
+/* Package Search (amber gold) */
+.md-typeset .admonition.package-search,
+.md-typeset details.package-search {
+  border-color: #f0b429; /* amber/goldenrod */
+}
+
+.md-typeset .package-search > .admonition-title,
+.md-typeset .package-search > summary {
+  background-color: rgba(240, 180, 41, 0.1);
+}
+
+.md-typeset .package-search > .admonition-title::before,
+.md-typeset .package-search > summary::before {
+  background-color: #f0b429;
+  mask-image: var(--md-admonition-icon-package-serach);
+  -webkit-mask-image: var(--md-admonition-icon-package-serach);
+}
+
+/* Eye (sky blue) */
+.md-typeset .admonition.eye,
+.md-typeset details.eye {
+  border-color: #50c2f0;
+}
+
+.md-typeset .eye > .admonition-title,
+.md-typeset .eye > summary {
+  background-color: rgba(80, 194, 240, 0.1);
+}
+
+.md-typeset .eye > .admonition-title::before,
+.md-typeset .eye > summary::before {
+  background-color: #50c2f0;
+  mask-image: var(--md-admonition-icon-eye);
+  -webkit-mask-image: var(--md-admonition-icon-eye);
+}
+
+/* View (light indigo) */
+.md-typeset .admonition.view,
+.md-typeset details.view {
+  border-color: #7f8ff4;
+}
+
+.md-typeset .view > .admonition-title,
+.md-typeset .view > summary {
+  background-color: rgba(127, 143, 244, 0.1);
+}
+
+.md-typeset .view > .admonition-title::before,
+.md-typeset .view > summary::before {
+  background-color: #7f8ff4;
+  mask-image: var(--md-admonition-icon-view);
+  -webkit-mask-image: var(--md-admonition-icon-view);
+}
+
+/* Wrench (steel blue) */
+.md-typeset .admonition.wrench,
+.md-typeset details.wrench {
+  border-color: #4682b4; /* steel blue */
+}
+
+.md-typeset .wrench > .admonition-title,
+.md-typeset .wrench > summary {
+  background-color: rgba(70, 130, 180, 0.1);
+}
+
+.md-typeset .wrench > .admonition-title::before,
+.md-typeset .wrench > summary::before {
+  background-color: #4682b4;
+  mask-image: var(--md-admonition-icon-wrench);
+  -webkit-mask-image: var(--md-admonition-icon-wrench);
+}
+
+/* Package Plus (emerald green) */
+.md-typeset .admonition.package-plus,
+.md-typeset details.package-plus {
+  border-color: #34d399; /* emerald green */
+}
+
+.md-typeset .package-plus > .admonition-title,
+.md-typeset .package-plus > summary {
+  background-color: rgba(52, 211, 153, 0.1); /* matching green tint */
+}
+
+.md-typeset .package-plus > .admonition-title::before,
+.md-typeset .package-plus > summary::before {
+  background-color: #34d399;
+  mask-image: var(--md-admonition-icon-package-plus);
+  -webkit-mask-image: var(--md-admonition-icon-package-plus);
+}
+
+/* Drill (slate blue) */
+.md-typeset .admonition.drill,
+.md-typeset details.drill {
+  border-color: #64748b; /* slate blue-gray */
+}
+
+.md-typeset .drill > .admonition-title,
+.md-typeset .drill > summary {
+  background-color: rgba(100, 116, 139, 0.1); /* light slate tint */
+}
+
+.md-typeset .drill > .admonition-title::before,
+.md-typeset .drill > summary::before {
+  background-color: #64748b;
+  mask-image: var(--md-admonition-icon-drill);
+  -webkit-mask-image: var(--md-admonition-icon-drill);
+}
+
+/* Trash / Deletion (crimson red) */
+.md-typeset .admonition.trash-2,
+.md-typeset details.trash-2 {
+  border-color: #e63946; /* strong crimson */
+}
+
+.md-typeset .trash-2 > .admonition-title,
+.md-typeset .trash-2 > summary {
+  background-color: rgba(230, 57, 70, 0.1);
+}
+
+.md-typeset .trash-2 > .admonition-title::before,
+.md-typeset .trash-2 > summary::before {
+  background-color: #e63946;
+  mask-image: var(--md0admonition-icon-trash-2);
+  -webkit-mask-image: var(--md0admonition-icon-trash-2);
+}
+
+/* Chart Line (sky blue for analytics) */
+.md-typeset .admonition.chart-line,
+.md-typeset details.chart-line {
+  border-color: #4fc3f7; /* sky blue */
+}
+
+.md-typeset .chart-line > .admonition-title,
+.md-typeset .chart-line > summary {
+  background-color: rgba(79, 195, 247, 0.1);
+}
+
+.md-typeset .chart-line > .admonition-title::before,
+.md-typeset .chart-line > summary::before {
+  background-color: #4fc3f7;
+  mask-image: var(--md-admonition-icon-chart-line);
+  -webkit-mask-image: var(--md-admonition-icon-chart-line);
+}
