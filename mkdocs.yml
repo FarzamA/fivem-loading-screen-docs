@@ -28,6 +28,7 @@ nav:
     - ⌨️ Keyboard Overlay: keyboard-overlay.md
     - 🎵 Music Player: music-player.md
   # - FAQ: faq.md
+  - Upgrading: upgrade.md
   - Changelog: changelog.md
 extra_css:
   - stylesheets/custom-admonitions.css

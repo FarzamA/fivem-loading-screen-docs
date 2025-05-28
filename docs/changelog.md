@@ -3,7 +3,7 @@
 ## v1.0.1
 
 - Fixed an issue where the UI would break if no social media options were enabled in the config.
-- Made the info button label on social cards configurable via config.json.
+- Made the info button label on social cards configurable via `config.json`.
 - Social media buttons now open their configured links when clicked.
 
 ## v1.0.0
