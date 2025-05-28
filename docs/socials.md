@@ -13,6 +13,7 @@ You can customize the social header cards that appear at the top of the loading 
         "cardLabel": "Discord Server", 
         "cardInfo": "Join the discord to keep up with the latest on the FiveM server!", 
         "link": "https://discord.gg/dbFChqBh5u", 
+        "buttonLabel": "Join",
         "enabled": true 
     }
 ]
@@ -20,13 +21,14 @@ You can customize the social header cards that appear at the top of the loading 
 
 ## Field Breakdown
 
-| **Field**   | **Description**                                            |
-| ----------- | ---------------------------------------------------------- |
-| `type`      | Platform type (used to display the appropriate icon)       |
-| `cardLabel` | The card's main title/header text                          |
-| `cardInfo`  | Description shown below the header                         |
-| `link`      | URL that opens when the "Join" or action button is clicked |
-| `enabled`   | Whether to show this social card on the loading screen     |
+| **Field**     | **Description**                                            |
+| ------------- | ---------------------------------------------------------- |
+| `type`        | Platform type (used to display the appropriate icon)       |
+| `cardLabel`   | The card's main title/header text                          |
+| `cardInfo`    | Description shown below the header                         |
+| `link`        | URL that opens when the "Join" or action button is clicked |
+| `buttonLabel` | Label of "Join" or action button                           |
+| `enabled`     | Whether to show this social card on the loading screen     |
 
 !!! info "Multiple Platforms Supported"
     You can include multiple social cards by adding more objects to the socialHeaders array.
