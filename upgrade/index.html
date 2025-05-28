@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fivem-loading.vercel.app/changelog/">
+        <link rel="canonical" href="https://fivem-loading.vercel.app/upgrade/">
       
       
-        <link rel="prev" href="../upgrade/">
+        <link rel="prev" href="../music-player/">
       
+      
+        <link rel="next" href="../changelog/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Changelog - FiveM Loading Screen</title>
+        <title>Upgrading - FiveM Loading Screen</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#changelog" class="md-skip">
+        <a href="#upgrading-to-a-new-version" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Changelog
+              Upgrading
             
           </span>
         </div>
@@ -474,28 +476,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../upgrade/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Upgrading
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -513,7 +493,7 @@
   
   
   <span class="md-ellipsis">
-    Changelog
+    Upgrading
     
   </span>
   
@@ -526,7 +506,7 @@
   
   
   <span class="md-ellipsis">
-    Changelog
+    Upgrading
     
   </span>
   
@@ -549,18 +529,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v101" class="md-nav__link">
+  <a href="#whats-preserved" class="md-nav__link">
     <span class="md-ellipsis">
-      v1.0.1
+      🧠 What’s Preserved
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100" class="md-nav__link">
+  <a href="#upgrade-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      v1.0.0
+      ⚙️ Upgrade Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Tips &amp; Reminders
     </span>
   </a>
   
@@ -570,6 +559,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -601,18 +612,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v101" class="md-nav__link">
+  <a href="#whats-preserved" class="md-nav__link">
     <span class="md-ellipsis">
-      v1.0.1
+      🧠 What’s Preserved
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100" class="md-nav__link">
+  <a href="#upgrade-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      v1.0.0
+      ⚙️ Upgrade Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Tips &amp; Reminders
     </span>
   </a>
   
@@ -634,20 +654,41 @@
 
 
 
-<h1 id="changelog">📦 Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
-<h2 id="v101">v1.0.1<a class="headerlink" href="#v101" title="Permanent link">&para;</a></h2>
+<h1 id="upgrading-to-a-new-version">🔄 Upgrading to a New Version<a class="headerlink" href="#upgrading-to-a-new-version" title="Permanent link">&para;</a></h1>
+<p>Upgrading your loading screen is quick and easy. Just follow the steps below to safely replace the core files without affecting your custom config.json, assets, or media.</p>
+<hr />
+<h2 id="whats-preserved">🧠 What’s Preserved<a class="headerlink" href="#whats-preserved" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Fixed an issue where the UI would break if no social media options were enabled in the config.</li>
-<li>Made the info button label on social cards configurable via <code>config.json</code>.</li>
-<li>Social media buttons now open their configured links when clicked.</li>
+<li>Your config.json settings</li>
+<li>Custom images, audio, or videos inside html/assets/</li>
+<li>Any changes you've made to theme colors, rules, team, or social headers</li>
 </ul>
-<h2 id="v100">v1.0.0<a class="headerlink" href="#v100" title="Permanent link">&para;</a></h2>
+<h2 id="upgrade-steps">⚙️ Upgrade Steps<a class="headerlink" href="#upgrade-steps" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Replace the HTML Entrypoint</p>
 <ul>
-<li>Initial release</li>
-<li>Full keyboard overlay support</li>
-<li>YouTube and MP4 background support</li>
-<li>Configurable music player</li>
+<li>Download the latest <code>index.html</code> from the <code>html/</code> folder of the new release.</li>
+<li>Overwrite your existing <code>html/index.html</code> file with the new one.</li>
 </ul>
+</li>
+<li>
+<p>Update Built JavaScript Assets</p>
+<ul>
+<li>Go to your existing <code>html/assets/</code> folder.</li>
+<li>Delete all <code>.js</code> files (these are the old build outputs).</li>
+<li>Copy the new <code>.js</code> files from the latest release into <code>html/assets/</code>.</li>
+</ul>
+</li>
+</ol>
+<p>✅ That’s it! Your loading screen is now running the latest version.</p>
+<h2 id="tips-reminders">⚠️ Tips &amp; Reminders<a class="headerlink" href="#tips-reminders" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Do not overwrite your config.json unless the release notes explicitly say to.</li>
+<li>If you’ve customized core styles or components, make a backup before upgrading.</li>
+<li>Check the <a href="../changelog/">changelog</a> for any new config options or breaking changes.</li>
+</ul>
+<hr />
 
 
 
