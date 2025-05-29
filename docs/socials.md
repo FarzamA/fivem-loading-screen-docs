@@ -33,13 +33,13 @@ You can customize the social header cards that appear at the top of the loading 
 !!! info "Multiple Platforms Supported"
     You can include multiple social cards by adding more objects to the socialHeaders array.
 
-## Suppirted `type` values
+## Supported `type` values
 
-- Discord
-- Instagram
-- Telegram
-- YouYube
-- Tik Tok
+- discord
+- instagram
+- telegram
+- youtube
+- tiktok
 
 !!! warning "Spelling Matters"
     The type value must be lowercase and spelled exactly as shown above to display the correct icon.
