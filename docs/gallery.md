@@ -37,4 +37,8 @@ You can customize the images shown by editing the `gallery` array in your config
     </video>
     </div>
 
+!!! warning "Automatic Gallery Tab Hiding"
+    If the gallery array is empty ([ ]), the Gallery tab will not be rendered on the loading screen.
+    This allows you to disable the gallery feature entirely by removing or omitting all image entries.
+
 ---
