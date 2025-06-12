@@ -6,7 +6,7 @@ You can fully customize each member by editing the `teamMembers` array in your c
 
 ---
 
-## JSON structure
+## JSON Structure
 
 ```json
 "teamMembers": [
