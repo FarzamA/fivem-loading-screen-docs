@@ -44,10 +44,24 @@ If you'd like to show cover art or thumbnails per track, provide the `image` fie
 
 Image files should ideally be square (1:1 aspect ratio) and under 500KB for fast load times.
 
+## Optional Default Volume Setting
+
+To set the initial volume level of the music player, add the following entry to your config:
+
+```json
+"defaultVolume": 100
+```
+
+This value accepts a number from 0 to 100, representing the percentage volume on first load.
+
 ???+ note "Music Player UI Preview"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
     <video src="./../media/mp4/MusicDemo.mp4" autoplay muted playsinline loop style="max-width: 100%; border-radius: 12px;">
     </video>
     </div>
+
+!!! warning "Automatic Music Player Hiding"
+    The music player tab is automatically hidden if the music array is empty ([ ]) or omitted entirely from the config.
+    To disable the music player, simply remove the music entry or ensure the array contains no entries.
 
 ---

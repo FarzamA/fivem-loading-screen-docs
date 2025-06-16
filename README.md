@@ -1,4 +1,4 @@
 # FiveM Loading Screen Docs
 
-- v1.0.2
+- v1.0.3
 - [Live Preview](https://fivem-loading.vercel.app/)

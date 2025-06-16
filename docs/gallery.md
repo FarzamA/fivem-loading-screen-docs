@@ -38,7 +38,7 @@ You can customize the images shown by editing the `gallery` array in your config
     </div>
 
 !!! warning "Automatic Gallery Tab Hiding"
-    If the gallery array is empty ([ ]), the Gallery tab will not be rendered on the loading screen.
-    This allows you to disable the gallery feature entirely by removing or omitting all image entries.
+    The gallery tab is automatically hidden if the gallery array is empty ([ ]) or omitted entirely from the config.
+    To disable the gallery feature, simply remove the gallery entry or ensure the array contains no images.
 
 ---

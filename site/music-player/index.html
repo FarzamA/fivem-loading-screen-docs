@@ -527,6 +527,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#optional-default-volume-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional Default Volume Setting
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -640,6 +649,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#optional-default-volume-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional Default Volume Setting
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -710,6 +728,11 @@
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/path/to/cover_art.png&quot;</span>
 </code></pre></div>
 <p>Image files should ideally be square (1:1 aspect ratio) and under 500KB for fast load times.</p>
+<h2 id="optional-default-volume-setting">Optional Default Volume Setting<a class="headerlink" href="#optional-default-volume-setting" title="Permanent link">&para;</a></h2>
+<p>To set the initial volume level of the music player, add the following entry to your config:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;defaultVolume&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
+</code></pre></div>
+<p>This value accepts a number from 0 to 100, representing the percentage volume on first load.</p>
 <details class="note" open="open">
 <summary>Music Player UI Preview</summary>
 <p><div style="display: flex; justify-content: center; margin: 1.5rem 0;">
@@ -717,6 +740,11 @@
 </video>
 </div></p>
 </details>
+<div class="admonition warning">
+<p class="admonition-title">Automatic Music Player Hiding</p>
+<p>The music player tab is automatically hidden if the music array is empty ([ ]) or omitted entirely from the config.
+To disable the music player, simply remove the music entry or ensure the array contains no entries.</p>
+</div>
 <hr />
 
 

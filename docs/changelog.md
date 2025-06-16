@@ -1,5 +1,11 @@
 # 📦 Changelog
 
+## v1.0.3
+
+- Introduced a fixed-height container with scroll support to ensure usability when the gallery contains a large number of images.
+- Added the ability to fully disable the music player via configuration.
+- Implemented a `defaultVolume` parameter to allow setting the initial playback volume of the music player on the loading screen.
+
 ## v1.0.2
 
 - Fixed an issue where the UI would lose hover effects if there were too many gallery images
