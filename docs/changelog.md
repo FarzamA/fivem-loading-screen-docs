@@ -1,5 +1,12 @@
 # 📦 Changelog
 
+## v1.0.4
+
+- Added graceful YouTube/local video failure handling with a troubleshooting modal and docs link.
+- Improved detection of YouTube embed restrictions (e.g., error 153).
+- Added support for custom social media icons through config 
+    - [Config Setup Guide](https://farzama.github.io/fivem-loading-screen-docs/socials/#custom-icon-support).
+
 ## v1.0.3
 
 - Introduced a fixed-height container with scroll support to ensure usability when the gallery contains a large number of images.

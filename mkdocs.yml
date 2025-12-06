@@ -30,5 +30,6 @@ nav:
   # - FAQ: faq.md
   - Upgrading: upgrade.md
   - Changelog: changelog.md
+  - Future Plans: future-plans.md
 extra_css:
   - stylesheets/custom-admonitions.css
