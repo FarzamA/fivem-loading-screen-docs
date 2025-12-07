@@ -412,6 +412,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#final-fallback-use-a-local-mp4-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Fallback: Use a Local MP4 (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -795,6 +804,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#final-fallback-use-a-local-mp4-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Fallback: Use a Local MP4 (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -937,6 +955,18 @@ If the loading screen detects an embedding issue, it will automatically:</p>
 </li>
 </ol>
 <p>The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.) and show helpful guidance.</p>
+<hr />
+<h3 id="final-fallback-use-a-local-mp4-recommended">Final Fallback: Use a Local MP4 (Recommended)<a class="headerlink" href="#final-fallback-use-a-local-mp4-recommended" title="Permanent link">&para;</a></h3>
+<p>If your video <strong>still refuses to embed</strong>, even after correcting settings:</p>
+<p><strong>Download the video and use a local <code>.mp4</code> or <code>.webm</code> file instead.</strong><br />
+This completely bypasses YouTube’s restrictions and works 100% of the time in FiveM.</p>
+<p>Place the file here:</p>
+<div class="highlight"><pre><span></span><code>html/assets/mp4/background.mp4
+</code></pre></div>
+<p>Then update your config:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/mp4/background.mp4&quot;</span>
+</code></pre></div>
+<p>This is the most reliable solution and prevents future YouTube policy issues.</p>
 <hr />
 <h2 id="automatic-fallback-behavior">Automatic Fallback Behavior<a class="headerlink" href="#automatic-fallback-behavior" title="Permanent link">&para;</a></h2>
 <p>If your YouTube or local video fails:</p>
