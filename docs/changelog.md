@@ -8,6 +8,7 @@
 - Improved detection of YouTube embed restrictions (e.g., error 153).
 - Added support for custom social media icons through config 
     - [Setup Guide](socials.md#custom-icon-support)
+- Added [Future Plans](future-plans.md) page
 
 ## v1.0.3
 
