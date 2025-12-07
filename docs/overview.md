@@ -113,7 +113,7 @@ The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.
 If your video **still refuses to embed**, even after correcting settings:
 
 **Download the video and use a local `.mp4` or `.webm` file instead.**  
-This completely bypasses YouTube’s restrictions and works 100% of the time in FiveM.
+This completely bypasses YouTube’s restrictions.
 
 Place the file here:
 
