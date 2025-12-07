@@ -19,7 +19,7 @@ nav:
   - Home: index.md
   - Getting Started: setup.md
   - Customization:
-    - 🎨 Overview: customization.md
+    - 🎨 Overview: overview.md
     - 🏷️ Watermark: watermark.md
     - 🧷 Social Headers: socials.md
     - 📜 Rules Panel: rules.md

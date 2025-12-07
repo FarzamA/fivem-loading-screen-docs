@@ -3,9 +3,11 @@
 ## v1.0.4
 
 - Added graceful YouTube/local video failure handling with a troubleshooting modal and docs link.
+    - [Implementation Explanation](overview.md#youtube-embed-requirements-error-handling)
+    - [Troubleshooting Guide](overview.md#how-to-fix-youtube-videos-that-wont-play)
 - Improved detection of YouTube embed restrictions (e.g., error 153).
 - Added support for custom social media icons through config 
-    - [Config Setup Guide](https://farzama.github.io/fivem-loading-screen-docs/socials/#custom-icon-support).
+    - [Setup Guide](socials.md#custom-icon-support)
 
 ## v1.0.3
 
