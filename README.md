@@ -2,3 +2,4 @@
 
 - v1.0.4
 - [Live Preview](https://fivem-loading.vercel.app/)
+- [Documentation](https://farzama.github.io/fivem-loading-screen-docs/)
