@@ -40,10 +40,10 @@ If both are provided, the **video always takes priority**.
 
 ---
 
-## 🎥 Video Background (Local MP4 / WEBM)
+## 🎥 Video Background (Local WEBM)
 
 ```json
-"backgroundVideo": "./assets/path/to/bg.mp4"
+"backgroundVideo": "./assets/path/to/bg.webm"
 ```
 
 !!! tip "Best Performance"
@@ -51,8 +51,7 @@ If both are provided, the **video always takes priority**.
 
 Supported formats:
 
-- `.mp4` (recommended)
-- `.webm`
+- `.webm` (recommended)
 
 Place your files inside:
 
@@ -112,19 +111,19 @@ The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.
 
 If your video **still refuses to embed**, even after correcting settings:
 
-**Download the video and use a local `.mp4` or `.webm` file instead.**  
+**Download the video and use a local `.webm` file instead.**  
 This completely bypasses YouTube’s restrictions.
 
 Place the file here:
 
 ```
-html/assets/mp4/background.mp4
+html/assets/webm/background.webm
 ```
 
 Then update your config:
 
 ```json
-"backgroundVideo": "./assets/mp4/background.mp4"
+"backgroundVideo": "./assets/webm/background.webm"
 ```
 
 This is the most reliable solution and prevents future YouTube policy issues.
@@ -151,7 +150,7 @@ This ensures the loading screen remains usable even during media failures.
 | Priority | Type            | Notes                                      |
 |---------|-----------------|---------------------------------------------|
 | 1      | YouTube Video   | Must allow embedding; otherwise fallback   |
-| 2️      | Local MP4/WEBM  | Fastest + most reliable                    |
+| 2️      | Local WEBM  | Fastest + most reliable                    |
 | 3️      | Static Image    | Used when no video or video fails          |
 
 ---

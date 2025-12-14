@@ -1,5 +1,10 @@
 # 📦 Changelog
 
+## v1.0.5
+
+- Updated documentation to recommend using WebM as the preferred video format for loading screens due to better compatibility with FiveM's NUI.
+- Updated `fxmanifest.lua` to include paths for importing WebM files.
+
 ## v1.0.4
 
 - Added graceful YouTube/local video failure handling with a troubleshooting modal and docs link.
