@@ -367,9 +367,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-background-local-mp4-webm" class="md-nav__link">
+  <a href="#video-background-local-webm" class="md-nav__link">
     <span class="md-ellipsis">
-      🎥 Video Background (Local MP4 / WEBM)
+      🎥 Video Background (Local WebM)
     </span>
   </a>
   
@@ -413,9 +413,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#final-fallback-use-a-local-mp4-recommended" class="md-nav__link">
+  <a href="#final-fallback-use-a-local-webm-recommended" class="md-nav__link">
     <span class="md-ellipsis">
-      Final Fallback: Use a Local MP4 (Recommended)
+      Final Fallback: Use a Local WebM (Recommended)
     </span>
   </a>
   
@@ -759,9 +759,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-background-local-mp4-webm" class="md-nav__link">
+  <a href="#video-background-local-webm" class="md-nav__link">
     <span class="md-ellipsis">
-      🎥 Video Background (Local MP4 / WEBM)
+      🎥 Video Background (Local WebM)
     </span>
   </a>
   
@@ -805,9 +805,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#final-fallback-use-a-local-mp4-recommended" class="md-nav__link">
+  <a href="#final-fallback-use-a-local-webm-recommended" class="md-nav__link">
     <span class="md-ellipsis">
-      Final Fallback: Use a Local MP4 (Recommended)
+      Final Fallback: Use a Local WebM (Recommended)
     </span>
   </a>
   
@@ -900,8 +900,8 @@ If both are provided, the <strong>video always takes priority</strong>.</p>
 Even static images receive subtle ambient movement and lighting effects for depth.</p>
 </div>
 <hr />
-<h2 id="video-background-local-mp4-webm">🎥 Video Background (Local MP4 / WEBM)<a class="headerlink" href="#video-background-local-mp4-webm" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/path/to/bg.mp4&quot;</span>
+<h2 id="video-background-local-webm">🎥 Video Background (Local WebM)<a class="headerlink" href="#video-background-local-webm" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/path/to/bg.webm&quot;</span>
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Best Performance</p>
@@ -909,8 +909,7 @@ Even static images receive subtle ambient movement and lighting effects for dept
 </div>
 <p>Supported formats:</p>
 <ul>
-<li><code>.mp4</code> (recommended)</li>
-<li><code>.webm</code></li>
+<li><code>.webm</code> (recommended)</li>
 </ul>
 <p>Place your files inside:</p>
 <div class="highlight"><pre><span></span><code>html/assets/
@@ -956,15 +955,15 @@ If the loading screen detects an embedding issue, it will automatically:</p>
 </ol>
 <p>The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.) and show helpful guidance.</p>
 <hr />
-<h3 id="final-fallback-use-a-local-mp4-recommended">Final Fallback: Use a Local MP4 (Recommended)<a class="headerlink" href="#final-fallback-use-a-local-mp4-recommended" title="Permanent link">&para;</a></h3>
+<h3 id="final-fallback-use-a-local-webm-recommended">Final Fallback: Use a Local WebM (Recommended)<a class="headerlink" href="#final-fallback-use-a-local-webm-recommended" title="Permanent link">&para;</a></h3>
 <p>If your video <strong>still refuses to embed</strong>, even after correcting settings:</p>
-<p><strong>Download the video and use a local <code>.mp4</code> or <code>.webm</code> file instead.</strong><br />
+<p><strong>Download the video and use a local <code>.webm</code> file instead.</strong><br />
 This completely bypasses YouTube’s restrictions.</p>
 <p>Place the file here:</p>
-<div class="highlight"><pre><span></span><code>html/assets/mp4/background.mp4
+<div class="highlight"><pre><span></span><code>html/assets/webm/background.webm
 </code></pre></div>
 <p>Then update your config:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/mp4/background.mp4&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/webm/background.webm&quot;</span>
 </code></pre></div>
 <p>This is the most reliable solution and prevents future YouTube policy issues.</p>
 <hr />
@@ -998,7 +997,7 @@ This completely bypasses YouTube’s restrictions.</p>
 </tr>
 <tr>
 <td>2️</td>
-<td>Local MP4/WEBM</td>
+<td>Local WEBM</td>
 <td>Fastest + most reliable</td>
 </tr>
 <tr>

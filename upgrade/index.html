@@ -702,7 +702,20 @@
 <li>Copy the new <code>.js</code> files from the latest release into <code>html/assets/</code>.</li>
 </ul>
 </li>
+<li>
+<p>Update <code>fxmanifest.lua</code></p>
+<ul>
+<li>If you're upgrading to <code>v1.0.5</code> or higher, make sure to update your <code>fxmanifest.lua</code> to reflect the changes for WebM file paths.</li>
+<li>Ensure the <code>webm</code> files are included under the files section in fxmanifest.lua:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nv">files</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s1">&#39;html/assets/*.webm&#39;</span><span class="p">,</span><span class="w">  </span><span class="c1">-- Updated to include WebM file paths</span>
+<span class="w">    </span><span class="c1">-- other assets</span>
+<span class="p">}</span>
+</code></pre></div>
+</li>
 </ol>
+<p>Note: If you're already using WebM videos, this step is necessary to ensure compatibility with the latest release.</p>
 <p>✅ That’s it! Your loading screen is now running the latest version.</p>
 <h2 id="tips-reminders">⚠️ Tips &amp; Reminders<a class="headerlink" href="#tips-reminders" title="Permanent link">&para;</a></h2>
 <ul>
