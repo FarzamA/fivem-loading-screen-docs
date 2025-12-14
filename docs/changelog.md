@@ -3,7 +3,8 @@
 ## v1.0.5
 
 - Updated documentation to recommend using WebM as the preferred video format for loading screens due to better compatibility with FiveM's NUI.
-- Updated `fxmanifest.lua` to include paths for importing WebM files.
+- Updated `fxmanifest.lua` to include paths for importing WebM files. Ensure the correct file paths are included for WebM assets when upgrading.
+- Check the [Upgrade Guide](upgrade.md) for detailed instructions on updating `fxmanifest.lua` and other changes.
 
 ## v1.0.4
 

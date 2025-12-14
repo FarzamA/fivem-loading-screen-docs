@@ -40,7 +40,7 @@ If both are provided, the **video always takes priority**.
 
 ---
 
-## 🎥 Video Background (Local WEBM)
+## 🎥 Video Background (Local WebM)
 
 ```json
 "backgroundVideo": "./assets/path/to/bg.webm"
@@ -107,7 +107,7 @@ The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.
 
 ---
 
-### Final Fallback: Use a Local MP4 (Recommended)
+### Final Fallback: Use a Local WebM (Recommended)
 
 If your video **still refuses to embed**, even after correcting settings:
 

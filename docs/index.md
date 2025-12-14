@@ -6,7 +6,7 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 
 ## 🚀 Features
 
-- Full MP4 / YouTube video background support
+- Full WEBM / YouTube video background support
 - Music playback with skip/progress controls
 - Keyboard overlay with customizable keybind tooltips
 - Modern animations

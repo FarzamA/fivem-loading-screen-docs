@@ -21,6 +21,19 @@ Upgrading your loading screen is quick and easy. Just follow the steps below to 
     - Delete all `.js` files (these are the old build outputs).
     - Copy the new `.js` files from the latest release into `html/assets/`.
 
+3. Update `fxmanifest.lua`
+    - If you're upgrading to `v1.0.5` or higher, make sure to update your `fxmanifest.lua` to reflect the changes for WebM file paths.
+    - Ensure the `webm` files are included under the files section in fxmanifest.lua:
+
+    ```lua
+    files {
+        'html/assets/*.webm',  -- Updated to include WebM file paths
+        -- other assets
+    }
+    ```
+
+Note: If you're already using WebM videos, this step is necessary to ensure compatibility with the latest release.
+
 ✅ That’s it! Your loading screen is now running the latest version.
 
 ## ⚠️ Tips & Reminders
