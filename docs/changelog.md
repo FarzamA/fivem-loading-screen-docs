@@ -1,5 +1,14 @@
 # 📦 Changelog
 
+## v1.0.6
+
+- Added fixed height and scroll functionality to the team members panel.
+- Added a configuration item to add custom panels to the right-hand side of the loading screen.
+- Fixed parallax animation to prevent zooming in on images, which was causing weird behaviors.
+- Improved parallax animation and effect.
+- Cleaned up and maintained the codebase.
+- Updated all asset paths to use **fivemanage** URLs for a smaller delivery package.
+
 ## v1.0.5
 
 - Updated documentation to recommend using WebM as the preferred video format for loading screens due to better compatibility with FiveM's NUI.
