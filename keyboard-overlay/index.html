@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://fivem-loading.vercel.app/keyboard-overlay/">
       
       
-        <link rel="prev" href="../gallery/">
+        <link rel="prev" href="../custom-panel/">
       
       
         <link rel="next" href="../music-player/">
@@ -425,6 +425,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🧩 Custom Panel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -496,11 +519,62 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#special-key-names" class="md-nav__link">
+  <a href="#keyboard-layouts" class="md-nav__link">
     <span class="md-ellipsis">
-      Special Key Names
+      Keyboard Layouts
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locale-language-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locale / Language Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accepted-key-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accepted Key Names
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accepted Key Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-named-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Named Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#letters-and-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Letters and Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symbol-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symbol Keys
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -663,11 +737,62 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#special-key-names" class="md-nav__link">
+  <a href="#keyboard-layouts" class="md-nav__link">
     <span class="md-ellipsis">
-      Special Key Names
+      Keyboard Layouts
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locale-language-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locale / Language Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accepted-key-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accepted Key Names
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accepted Key Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-named-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Named Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#letters-and-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Letters and Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symbol-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symbol Keys
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -697,53 +822,55 @@
 
 
 <h1 id="keyboard-overlay-configuration">⌨️ Keyboard Overlay Configuration<a class="headerlink" href="#keyboard-overlay-configuration" title="Permanent link">&para;</a></h1>
-<p>The keyboard overlay appears on the loading screen and visually highlights keybinds to help new players learn essential controls. You can fully customize this overlay using the <code>keyboardShortcuts</code> configuration.</p>
+<p>The keyboard overlay appears on the loading screen and visually highlights keybinds to help new players learn essential controls. You can customize the compact keyboard layout, displayed language, and individual shortcuts using the <code>keyboardShortcuts</code> configuration.</p>
 <hr />
 <h2 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;keyboardShortcuts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;layout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ansi&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;locale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="p">{</span><span class="w"> </span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;~&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Point&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Put on seatbelt&quot;</span>
 <span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span><span class="w"> </span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Left Arrow&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Left Arrow&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Left Indicator&quot;</span>
 <span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span><span class="w"> </span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Right Arrow&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Right Arrow&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Right Indicator&quot;</span>
 <span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span><span class="w"> </span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Up Arrow&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Up Arrow&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hazard Lights&quot;</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lock vehicle&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;G&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;G&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Toggle vehicle engine on/off&quot;</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Z&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Z&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Open radial menu&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hands up&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LALT&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LALT&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Third eye view&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="w">        </span><span class="p">}</span>
@@ -760,16 +887,28 @@
 </thead>
 <tbody>
 <tr>
+<td><code>layout</code></td>
+<td>Optional. Controls which compact keyboard layout is rendered. Supported values: <code>ansi</code>, <code>iso</code>, <code>jis</code>.</td>
+</tr>
+<tr>
+<td><code>locale</code></td>
+<td>Optional. Controls how special key labels are displayed in the overlay. Example values: <code>en-US</code>, <code>de-DE</code>, <code>fr-FR</code>, <code>es-ES</code>, <code>pt-BR</code>, <code>ar</code>, <code>zh-CN</code>, <code>ja-JP</code>.</td>
+</tr>
+<tr>
+<td><code>keys</code></td>
+<td>Array of keybind entries to highlight on the keyboard.</td>
+</tr>
+<tr>
 <td><code>key</code></td>
-<td>Key to highlight on the keyboard (see special key naming below)</td>
+<td>The key to highlight on the keyboard. Use the key label shown in the overlay preview or one of the standard names listed below.</td>
 </tr>
 <tr>
 <td><code>onFoot</code></td>
-<td>Tooltip text shown when the player is <strong>on foot</strong></td>
+<td>Tooltip text shown when the player is <strong>on foot</strong>.</td>
 </tr>
 <tr>
 <td><code>inCar</code></td>
-<td>Tooltip text shown when the player is <strong>in a vehicle</strong></td>
+<td>Tooltip text shown when the player is <strong>in a vehicle</strong>.</td>
 </tr>
 </tbody>
 </table>
@@ -777,8 +916,66 @@
 <p class="admonition-title">Multiple Contexts</p>
 <p>You can define different behaviors for the same key depending on whether the player is on foot or in a vehicle.</p>
 </div>
-<h2 id="special-key-names">Special Key Names<a class="headerlink" href="#special-key-names" title="Permanent link">&para;</a></h2>
-<p>To ensure proper mapping and rendering, use the following standard key names for special or non-alphanumeric keys:</p>
+<div class="admonition info">
+<p class="admonition-title">Optional Settings</p>
+<p>If <code>layout</code> or <code>locale</code> are omitted, the loading screen will fall back to default values. Existing configs without these fields will continue to work.</p>
+</div>
+<h2 id="keyboard-layouts">Keyboard Layouts<a class="headerlink" href="#keyboard-layouts" title="Permanent link">&para;</a></h2>
+<p>The loading screen uses a compact keyboard overlay and supports multiple layout styles:</p>
+<table>
+<thead>
+<tr>
+<th>Layout</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ansi</code></td>
+<td>Standard US-style compact keyboard layout</td>
+</tr>
+<tr>
+<td><code>iso</code></td>
+<td>Common European-style compact keyboard layout</td>
+</tr>
+<tr>
+<td><code>jis</code></td>
+<td>Japanese-style compact keyboard layout</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">What layout changes</p>
+<p>The selected layout affects how symbol keys are displayed in the overlay. It does <strong>not</strong> change your server's actual game keybinds — it only changes the visual keyboard preview.</p>
+</div>
+<h2 id="locale-language-display">Locale / Language Display<a class="headerlink" href="#locale-language-display" title="Permanent link">&para;</a></h2>
+<p>The <code>locale</code> field changes the displayed labels for special keys such as:</p>
+<ul>
+<li><code>Tab</code></li>
+<li><code>Caps Lock</code></li>
+<li><code>Enter</code></li>
+<li><code>Shift</code></li>
+<li><code>Ctrl</code></li>
+<li><code>Alt</code></li>
+<li><code>Space</code></li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;keyboardShortcuts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;layout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;iso&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;locale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;de-DE&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LALT&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Third eye view&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This would render the keyboard using the ISO layout and German-style special key labels.</p>
+<h2 id="accepted-key-names">Accepted Key Names<a class="headerlink" href="#accepted-key-names" title="Permanent link">&para;</a></h2>
+<p>For best results, use the exact key label shown in the keyboard overlay preview.</p>
+<h3 id="standard-named-keys">Standard Named Keys<a class="headerlink" href="#standard-named-keys" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -804,24 +1001,132 @@
 <td><code>RCTRL</code></td>
 </tr>
 <tr>
+<td>Left SHIFT</td>
+<td><code>LSHIFT</code></td>
+</tr>
+<tr>
+<td>Right SHIFT</td>
+<td><code>RSHIFT</code></td>
+</tr>
+<tr>
 <td>Space Bar</td>
 <td><code>SPACE</code></td>
 </tr>
 <tr>
-<td>Arrow Keys</td>
-<td><code>Left Arrow</code>, <code>Right Arrow</code>, <code>Up Arrow</code>, <code>Down Arrow</code></td>
+<td>Backspace</td>
+<td><code>BACKSPACE</code></td>
+</tr>
+<tr>
+<td>Enter</td>
+<td><code>ENTER</code></td>
+</tr>
+<tr>
+<td>Tab</td>
+<td><code>TAB</code></td>
+</tr>
+<tr>
+<td>Caps Lock</td>
+<td><code>CAPS LOCK</code></td>
+</tr>
+<tr>
+<td>Left Arrow</td>
+<td><code>Left Arrow</code></td>
+</tr>
+<tr>
+<td>Right Arrow</td>
+<td><code>Right Arrow</code></td>
+</tr>
+<tr>
+<td>Up Arrow</td>
+<td><code>Up Arrow</code></td>
+</tr>
+<tr>
+<td>Down Arrow</td>
+<td><code>Down Arrow</code></td>
+</tr>
+<tr>
+<td>Windows Key</td>
+<td><code>WIN</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="letters-and-numbers">Letters and Numbers<a class="headerlink" href="#letters-and-numbers" title="Permanent link">&para;</a></h3>
+<p>You can use normal letters and numbers directly:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Action&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">}</span>
+<span class="p">{</span><span class="w"> </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Seat position&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h3 id="symbol-keys">Symbol Keys<a class="headerlink" href="#symbol-keys" title="Permanent link">&para;</a></h3>
+<p>Symbol keys should use the visible symbol shown in the compact keyboard overlay.</p>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>JSON Key Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tilde / top-left symbol key</td>
+<td><code>~</code></td>
+</tr>
+<tr>
+<td>Minus</td>
+<td><code>-</code></td>
+</tr>
+<tr>
+<td>Equals</td>
+<td><code>=</code></td>
+</tr>
+<tr>
+<td>Left Bracket</td>
+<td><code>[</code></td>
+</tr>
+<tr>
+<td>Right Bracket</td>
+<td><code>]</code></td>
+</tr>
+<tr>
+<td>Backslash</td>
+<td><code>\</code></td>
+</tr>
+<tr>
+<td>Semicolon</td>
+<td><code>;</code></td>
+</tr>
+<tr>
+<td>Quote</td>
+<td><code>'</code></td>
+</tr>
+<tr>
+<td>Comma</td>
+<td><code>,</code></td>
+</tr>
+<tr>
+<td>Period</td>
+<td><code>.</code></td>
+</tr>
+<tr>
+<td>Slash</td>
+<td><code>/</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Top-left key compatibility</p>
+<p>The top-left symbol key accepts <code>~</code>. Existing configs using <code>`</code> are still supported for compatibility.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Naming Matters</p>
-<p>Key names must match exactly as shown above — e.g., use "LALT" instead of "Alt" and "SPACE" instead of "Spacebar".</p>
+<p>Special named keys must match the supported values exactly. For example, use <code>LALT</code> instead of <code>Alt</code>, and <code>SPACE</code> instead of <code>Spacebar</code>.</p>
 </div>
 <h2 id="tips-for-best-results">Tips for Best Results<a class="headerlink" href="#tips-for-best-results" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Keep tooltips short and action-focused.</li>
-<li>Avoid repeating the same key across multiple entries unless you want to override behavior in both contexts.</li>
-<li>Use consistent formatting (title case is recommended).</li>
+<li>Use the same <code>layout</code> that best matches your community's keyboard style.</li>
+<li>Use the same <code>locale</code> as the language used throughout your loading screen.</li>
+<li>For symbol keys, use the exact symbol shown in the overlay preview.</li>
+<li>Avoid repeating the same key across multiple entries unless you intentionally want different <code>onFoot</code> and <code>inCar</code> behavior.</li>
 </ul>
 <details class="note" open="open">
 <summary>Keyboard Overlay Preview</summary>
