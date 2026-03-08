@@ -17,3 +17,12 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 [See a Live Preview ➜](https://fivem-loading.vercel.app/)
 
 ---
+
+## 🌆 See the Server Behind the Project
+
+This loading screen was built and refined through real-world use on **The Vibe RP**.  
+If you want to see the server, branding, and overall style behind the project, check it out below.
+
+[See The Vibe RP ➜](https://thevibe.mooo.com/)
+
+---

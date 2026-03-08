@@ -173,7 +173,8 @@ This ensures the loading screen remains usable even during media failures.
 - Customize **social headers & custom icons** → [Social Headers](socials.md) page  
 - Create formatted **rules** → [Rules Panel](rules.md) page  
 - Add your **team panel** → [Team Panel](team.md) page  
-- Build a **gallery grid** → [Gallery Grid](gallery.md) page  
+- Build a **gallery grid** → [Gallery Grid](gallery.md) page
+- Configure a **custom panel** → [Custom Panel](custom-panel.md) page
 - Enable the **keyboard overlay** → [Keyboard Overlay](keyboard-overlay.md) page  
 - Configure the **music player** → [Music Player](music-player.md) page  
 

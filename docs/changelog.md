@@ -1,5 +1,19 @@
 # 📦 Changelog
 
+## v1.0.7
+
+- Added compact keyboard localization support through `keyboardShortcuts.layout` and `keyboardShortcuts.locale`.
+- Added support for multiple compact keyboard layout styles:
+    - `ansi`
+    - `iso`
+    - `jis`
+- Improved keyboard overlay rendering so layout-specific key labels can be displayed without changing the compact design.
+- Added compatibility handling for symbol-based key aliases such as `~` on the top-left key.
+- Added a dedicated [Custom Panel Configuration](custom-panel.md) documentation page.
+- Added support for preset custom panel icons through a built-in icon registry.
+- Fixed an issue where multiple custom social headers could be highlighted/selected at the same time if they shared the same `type`.
+- Updated social header selection logic to use an internal runtime ID so duplicate `custom` entries now behave correctly.
+
 ## v1.0.6
 
 - Added fixed height and scroll functionality to the team members panel.

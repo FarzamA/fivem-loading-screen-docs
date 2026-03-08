@@ -23,7 +23,7 @@ You can customize the social header cards that appear at the top of the loading 
 
 | **Field**     | **Description**                                            |
 | ------------- | ---------------------------------------------------------- |
-| `type`        | Platform type (used to display the appropriate icon)       |
+| `type`        | Platform type used to display a built-in social icon. Use `custom` to supply your own image icon. |
 | `cardLabel`   | The card's main title/header text                          |
 | `cardInfo`    | Description shown below the header                         |
 | `link`        | URL that opens when the "Join" or action button is clicked |
