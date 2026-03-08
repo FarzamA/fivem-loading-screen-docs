@@ -20,8 +20,8 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 
 ## 🌆 See the Community Behind the Project
 
-This loading screen was built and refined through real-world use across **The Vibe** community and its projects.  
-If you want to check out The Vibe RP, Discord, Assetto Corsa, and more, visit the hub below.
+This loading screen was built and refined through real-world use on **The Vibe RP** and across the broader **The Vibe** community.  
+If you want to check out the projects, servers, and community behind it, visit the hub below.
 
 [Visit The Vibe ➜](https://thevibe.mooo.com/)
 
