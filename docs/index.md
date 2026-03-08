@@ -18,11 +18,11 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 
 ---
 
-## 🌆 See the Server Behind the Project
+## 🌆 See the Community Behind the Project
 
-This loading screen was built and refined through real-world use on **The Vibe RP**.  
-If you want to see the server, branding, and overall style behind the project, check it out below.
+This loading screen was built and refined through real-world use across **The Vibe** community and its projects.  
+If you want to check out The Vibe RP, Discord, Assetto Corsa, and more, visit the hub below.
 
-[See The Vibe RP ➜](https://thevibe.mooo.com/)
+[Visit The Vibe ➜](https://thevibe.mooo.com/)
 
 ---
