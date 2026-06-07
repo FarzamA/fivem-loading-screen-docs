@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fivem-loading.vercel.app/watermark/">
+        <link rel="canonical" href="https://fivem-loading.vercel.app/title-animation/">
       
       
-        <link rel="prev" href="../background/">
+        <link rel="prev" href="../watermark/">
       
       
-        <link rel="next" href="../title-animation/">
+        <link rel="next" href="../socials/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>🏷️ Watermark - FiveM Loading Screen</title>
+        <title>✨ Title Animation - FiveM Loading Screen</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#watermark-configuration" class="md-skip">
+        <a href="#title-animation" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏷️ Watermark
+              ✨ Title Animation
             
           </span>
         </div>
@@ -434,6 +434,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../watermark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏷️ Watermark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -453,7 +481,7 @@
   <span class="md-ellipsis">
     
   
-    🏷️ Watermark
+    ✨ Title Animation
   
 
     
@@ -471,7 +499,7 @@
   <span class="md-ellipsis">
     
   
-    🏷️ Watermark
+    ✨ Title Animation
   
 
     
@@ -518,38 +546,32 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#available-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../title-animation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ✨ Title Animation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -887,6 +909,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#available-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -904,14 +948,18 @@
 
 
 
-<h1 id="watermark-configuration">🏷️ Watermark Configuration<a class="headerlink" href="#watermark-configuration" title="Permanent link">&para;</a></h1>
-<p>Customize the watermark that appears in the top-left corner of the loading screen.</p>
+<h1 id="title-animation">✨ Title Animation<a class="headerlink" href="#title-animation" title="Permanent link">&para;</a></h1>
+<p>Control how the watermark <strong>title</strong> (your server name) animates, and toggle the sweeping sheen highlight over it.</p>
+<p>These options live inside <code>watermark.label</code>, right alongside the title text.</p>
 <hr />
 <h2 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;watermark&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Vibe RP&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;colorWordCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;animation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wave&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;sheen&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span><span class="w"> </span>
-<span class="w">    </span><span class="nt">&quot;subHeading&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Loading Screen&quot;</span><span class="p">,</span><span class="w"> </span>
-<span class="w">    </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/png/logo.png&quot;</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;watermark&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Vibe RP&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;colorWordCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;animation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wave&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sheen&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="field-breakdown">Field Breakdown<a class="headerlink" href="#field-breakdown" title="Permanent link">&para;</a></h2>
@@ -924,52 +972,87 @@
 </thead>
 <tbody>
 <tr>
-<td><code>label.text</code></td>
-<td>The main title text shown in the watermark</td>
-</tr>
-<tr>
-<td><code>label.colorWordCount</code></td>
-<td>How many words get the <code>selectedColor</code> highlight from the start</td>
-</tr>
-<tr>
 <td><code>label.animation</code></td>
-<td>(Optional) Title animation preset — see <a href="../title-animation/">Title Animation</a>. Defaults to <code>wave</code>.</td>
+<td>The animation preset applied to the title text. See the preset list below.</td>
 </tr>
 <tr>
 <td><code>label.sheen</code></td>
-<td>(Optional) Sweeping sheen highlight over the title. On by default.</td>
+<td>A sweeping light "sheen" that passes across the whole title. <code>true</code> by default.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Defaults</p>
+<p>If <code>animation</code> is missing or set to a value that doesn't exist, the title falls back to <strong><code>wave</code></strong>. If <code>sheen</code> is omitted, the sheen is <strong>on</strong> — set <code>"sheen": false</code> to turn it off.</p>
+</div>
+<hr />
+<h2 id="available-presets">Available Presets<a class="headerlink" href="#available-presets" title="Permanent link">&para;</a></h2>
+<p>Every preset is hand-tuned to look premium and animates smoothly without straining the FiveM UI.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Value</strong></th>
+<th><strong>Style</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wave</code></td>
+<td>Each letter gently bobs up and down in sequence. <em>(Default)</em></td>
 </tr>
 <tr>
-<td><code>subHeading</code></td>
-<td>The text shown underneath the title</td>
+<td><code>wave-reverse</code></td>
+<td>The same bob, staggered right-to-left.</td>
 </tr>
 <tr>
-<td><code>logo</code></td>
-<td>File path to your logo image</td>
+<td><code>bounce</code></td>
+<td>A snappier, springier per-letter hop.</td>
+</tr>
+<tr>
+<td><code>ripple</code></td>
+<td>Letters scale-pop in sequence, like a travelling ripple.</td>
+</tr>
+<tr>
+<td><code>sway</code></td>
+<td>The whole title rocks gently left and right.</td>
+</tr>
+<tr>
+<td><code>reveal</code></td>
+<td>The title wipes in left-to-right, holds, then wipes out — on a loop.</td>
+</tr>
+<tr>
+<td><code>slam</code></td>
+<td>The title punches in with a sharp impact, repeating periodically.</td>
+</tr>
+<tr>
+<td><code>pulse</code></td>
+<td>The title thumps to a beat, with a synced underline glow.</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>No motion — the title appears and stays still.</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Animating the title</p>
-<p><code>label.animation</code> and <code>label.sheen</code> control how the title moves and shines. See the <a href="../title-animation/">Title Animation</a> page for the full preset list.</p>
+<p class="admonition-title">Sheen layers on top</p>
+<p><code>sheen</code> is independent of <code>animation</code>. The sheen sweep runs <strong>over whichever preset you pick</strong>, so you can pair, for example, <code>wave</code> + sheen or <code>slam</code> + sheen.</p>
 </div>
+<hr />
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p>A calm, premium look:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Vibe RP&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;colorWordCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;animation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sway&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;sheen&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>A high-energy, beat-driven look:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Vibe RP&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;colorWordCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;animation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pulse&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;sheen&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>A completely static title with no sheen:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Vibe RP&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;colorWordCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;animation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;sheen&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Color Tip</p>
-<p>The colorWordCount applies the highlight color to that number of starting words in the label.text.</p>
+<p class="admonition-title">Where the title comes from</p>
+<p><code>text</code> and <code>colorWordCount</code> (the title itself and its color split) are documented on the <a href="../watermark/">Watermark</a> page. <code>animation</code> and <code>sheen</code> only control how that text moves and shines.</p>
 </div>
-<details class="note" open="open">
-<summary>Watermark Preview</summary>
-<p><div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-    <video 
-        src="./../media/mp4/WatermarkDemo.mp4" 
-        autoplay 
-        muted 
-        playsinline 
-        loop 
-        style="max-width: 100%; border-radius: 12px;">
-    </video>
-</div></p>
-</details>
 <hr />
 
 
