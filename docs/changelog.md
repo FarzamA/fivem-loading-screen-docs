@@ -1,5 +1,23 @@
 # 📦 Changelog
 
+## v1.0.8
+
+- Added a free **in-browser Config Builder** on the website — edit every `config.json` option in a visual editor with color pickers, see a **true-to-life live preview** of the loading screen as you go, and **export a ready-to-run `gucci_loading.zip`** you drop straight into your server. No more editing config blind.
+    - **Paste a URL or upload a file** for any image/video/audio; uploads are bundled into the download automatically.
+    - **Import** an existing `config.json` to keep editing it. If it references **local assets** (`./assets/...`), add those files in the import dialog and they show up in the live preview right away.
+    - **Pre-fill from your live server** — point the builder at your FiveM server address to auto-fill the basics (server name, etc.).
+    - **Light / dark / system theme** and your work **auto-saves** in the browser so a refresh never loses it.
+- Added a **Build with AI** assistant — describe your server in plain language and the assistant builds and edits your loading screen for you, live. Free turns to try it, then a one-time **$4.99** unlock for a full build session (no account, no subscription). Includes a built-in **support assistant** that answers setup and troubleshooting questions right in the chat.
+- Gave the builder and AI pages a **premium restyle** — a frosted-glass UI with a single reactive accent that follows your chosen color across the whole interface, plus higher-contrast, more readable loading-screen text over busy backgrounds.
+- Refreshed the default loading screen to a new **deep-violet** color scheme.
+- Added configurable **title animation** with curated presets and a sweeping sheen overlay, via `watermark.label.animation` and `watermark.label.sheen`. See [Title Animation](title-animation.md).
+- Added **video as the audio source** — a background video can be driven by the built-in player (play/pause, scrub, volume).
+- Added **multiple background videos (playlist)** — `backgroundVideo` now accepts an array with per-video `title`/`subtitle`, forward/back controls, and a position counter. See [Background](background.md).
+- Added the `videoAsAudio` toggle with a music-aware default: with a music playlist the video is muted and the music plays; with no music the video becomes the audio source.
+- Added a **Pause Video** control shown only in muted-ambient mode.
+- Added **gallery lightbox navigation** — open an image and browse the gallery with on-screen arrows or the ←/→ keys, with position dots. See [Gallery Panel](gallery.md).
+- Reorganized the documentation: split **Background** into its own page.
+
 ## v1.0.7
 
 - Added compact keyboard localization support through `keyboardShortcuts.layout` and `keyboardShortcuts.locale`.
@@ -32,12 +50,11 @@
 ## v1.0.4
 
 - Added graceful YouTube/local video failure handling with a troubleshooting modal and docs link.
-    - [Implementation Explanation](overview.md#youtube-embed-requirements-error-handling)
-    - [Troubleshooting Guide](overview.md#how-to-fix-youtube-videos-that-wont-play)
+    - [Implementation Explanation](background.md#youtube-embed-requirements-error-handling)
+    - [Troubleshooting Guide](background.md#how-to-fix-youtube-videos-that-wont-play)
 - Improved detection of YouTube embed restrictions (e.g., error 153).
 - Added support for custom social media icons through config 
     - [Setup Guide](socials.md#custom-icon-support)
-- Added [Future Plans](future-plans.md) page
 
 ## v1.0.3
 

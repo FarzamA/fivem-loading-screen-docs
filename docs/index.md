@@ -6,11 +6,17 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 
 ## 🚀 Features
 
+- **No-code Config Builder** — customize everything visually and export a ready-to-run resource
+- **Build with AI** — describe your server and the assistant builds your loading screen for you
 - Full WEBM / YouTube video background support
 - Music playback with skip/progress controls
 - Keyboard overlay with customizable keybind tooltips
 - Modern animations
 - Easy to configure via `config.json`
+
+[Build Your Own Config ➜](https://fivem-loading.vercel.app/builder.html)
+
+[Build with AI ➜](https://fivem-loading.vercel.app/ai.html)
 
 [Get the Latest Release ➜](https://github.com/FarzamA/fivem-loading-screen-docs/releases)
 
