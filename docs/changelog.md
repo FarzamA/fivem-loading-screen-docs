@@ -6,9 +6,8 @@
     - **Paste a URL or upload a file** for any image/video/audio; uploads are bundled into the download automatically.
     - **Import** an existing `config.json`, or upload a whole `gucci_loading` folder, to keep editing it. If it references **local assets** (`./assets/...`), add those files in the import dialog and they show up in the live preview right away.
     - **Light / dark / system theme** and your work **auto-saves** in the browser so a refresh never loses it.
-- Added a **Build with AI** assistant — describe your server in plain language and the assistant builds and edits your loading screen for you, live. Free turns to try it, then a one-time unlock for a full build session (no account, no subscription). Includes a built-in **support assistant** that answers setup and troubleshooting questions right in the chat.
+- Added a **Build with AI** assistant — describe your server in plain language and the assistant builds and edits your loading screen for you, live, no account needed. Includes a built-in **support assistant** that answers setup and troubleshooting questions right in the chat.
 - Gave the builder and AI pages a **premium restyle** — a frosted-glass UI with a single reactive accent that follows your chosen color across the whole interface, plus higher-contrast, more readable loading-screen text over busy backgrounds.
-- Refreshed the default loading screen to a new **deep-violet** color scheme.
 - Added configurable **title animation** with curated presets and a sweeping sheen overlay, via `watermark.label.animation` and `watermark.label.sheen`. See [Title Animation](title-animation.md).
 - Added **video as the audio source** — a background video can be driven by the built-in player (play/pause, scrub, volume).
 - Added **multiple background videos (playlist)** — `backgroundVideo` now accepts an array with per-video `title`/`subtitle`, forward/back controls, and a position counter. See [Background](background.md).
