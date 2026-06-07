@@ -4,10 +4,9 @@
 
 - Added a free **in-browser Config Builder** on the website — edit every `config.json` option in a visual editor with color pickers, see a **true-to-life live preview** of the loading screen as you go, and **export a ready-to-run `gucci_loading.zip`** you drop straight into your server. No more editing config blind.
     - **Paste a URL or upload a file** for any image/video/audio; uploads are bundled into the download automatically.
-    - **Import** an existing `config.json` to keep editing it. If it references **local assets** (`./assets/...`), add those files in the import dialog and they show up in the live preview right away.
-    - **Pre-fill from your live server** — point the builder at your FiveM server address to auto-fill the basics (server name, etc.).
+    - **Import** an existing `config.json`, or upload a whole `gucci_loading` folder, to keep editing it. If it references **local assets** (`./assets/...`), add those files in the import dialog and they show up in the live preview right away.
     - **Light / dark / system theme** and your work **auto-saves** in the browser so a refresh never loses it.
-- Added a **Build with AI** assistant — describe your server in plain language and the assistant builds and edits your loading screen for you, live. Free turns to try it, then a one-time **$4.99** unlock for a full build session (no account, no subscription). Includes a built-in **support assistant** that answers setup and troubleshooting questions right in the chat.
+- Added a **Build with AI** assistant — describe your server in plain language and the assistant builds and edits your loading screen for you, live. Free turns to try it, then a one-time unlock for a full build session (no account, no subscription). Includes a built-in **support assistant** that answers setup and troubleshooting questions right in the chat.
 - Gave the builder and AI pages a **premium restyle** — a frosted-glass UI with a single reactive accent that follows your chosen color across the whole interface, plus higher-contrast, more readable loading-screen text over busy backgrounds.
 - Refreshed the default loading screen to a new **deep-violet** color scheme.
 - Added configurable **title animation** with curated presets and a sweeping sheen overlay, via `watermark.label.animation` and `watermark.label.sheen`. See [Title Animation](title-animation.md).
