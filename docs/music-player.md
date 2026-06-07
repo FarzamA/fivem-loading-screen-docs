@@ -34,6 +34,18 @@ Customize your music experience by modifying the `music` array in your configura
 !!! info "Track Rotation"
     Tracks rotate automatically in order. The player includes play, pause, skip, and volume control functionality.
 
+!!! info "Playlist Counter"
+    When more than one track is configured, a small position counter (e.g. `2 / 5`) appears at the top-right of the player card.
+
+## Doubles as the Video Controller
+
+When a background video is set with `videoAsAudio` enabled (the default), this same player controls the **video** instead of the mp3 playlist — play/pause, scrub, and volume all drive the video, and the "now playing" text comes from each video's `title` / `subtitle`. With multiple videos, the forward/back buttons and the position counter work just like the music playlist.
+
+See [Background Options](overview.md) for how to configure single or multiple background videos and the `videoAsAudio` toggle.
+
+!!! info "When does the player show?"
+    The player appears when there is an mp3 playlist **or** a video acting as the audio source. In muted-ambient mode (`videoAsAudio: false`) the player controls the mp3 playlist while the video loops silently behind it.
+
 ## Optional Album Art
 
 If you'd like to show cover art or thumbnails per track, provide the `image` field:

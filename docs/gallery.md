@@ -31,6 +31,23 @@ You can customize the images shown by editing the `gallery` array in your config
 !!! note "Aspect Ratio Tip"
     For a clean layout, try to keep all gallery images at a consistent resolution (e.g. 1280x720 or 1920x1080).
 
+## Viewing Images (Lightbox)
+
+Clicking any thumbnail opens the image in a full-size lightbox. From there you can move through the gallery:
+
+- **On-screen arrows** — left/right arrows on the sides of the image jump to the previous/next picture.
+- **Keyboard** — the **←** and **→** arrow keys navigate, and **Esc** closes the lightbox.
+
+Navigation **wraps around**: going back from the first image shows the last, and forward from the last returns to the first.
+
+!!! info "Single image"
+    The navigation arrows only appear when the gallery has more than one image. No extra configuration is needed — navigation works over your existing `gallery` array.
+
+???+ note "Lightbox Preview"
+    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+        <img src="./../media/png/gallery-lightbox.png" alt="Gallery lightbox with side arrows, position dots, and a keyboard hint" style="max-width: 100%; border-radius: 12px;" />
+    </div>
+
 ???+ note "Gallery Panel Preview"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
     <video src="./../media/mp4/GalleryDemo.mp4" autoplay muted playsinline loop style="max-width: 100%; border-radius: 12px;">

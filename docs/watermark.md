@@ -8,7 +8,7 @@ Customize the watermark that appears in the top-left corner of the loading scree
 
 ```json
 "watermark": { 
-    "label": { "text": "The Vibe RP", "colorWordCount": 2 }, 
+    "label": { "text": "The Vibe RP", "colorWordCount": 2, "animation": "wave", "sheen": true }, 
     "subHeading": "Loading Screen", 
     "logo": "./assets/png/logo.png" 
 }
@@ -20,8 +20,13 @@ Customize the watermark that appears in the top-left corner of the loading scree
 |------------------------|---------------------------------------------------------------------------|
 | `label.text`           | The main title text shown in the watermark                              |
 | `label.colorWordCount` | How many words get the `selectedColor` highlight from the start         |
+| `label.animation`      | (Optional) Title animation preset — see [Title Animation](title-animation.md). Defaults to `wave`. |
+| `label.sheen`          | (Optional) Sweeping sheen highlight over the title. On by default.       |
 | `subHeading`           | The text shown underneath the title                                     |
 | `logo`                 | File path to your logo image                     |
+
+!!! tip "Animating the title"
+    `label.animation` and `label.sheen` control how the title moves and shines. See the [Title Animation](title-animation.md) page for the full preset list.
 
 !!! info "Color Tip"
     The colorWordCount applies the highlight color to that number of starting words in the label.text.
