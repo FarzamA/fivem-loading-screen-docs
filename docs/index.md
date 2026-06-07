@@ -6,8 +6,8 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 
 ## 🚀 Features
 
-- **No-code Config Builder** — customize everything visually and export a ready-to-run resource
-- **Build with AI** — describe your server and the assistant builds your loading screen for you
+- **No-code Config Builder:** customize everything visually and export a ready-to-run resource
+- **Build with AI:** describe your server and the assistant builds your loading screen for you
 - Full WEBM / YouTube video background support
 - Music playback with skip/progress controls
 - Keyboard overlay with customizable keybind tooltips
