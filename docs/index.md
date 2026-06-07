@@ -14,9 +14,8 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 - Modern animations
 - Easy to configure via `config.json`
 
-[Build Your Own Config ➜](https://fivem-loading.vercel.app/builder.html)
-
-[Build with AI ➜](https://fivem-loading.vercel.app/ai.html)
+[Build Your Own Config](https://fivem-loading.vercel.app/builder.html){ .md-button .md-button--primary }
+[Build with AI](https://fivem-loading.vercel.app/ai.html){ .md-button .md-button--primary }
 
 [Get the Latest Release ➜](https://github.com/FarzamA/fivem-loading-screen-docs/releases)
 

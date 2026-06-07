@@ -2,12 +2,14 @@ site_name: FiveM Loading Screen
 site_url: https://fivem-loading.vercel.app/
 theme:
   name: material
+  custom_dir: overrides
   palette:
     scheme: slate
 markdown_extensions:
   - toc:
       permalink: true
   - admonition
+  - attr_list
   - codehilite
   - footnotes
   - tables
@@ -17,10 +19,14 @@ markdown_extensions:
       alternate_style: true
 nav:
   - Home: index.md
+  - Config Builder: https://fivem-loading.vercel.app/builder.html
+  - Build with AI: https://fivem-loading.vercel.app/ai.html
   - Getting Started: setup.md
   - Customization:
     - 🎨 Overview: overview.md
+    - 🎥 Background: background.md
     - 🏷️ Watermark: watermark.md
+    - ✨ Title Animation: title-animation.md
     - 🧷 Social Headers: socials.md
     - 📜 Rules Panel: rules.md
     - 👥 Team Panel: team.md
@@ -31,6 +37,6 @@ nav:
   # - FAQ: faq.md
   - Upgrading: upgrade.md
   - Changelog: changelog.md
-  - Future Plans: future-plans.md
+  - Community: https://thevibe.mooo.com/
 extra_css:
   - stylesheets/custom-admonitions.css
