@@ -405,6 +405,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../localization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 Language & RTL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../background/" class="md-nav__link">
         
   
@@ -779,6 +807,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v1.0.9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v108" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -912,6 +951,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://fivem-loading.vercel.app/terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -937,6 +1003,17 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v1.0.9
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v108" class="md-nav__link">
@@ -1055,6 +1132,20 @@
 
 
 <h1 id="changelog">📦 Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<h2 id="v109">v1.0.9<a class="headerlink" href="#v109" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added full <strong>localization</strong> across the loading screen, the Config Builder, and the AI assistant, in <strong>7 languages</strong>: English (US), English (UK), Spanish, German, French, Arabic, and Urdu. See <a href="../localization/">Language &amp; RTL</a>.<ul>
+<li>Set the loading-screen language with a new top-level <code>language</code> field in <code>config.json</code> (for example <code>"language": "ar"</code>). Missing or unknown values stay English, so older configs are unaffected.</li>
+<li><strong>Right-to-left (RTL) text</strong> for <strong>Arabic</strong> and <strong>Urdu</strong>: each piece of text renders in its natural direction, with an Arabic/Urdu font bundled into the resource so it displays correctly offline. The screen keeps its normal layout (panels and watermark are not moved); physical controls such as the keyboard grid stay left-to-right by design.</li>
+<li>The <strong>Config Builder</strong> auto-detects your browser language, adds a <strong>Language</strong> switcher in the settings menu, remembers your choice, and writes the language into your exported <code>config.json</code> automatically.</li>
+<li>The <strong>AI assistant replies in your language</strong>.</li>
+<li>Keyboard key-cap labels now follow <code>language</code> automatically (the existing <code>keyboardShortcuts.locale</code> still overrides).</li>
+</ul>
+</li>
+<li>Added localized <strong>per-field help hints</strong> in the Config Builder: click the <strong>ℹ️ info icon</strong> next to any field to reveal a short "how to fill this" explanation inline, in your language.</li>
+<li>Added an <strong>AI-translation disclaimer</strong> in the Language menu, noting that non-English translations are AI generated.</li>
+<li>Added a <strong>Terms and Conditions</strong> page (linked from the settings menu on the builder and AI pages).</li>
+</ul>
 <h2 id="v108">v1.0.8<a class="headerlink" href="#v108" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Added a free <strong>in-browser Config Builder</strong> on the website: edit every <code>config.json</code> option in a visual editor with color pickers, see a <strong>true-to-life live preview</strong> of the loading screen as you go, and <strong>export a ready-to-run <code>gucci_loading.zip</code></strong> you drop straight into your server. No more editing config blind.<ul>
