@@ -24,6 +24,7 @@ nav:
   - Getting Started: setup.md
   - Customization:
     - 🎨 Overview: overview.md
+    - 🌐 Language & RTL: localization.md
     - 🎥 Background: background.md
     - 🏷️ Watermark: watermark.md
     - ✨ Title Animation: title-animation.md
@@ -38,5 +39,6 @@ nav:
   - Upgrading: upgrade.md
   - Changelog: changelog.md
   - Community: https://thevibe.mooo.com/
+  - Terms: https://fivem-loading.vercel.app/terms.html
 extra_css:
   - stylesheets/custom-admonitions.css

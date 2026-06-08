@@ -1,5 +1,17 @@
 # 📦 Changelog
 
+## v1.0.9
+
+- Added full **localization** across the loading screen, the Config Builder, and the AI assistant, in **7 languages**: English (US), English (UK), Spanish, German, French, Arabic, and Urdu. See [Language & RTL](localization.md).
+    - Set the loading-screen language with a new top-level `language` field in `config.json` (for example `"language": "ar"`). Missing or unknown values stay English, so older configs are unaffected.
+    - **Right-to-left (RTL) text** for **Arabic** and **Urdu**: each piece of text renders in its natural direction, with an Arabic/Urdu font bundled into the resource so it displays correctly offline. The screen keeps its normal layout (panels and watermark are not moved); physical controls such as the keyboard grid stay left-to-right by design.
+    - The **Config Builder** auto-detects your browser language, adds a **Language** switcher in the settings menu, remembers your choice, and writes the language into your exported `config.json` automatically.
+    - The **AI assistant replies in your language**.
+    - Keyboard key-cap labels now follow `language` automatically (the existing `keyboardShortcuts.locale` still overrides).
+- Added localized **per-field help hints** in the Config Builder: click the **ℹ️ info icon** next to any field to reveal a short "how to fill this" explanation inline, in your language.
+- Added an **AI-translation disclaimer** in the Language menu, noting that non-English translations are AI generated.
+- Added a **Terms and Conditions** page (linked from the settings menu on the builder and AI pages).
+
 ## v1.0.8
 
 - Added a free **in-browser Config Builder** on the website: edit every `config.json` option in a visual editor with color pickers, see a **true-to-life live preview** of the loading screen as you go, and **export a ready-to-run `gucci_loading.zip`** you drop straight into your server. No more editing config blind.
