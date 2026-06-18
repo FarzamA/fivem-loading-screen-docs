@@ -6,7 +6,7 @@ See LICENSE for full terms.
 
 - v1.0.9
 - [Config Builder](https://fivem-loading.vercel.app/builder.html) (customize visually, export a ready-to-run resource)
-- [Build with AI](https://fivem-loading.vercel.app/ai.html) (describe your server, the assistant builds it)
+- [Build with AI](https://fivem-loading.vercel.app/ai.html) (describe your server and the changes you want, the assistant builds it)
 - [Live Preview](https://fivem-loading.vercel.app/)
 - [Documentation](https://farzama.github.io/fivem-loading-screen-docs/)
 - [Community](https://thevibe.mooo.com/)
