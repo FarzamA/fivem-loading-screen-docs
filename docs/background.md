@@ -183,6 +183,9 @@ A background video can either **be the audio** (the player controls it — play/
 !!! warning "When a video fails"
     If a video in the list fails to load, it is skipped to the next one. If **every** video fails, the screen falls back to the music player (or the animated image background).
 
+!!! info "Muted-background playlists auto-cycle"
+    In muted-ambient mode (`videoAsAudio: false`, with a music playlist), a multi-video list plays through automatically: each video plays in turn, then loops back to the first. There are no on-screen forward/back controls in this mode (those appear only when the video is the audio source), and a single video simply loops in place.
+
 ---
 
 ## Summary of Background Priority

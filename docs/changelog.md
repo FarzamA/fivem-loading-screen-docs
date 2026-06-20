@@ -1,5 +1,11 @@
 # 📦 Changelog
 
+## v1.0.10
+
+- Background videos now **cycle automatically when used as a muted background**, not only when the video is the audio source. With `videoAsAudio` off (a music playlist drives the audio), multiple `backgroundVideo` entries now play through in sequence and loop, instead of only the first one playing. See [Background](background.md).
+    - **Automatic skip on error**: if a video fails to load, the screen moves on to the next working video in the list, and only falls back to the animated background if every video fails.
+    - The last remaining video loops smoothly instead of freezing on its final frame.
+
 ## v1.0.9
 
 - Added full **localization** across the loading screen, the Config Builder, and the AI assistant, in **7 languages**: English (US), English (UK), Spanish, German, French, Arabic, and Urdu. See [Language & RTL](localization.md).
