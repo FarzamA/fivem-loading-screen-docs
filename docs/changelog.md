@@ -1,5 +1,9 @@
 # 📦 Changelog
 
+## v1.1.0
+
+- The **on-screen keyboard** key labels now automatically pick black or white for the **highest contrast against your accent color**, the same way the rest of the loading screen already did. Dark accent colors no longer render unreadable dark-on-dark key labels, and bright accents get crisp dark labels. The choice is **WCAG AA** legible for any color you pick. See [Keyboard Overlay](keyboard-overlay.md).
+
 ## v1.0.10
 
 - Background videos now **cycle automatically when used as a muted background**, not only when the video is the audio source. With `videoAsAudio` off (a music playlist drives the audio), multiple `backgroundVideo` entries now play through in sequence and loop, instead of only the first one playing. See [Background](background.md).
