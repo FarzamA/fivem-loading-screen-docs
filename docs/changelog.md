@@ -1,5 +1,11 @@
 # 📦 Changelog
 
+## v1.2.0
+
+- **Renamed the resource to `4zam_loading`** (previously `gucci_loading`). Updating an existing install: rename the resource folder to `4zam_loading` and change your `server.cfg` line to `ensure 4zam_loading`. Fresh downloads already use the new name. See [Setup](setup.md).
+- **Background videos are more reliable in FiveM.** A video that silently freezes, or an embed that never starts, now falls back automatically instead of leaving a black screen. Background videos also **always autoplay** now, whether or not the video is the audio source.
+- **Cleaner fullscreen on every monitor.** The background video and images fill the screen edge to edge in a clean 16:9 with no black bars, on standard, ultrawide and 4:3 displays alike.
+
 ## v1.1.0
 
 - The **on-screen keyboard** key labels now automatically pick black or white for the **highest contrast against your accent color**, the same way the rest of the loading screen already did. Dark accent colors no longer render unreadable dark-on-dark key labels, and bright accents get crisp dark labels. The choice is **WCAG AA** legible for any color you pick. See [Keyboard Overlay](keyboard-overlay.md).

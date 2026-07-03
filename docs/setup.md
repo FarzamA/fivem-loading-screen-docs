@@ -4,12 +4,12 @@
 
 1. Visit the [Releases Page](https://github.com/FarzamA/fivem-loading-screen-docs/releases)
 2. Download the latest `.zip` package
-3. Extract to `resources/gucci_loading`
+3. Extract to `resources/4zam_loading`
 
 ## 🧩 Add to `server.cfg`
 
 ```cfg
-ensure gucci_loading
+ensure 4zam_loading
 ```
 
 ## ⚙️ Configuration
