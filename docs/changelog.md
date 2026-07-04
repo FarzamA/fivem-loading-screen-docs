@@ -1,5 +1,9 @@
 # 📦 Changelog
 
+## v1.2.2
+
+- **Asset host migration and logo fix.** The loading-screen assets (background video, music, images, watermark logo) now load from the `dl.4zam.dev` asset host at stable, URL-safe paths, since the previous host was retired. This also fixes a broken watermark logo caused by a filename with a space in it. No gameplay or config changes are required; if you maintain your own `config.json`, point its asset URLs at `dl.4zam.dev`. Code is unchanged from v1.2.0.
+
 ## v1.2.0
 
 - **Renamed the resource to `4zam_loading`** (previously `gucci_loading`). Updating an existing install: rename the resource folder to `4zam_loading` and change your `server.cfg` line to `ensure 4zam_loading`. Fresh downloads already use the new name. See [Setup](setup.md).
