@@ -53,11 +53,17 @@ html/assets/
 
 ## ⚠️ YouTube Embed Requirements & Error Handling
 
-YouTube videos **must meet several requirements** to play inside FiveM's Chromium-based UI.  
-If the loading screen detects an embedding issue, it will automatically:
+!!! success "Error 153 is fixed in v1.3.0"
+    FiveM loads loading screens from `nui://`, which sends no Referer, so YouTube used to reject
+    every embed with **"Error 153: video player configuration error"**. Since **v1.3.0**, YouTube
+    links play in game through a small player page hosted at `loadingscreen.4zam.dev`, with sound,
+    pause and volume working as usual. No setup is needed: paste a normal YouTube link.
 
-- Show a **graceful error modal**, and  
-- Fall back to your **static background image** with animation.
+YouTube videos still **must meet a few requirements** set by the video owner.  
+If a video can't play, the loading screen automatically:
+
+- Moves on to your **next video**, or to your **music**, within about 15 seconds, and  
+- Shows a **notice** only if every video fails, falling back to your **static background image** with animation.
 
 ### Required YouTube Settings
 
@@ -69,7 +75,7 @@ Make sure your video has:
 - **No region/copyright blocks**
 - **Public or unlisted visibility**
 
-If any of these are missing, YouTube will block the embed request, and a failure modal will appear.
+If any of these are missing, YouTube will block the embed request and the screen falls back as described above.
 
 ### How to Fix YouTube Videos That Won't Play
 
@@ -82,7 +88,7 @@ If any of these are missing, YouTube will block the embed request, and a failure
     - Region blocked → allow all locations  
     - Embedding disabled → enable permissions  
 
-The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.) and show helpful guidance.
+The YouTube player page needs `loadingscreen.4zam.dev` to be reachable. If it isn't, YouTube backgrounds fall back to your next video or music within about 8 seconds. Local video files never depend on it.
 
 ---
 
@@ -111,10 +117,10 @@ This is the most reliable solution and prevents future YouTube policy issues.
 
 ## Automatic Fallback Behavior
 
-If your YouTube or local video fails:
+If a YouTube or local video fails:
 
-- A **modal** explains the issue  
-- A **link to troubleshooting docs** appears  
+- The screen moves on to the **next video**, or to your **music**  
+- If **every** video fails, a **notice** explains the issue with a **link to troubleshooting docs**  
 - The background animates using your static `"backgroundImage"`  
 
 This ensures the loading screen remains usable even during media failures.

@@ -43,7 +43,7 @@ Add a top-level `language` field to your `config.json`. Every player connecting 
 
 ## In the Config Builder and AI assistant
 
-Open the [Config Builder](https://fivem-loading.vercel.app/builder.html) or [Build with AI](https://fivem-loading.vercel.app/ai.html):
+Open the [Config Builder](https://loadingscreen.4zam.dev/builder.html) or [Build with AI](https://loadingscreen.4zam.dev/ai.html):
 
 - The interface **auto-detects your browser language** on first visit.
 - A **Language** option in the settings (gear) menu lets you switch at any time, and your choice is remembered.
@@ -52,7 +52,7 @@ Open the [Config Builder](https://fivem-loading.vercel.app/builder.html) or [Bui
 - When you **export**, the language you are building in is written into your `config.json` automatically, so the loading screen ships in the same language. You can always change the `language` field afterward.
 
 !!! note "About non-English translations"
-    The interface translations are AI generated and reviewed, and may not be perfect. The **Language** menu notes this, and the [Terms and Conditions](https://fivem-loading.vercel.app/terms.html) are provided in English, which is the authoritative version.
+    The interface translations are AI generated and reviewed, and may not be perfect. The **Language** menu notes this, and the [Terms and Conditions](https://loadingscreen.4zam.dev/terms.html) are provided in English, which is the authoritative version.
 
 ---
 
@@ -88,4 +88,4 @@ If you ever want to pin a specific key-cap language regardless of `language`, th
 
 ## Adding a language
 
-The architecture is built so a new language is a single file. If you would like to contribute one (or request one), reach out on the [community Discord](https://thevibe.mooo.com/) — a new locale is one translation file plus one line in the locale registry, with no other code changes.
+The architecture is built so a new language is a single file. If you would like to contribute one (or request one), reach out on the [community Discord](https://discord.gg/BetjMuDbC2) — a new locale is one translation file plus one line in the locale registry, with no other code changes.

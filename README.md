@@ -4,9 +4,9 @@ This project is proprietary software.
 Commercial use, resale, redistribution, sublicensing, and reposting are prohibited without prior written permission.
 See LICENSE for full terms.
 
-- v1.1.0
-- [Config Builder](https://fivem-loading.vercel.app/builder.html) (customize visually, export a ready-to-run resource)
-- [Build with AI](https://fivem-loading.vercel.app/ai.html) (describe your server and the changes you want, the assistant builds it)
-- [Live Preview](https://fivem-loading.vercel.app/)
+- v1.3.0
+- [Config Builder](https://loadingscreen.4zam.dev/builder.html) (customize visually, export a ready-to-run resource)
+- [Build with AI](https://loadingscreen.4zam.dev/ai.html) (describe your server and the changes you want, the assistant builds it)
+- [Live Preview](https://loadingscreen.4zam.dev/)
 - [Documentation](https://farzama.github.io/fivem-loading-screen-docs/)
-- [Community](https://thevibe.mooo.com/)
+- [Community](https://discord.gg/BetjMuDbC2)

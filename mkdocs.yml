@@ -1,5 +1,5 @@
 site_name: FiveM Loading Screen
-site_url: https://fivem-loading.vercel.app/
+site_url: https://farzama.github.io/fivem-loading-screen-docs/
 theme:
   name: material
   custom_dir: overrides
@@ -19,8 +19,8 @@ markdown_extensions:
       alternate_style: true
 nav:
   - Home: index.md
-  - Config Builder: https://fivem-loading.vercel.app/builder.html
-  - Build with AI: https://fivem-loading.vercel.app/ai.html
+  - Config Builder: https://loadingscreen.4zam.dev/builder.html
+  - Build with AI: https://loadingscreen.4zam.dev/ai.html
   - Getting Started: setup.md
   - Customization:
     - 🎨 Overview: overview.md
@@ -38,7 +38,7 @@ nav:
   # - FAQ: faq.md
   - Upgrading: upgrade.md
   - Changelog: changelog.md
-  - Community: https://thevibe.mooo.com/
-  - Terms: https://fivem-loading.vercel.app/terms.html
+  - Community: https://discord.gg/BetjMuDbC2
+  - Terms: https://loadingscreen.4zam.dev/terms.html
 extra_css:
   - stylesheets/custom-admonitions.css

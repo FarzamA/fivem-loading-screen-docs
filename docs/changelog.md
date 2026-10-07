@@ -1,5 +1,11 @@
 # 📦 Changelog
 
+## v1.3.0
+
+- **YouTube backgrounds work in FiveM again (Error 153 fixed).** FiveM serves loading screens from `nui://`, which sends no Referer, so YouTube rejected every embed with "Error 153: video player configuration error". YouTube links now play in game through a small player page hosted at `loadingscreen.4zam.dev`, with sound, pause and volume working as before. See [Background](background.md).
+    - If a YouTube video still cannot play (embedding disabled, age restriction or the player page unreachable), the screen falls back to the next video or your music within about 15 seconds. If every video fails, a notice explains why.
+    - Local MP4/WEBM backgrounds are unchanged and never use the hosted page.
+
 ## v1.2.2
 
 - **Asset host migration and logo fix.** The loading-screen assets (background video, music, images, watermark logo) now load from the `dl.4zam.dev` asset host at stable, URL-safe paths, since the previous host was retired. This also fixes a broken watermark logo caused by a filename with a space in it. No gameplay or config changes are required; if you maintain your own `config.json`, point its asset URLs at `dl.4zam.dev`. Code is unchanged from v1.2.0.

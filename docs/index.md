@@ -14,20 +14,20 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 - Modern animations
 - Easy to configure via `config.json`
 
-[Build Your Own Config](https://fivem-loading.vercel.app/builder.html){ .md-button .md-button--primary }
-[Build with AI](https://fivem-loading.vercel.app/ai.html){ .md-button .md-button--primary }
+[Build Your Own Config](https://loadingscreen.4zam.dev/builder.html){ .md-button .md-button--primary }
+[Build with AI](https://loadingscreen.4zam.dev/ai.html){ .md-button .md-button--primary }
 
 [Get the Latest Release ➜](https://github.com/FarzamA/fivem-loading-screen-docs/releases)
 
-[See a Live Preview ➜](https://fivem-loading.vercel.app/)
+[See a Live Preview ➜](https://loadingscreen.4zam.dev/)
 
 ---
 
 ## 🌆 See the Community Behind the Project
 
 This loading screen was built and refined through real-world use on **The Vibe RP** and across the broader **The Vibe** community.  
-If you want to check out the projects, servers, and community behind it, visit the hub below.
+If you want to check out the projects, servers, and community behind it, join the Discord below.
 
-[Visit The Vibe ➜](https://thevibe.mooo.com/)
+[Join the Discord ➜](https://discord.gg/BetjMuDbC2)
 
 ---
