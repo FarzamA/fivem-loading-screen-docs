@@ -1,5 +1,12 @@
 # 📦 Changelog
 
+## v1.3.1
+
+- **YouTube links are read the same way everywhere.** The loading screen, the Config Builder preview and the AI assistant now share one YouTube link reader, so a link that previews correctly also plays in game.
+    - A video link that also carries playlist details (`&list=...&index=...`) now plays just that video instead of the whole playlist, and keeps its start time (`t=` or `start=`).
+    - Pure playlist and channel links are still not supported as backgrounds.
+- The license now points to the community hub at `thevibe.4zam.dev`.
+
 ## v1.3.0
 
 - **YouTube backgrounds work in FiveM again (Error 153 fixed).** FiveM serves loading screens from `nui://`, which sends no Referer, so YouTube rejected every embed with "Error 153: video player configuration error". YouTube links now play in game through a small player page hosted at `loadingscreen.4zam.dev`, with sound, pause and volume working as before. See [Background](background.md).
