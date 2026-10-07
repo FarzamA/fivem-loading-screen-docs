@@ -809,6 +809,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v1.3.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v130" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1062,6 +1073,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v1.3.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v130" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1244,6 +1266,15 @@
 
 
 <h1 id="changelog">📦 Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<h2 id="v131">v1.3.1<a class="headerlink" href="#v131" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>YouTube links are read the same way everywhere.</strong> The loading screen, the Config Builder preview and the AI assistant now share one YouTube link reader, so a link that previews correctly also plays in game.<ul>
+<li>A video link that also carries playlist details (<code>&amp;list=...&amp;index=...</code>) now plays just that video instead of the whole playlist, and keeps its start time (<code>t=</code> or <code>start=</code>).</li>
+<li>Pure playlist and channel links are still not supported as backgrounds.</li>
+</ul>
+</li>
+<li>The license now points to the community hub at <code>thevibe.4zam.dev</code>.</li>
+</ul>
 <h2 id="v130">v1.3.0<a class="headerlink" href="#v130" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>YouTube backgrounds work in FiveM again (Error 153 fixed).</strong> FiveM serves loading screens from <code>nui://</code>, which sends no Referer, so YouTube rejected every embed with "Error 153: video player configuration error". YouTube links now play in game through a small player page hosted at <code>loadingscreen.4zam.dev</code>, with sound, pause and volume working as before. See <a href="../background/">Background</a>.<ul>
