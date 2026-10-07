@@ -26,8 +26,8 @@ A high-quality, customizable loading screen built for modern FiveM servers. Feat
 ## 🌆 See the Community Behind the Project
 
 This loading screen was built and refined through real-world use on **The Vibe RP** and across the broader **The Vibe** community.  
-If you want to check out the projects, servers, and community behind it, join the Discord below.
+If you want to check out the projects, servers, and community behind it, visit the hub below.
 
-[Join the Discord ➜](https://discord.gg/BetjMuDbC2)
+[Visit The Vibe ➜](https://thevibe.4zam.dev/)
 
 ---

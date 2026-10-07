@@ -88,4 +88,4 @@ If you ever want to pin a specific key-cap language regardless of `language`, th
 
 ## Adding a language
 
-The architecture is built so a new language is a single file. If you would like to contribute one (or request one), reach out on the [community Discord](https://discord.gg/BetjMuDbC2) — a new locale is one translation file plus one line in the locale registry, with no other code changes.
+The architecture is built so a new language is a single file. If you would like to contribute one (or request one), reach out on the [community hub](https://thevibe.4zam.dev/) — a new locale is one translation file plus one line in the locale registry, with no other code changes.
