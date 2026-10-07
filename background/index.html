@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://fivem-loading.vercel.app/background/">
+        <link rel="canonical" href="https://farzama.github.io/fivem-loading-screen-docs/background/">
       
       
         <link rel="prev" href="../localization/">
@@ -251,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://fivem-loading.vercel.app/builder.html" class="md-nav__link">
+      <a href="https://loadingscreen.4zam.dev/builder.html" class="md-nav__link">
         
   
   
@@ -278,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://fivem-loading.vercel.app/ai.html" class="md-nav__link">
+      <a href="https://loadingscreen.4zam.dev/ai.html" class="md-nav__link">
         
   
   
@@ -963,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://thevibe.mooo.com/" class="md-nav__link">
+      <a href="https://discord.gg/BetjMuDbC2" class="md-nav__link">
         
   
   
@@ -990,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://fivem-loading.vercel.app/terms.html" class="md-nav__link">
+      <a href="https://loadingscreen.4zam.dev/terms.html" class="md-nav__link">
         
   
   
@@ -1231,11 +1231,18 @@ Even static images receive subtle ambient movement and lighting effects for dept
 </div>
 <hr />
 <h2 id="youtube-embed-requirements-error-handling">⚠️ YouTube Embed Requirements &amp; Error Handling<a class="headerlink" href="#youtube-embed-requirements-error-handling" title="Permanent link">&para;</a></h2>
-<p>YouTube videos <strong>must meet several requirements</strong> to play inside FiveM's Chromium-based UI.<br />
-If the loading screen detects an embedding issue, it will automatically:</p>
+<div class="admonition success">
+<p class="admonition-title">Error 153 is fixed in v1.3.0</p>
+<p>FiveM loads loading screens from <code>nui://</code>, which sends no Referer, so YouTube used to reject
+every embed with <strong>"Error 153: video player configuration error"</strong>. Since <strong>v1.3.0</strong>, YouTube
+links play in game through a small player page hosted at <code>loadingscreen.4zam.dev</code>, with sound,
+pause and volume working as usual. No setup is needed: paste a normal YouTube link.</p>
+</div>
+<p>YouTube videos still <strong>must meet a few requirements</strong> set by the video owner.<br />
+If a video can't play, the loading screen automatically:</p>
 <ul>
-<li>Show a <strong>graceful error modal</strong>, and  </li>
-<li>Fall back to your <strong>static background image</strong> with animation.</li>
+<li>Moves on to your <strong>next video</strong>, or to your <strong>music</strong>, within about 15 seconds, and  </li>
+<li>Shows a <strong>notice</strong> only if every video fails, falling back to your <strong>static background image</strong> with animation.</li>
 </ul>
 <h3 id="required-youtube-settings">Required YouTube Settings<a class="headerlink" href="#required-youtube-settings" title="Permanent link">&para;</a></h3>
 <p>Make sure your video has:</p>
@@ -1246,7 +1253,7 @@ If the loading screen detects an embedding issue, it will automatically:</p>
 <li><strong>No region/copyright blocks</strong></li>
 <li><strong>Public or unlisted visibility</strong></li>
 </ul>
-<p>If any of these are missing, YouTube will block the embed request, and a failure modal will appear.</p>
+<p>If any of these are missing, YouTube will block the embed request and the screen falls back as described above.</p>
 <h3 id="how-to-fix-youtube-videos-that-wont-play">How to Fix YouTube Videos That Won't Play<a class="headerlink" href="#how-to-fix-youtube-videos-that-wont-play" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Open <strong>YouTube Studio</strong></li>
@@ -1260,7 +1267,7 @@ If the loading screen detects an embedding issue, it will automatically:</p>
 </ul>
 </li>
 </ol>
-<p>The UI will automatically detect errors (Invalid Frame 153, blocked iframe, etc.) and show helpful guidance.</p>
+<p>The YouTube player page needs <code>loadingscreen.4zam.dev</code> to be reachable. If it isn't, YouTube backgrounds fall back to your next video or music within about 8 seconds. Local video files never depend on it.</p>
 <hr />
 <h3 id="final-fallback-use-a-local-webm-recommended">Final Fallback: Use a Local WebM (Recommended)<a class="headerlink" href="#final-fallback-use-a-local-webm-recommended" title="Permanent link">&para;</a></h3>
 <p>If your video <strong>still refuses to embed</strong>, even after correcting settings:</p>
@@ -1275,10 +1282,10 @@ This completely bypasses YouTube’s restrictions.</p>
 <p>This is the most reliable solution and prevents future YouTube policy issues.</p>
 <hr />
 <h2 id="automatic-fallback-behavior">Automatic Fallback Behavior<a class="headerlink" href="#automatic-fallback-behavior" title="Permanent link">&para;</a></h2>
-<p>If your YouTube or local video fails:</p>
+<p>If a YouTube or local video fails:</p>
 <ul>
-<li>A <strong>modal</strong> explains the issue  </li>
-<li>A <strong>link to troubleshooting docs</strong> appears  </li>
+<li>The screen moves on to the <strong>next video</strong>, or to your <strong>music</strong>  </li>
+<li>If <strong>every</strong> video fails, a <strong>notice</strong> explains the issue with a <strong>link to troubleshooting docs</strong>  </li>
 <li>The background animates using your static <code>"backgroundImage"</code>  </li>
 </ul>
 <p>This ensures the loading screen remains usable even during media failures.</p>
