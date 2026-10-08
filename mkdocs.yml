@@ -23,13 +23,26 @@ nav:
   - Build with AI: https://loadingscreen.4zam.dev/ai.html
   - Install & update: setup.md
   - Config reference: config-reference.md
+  - Customization guides:
+    - 🎨 Overview: overview.md
+    - 🌐 Language & RTL: localization.md
+    - 🎥 Background: background.md
+    - 🏷️ Watermark: watermark.md
+    - ✨ Title Animation: title-animation.md
+    - 🧷 Social Headers: socials.md
+    - 📜 Rules Panel: rules.md
+    - 👥 Team Panel: team.md
+    - 🖼️ Gallery Grid: gallery.md
+    - 🧩 Custom Panel: custom-panel.md
+    - ⌨️ Keyboard Overlay: keyboard-overlay.md
+    - 🎵 Music Player: music-player.md
   - Troubleshooting & FAQ: troubleshooting.md
   - Changelog: changelog.md
   - Community: https://thevibe.4zam.dev/
   - Terms: https://loadingscreen.4zam.dev/terms.html
-# The old per-section pages (overview.md, background.md, socials.md and so on)
-# stay as short stubs outside the nav so forum links and the in-game error
-# notice (overview/#youtube-embed-requirements-error-handling) keep working.
+# upgrade.md stays as a short stub outside the nav (its content moved to
+# setup.md#updating) so old links keep working. overview.md keeps the anchor
+# the in-game error notice links to (#youtube-embed-requirements-error-handling).
 validation:
   anchors: warn
 extra_css:

@@ -44,7 +44,9 @@ After editing, restart the resource (`restart 4zam_loading`) or the server.
 
 ## Updating to a new version { #updating }
 
-Your `config.json` and your own files carry over. To update:
+**What carries over:** your `config.json` settings (theme color, rules, team, social headers and everything else) and your own images, audio and videos in `html/assets/`.
+
+To update:
 
 1. **Back up** `html/config.json` and any files you added under `html/assets/`.
 2. **Replace the resource:** delete the old `4zam_loading` folder and extract the new release in its place.
@@ -54,6 +56,10 @@ Your `config.json` and your own files carry over. To update:
 Or skip the copying: import your old `config.json` into the [Config Builder](https://loadingscreen.4zam.dev/builder.html) and export a fresh resource, which always uses the latest version.
 
 Check the [Changelog](changelog.md) for what changed. New options are optional, so an older `config.json` keeps working.
+
+!!! warning "Before you update"
+    - Do not overwrite your `config.json` unless the release notes explicitly say to.
+    - If you changed the loading screen's own styles or code, back them up first: an update replaces them.
 
 !!! info "Coming from `gucci_loading`?"
     The resource was renamed to `4zam_loading` in v1.2.0. Rename your folder to `4zam_loading` and change your `server.cfg` line to `ensure 4zam_loading`.

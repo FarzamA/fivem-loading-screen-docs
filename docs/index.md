@@ -4,6 +4,14 @@ A polished, fully customizable loading screen for FiveM servers: your name and c
 
 **You do not need to edit any code or JSON.** Design it in your browser with a live preview, then download a ready-to-run resource.
 
+- Video backgrounds (local WEBM or MP4, or YouTube) with an animated image fallback
+- Music playback with skip, progress and volume controls
+- A keyboard overlay with your own keybind tooltips
+- Animated title presets, rules, team, gallery and custom panels
+- 12 languages, with right-to-left text for Arabic and Urdu
+
+Built with React, Tailwind and Radix UI, and battle-tested on a live server.
+
 [Build yours in the browser](https://loadingscreen.4zam.dev/builder.html){ .md-button .md-button--primary }
 [Build with AI](https://loadingscreen.4zam.dev/ai.html){ .md-button .md-button--primary }
 

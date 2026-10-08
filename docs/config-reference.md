@@ -7,7 +7,7 @@ Every option in `config.json`, generated from the loading screen's source code f
 
 You rarely need this page: the [Config Builder](https://loadingscreen.4zam.dev/builder.html) and [Build with AI](https://loadingscreen.4zam.dev/ai.html) write `config.json` for you and show a live preview. Use it when you edit the file by hand.
 
-`config.json` lives at `html/config.json` inside the `4zam_loading` resource. Restart the resource after editing it. Images, videos and audio can be full URLs or paths inside the resource such as `./assets/bg.webm`.
+`config.json` lives at `html/config.json` inside the `4zam_loading` resource. Restart the resource after editing it. Images, videos and audio can be full URLs or paths inside the resource such as `./assets/bg.webm`. Values are shown the way you write them in JSON.
 
 ## Fields at a glance
 
@@ -28,7 +28,7 @@ You rarely need this page: the [Config Builder](https://loadingscreen.4zam.dev/b
 | [`gallery`](#gallery) | object[] | Gallery | Images in the Gallery panel. |
 | [`keyboardShortcuts`](#keyboardShortcuts) | object | Keyboard | Keybind hints shown on the on-screen keyboard. |
 | [`music`](#music) | object[] | Music | Music playlist (`.mp3`). |
-| [`defaultVolume`](#defaultVolume) | number | Music | Starting player volume, from 0 to 100. |
+| [`defaultVolume`](#defaultVolume) | number | Music | Starting player volume in percent. |
 
 ## `language` { #language }
 
@@ -36,11 +36,28 @@ Language of the loading-screen text. Arabic (`ar`) and Urdu (`ur`) render right 
 
 **Type:** string, optional.
 
-**Allowed values:** `"en"`, `"en-GB"`, `"es"`, `"de"`, `"fr"`, `"it"`, `"nl"`, `"pl"`, `"pt"`, `"hi"`, `"ar"`, `"ur"`.
+**Allowed values:** [12 allowed values](#values-language).
 
 **Default:** `"en"`.
 
 Set for you: the builder writes the language you pick in its settings menu.
+
+### `language` allowed values { #values-language }
+
+| Value | What it does |
+| --- | --- |
+| `"en"` | English |
+| `"en-GB"` | English (UK) |
+| `"es"` | Español |
+| `"de"` | Deutsch |
+| `"fr"` | Français |
+| `"it"` | Italiano |
+| `"nl"` | Nederlands |
+| `"pl"` | Polski |
+| `"pt"` | Português |
+| `"hi"` | हिन्दी |
+| `"ar"` | العربية, right to left |
+| `"ur"` | اردو, right to left |
 
 ## `mirrorLayout` { #mirrorLayout }
 
@@ -115,10 +132,24 @@ Edit it in the [Config Builder](https://loadingscreen.4zam.dev/builder.html) und
 | `watermark.label` | object |  |  | The title line. |
 | `watermark.label.text` | string |  |  | The main title text, usually your server name. |
 | `watermark.label.colorWordCount` | number |  | `1` | How many words of `text`, counted from the start, get the accent color. |
-| `watermark.label.animation` | string, optional | `"none"`, `"wave"`, `"wave-reverse"`, `"bounce"`, `"ripple"`, `"sway"`, `"reveal"`, `"slam"`, `"pulse"` | `"wave"` | Title animation preset. Missing or unknown values use `wave`. |
+| `watermark.label.animation` | string, optional | [9 allowed values](#values-watermark-label-animation) | `"wave"` | Title animation preset. Missing or unknown values use `wave`. The sheen (below) layers on top of any preset. |
 | `watermark.label.sheen` | boolean, optional |  | `true` | Sweeping light sheen across the title. Set `false` to turn it off. |
 | `watermark.subHeading` | string |  |  | Smaller line shown under the title. |
 | `watermark.logo` | string |  |  | Logo image: a URL or a path inside the resource. |
+
+### `watermark.label.animation` allowed values { #values-watermark-label-animation }
+
+| Value | What it does |
+| --- | --- |
+| `"none"` | No motion: the title fades in and stays still. |
+| `"wave"` | Each letter gently bobs up and down in sequence. The default. |
+| `"wave-reverse"` | The same bob, staggered right to left. |
+| `"bounce"` | A snappier, springier hop on each letter. |
+| `"ripple"` | Letters scale-pop in sequence, like a travelling ripple. |
+| `"sway"` | The whole title rocks gently left and right. |
+| `"reveal"` | The title wipes in left to right, holds, then wipes out, on a loop. |
+| `"slam"` | The title punches in with a sharp impact, repeating now and then. |
+| `"pulse"` | The title thumps to a beat, with a synced underline glow. |
 
 ## `socialHeaders` { #socialHeaders }
 
@@ -130,7 +161,7 @@ Edit it in the [Config Builder](https://loadingscreen.4zam.dev/builder.html) und
 
 | Key | Type | Allowed values | Default | Description |
 | --- | --- | --- | --- | --- |
-| `socialHeaders[].type` | string | `"discord"`, `"instagram"`, `"telegram"`, `"youtube"`, `"tiktok"`, `"custom"` |  | Platform icon to show. Use `custom` to supply your own icon image. |
+| `socialHeaders[].type` | string | `"discord"`, `"instagram"`, `"telegram"`, `"youtube"`, `"tiktok"`, `"custom"` |  | Platform icon to show, lowercase and spelled exactly. Use `custom` to supply your own icon image. |
 | `socialHeaders[].imagePath` | string, optional |  |  | Custom icon image (URL or resource path). Used with `type: "custom"`. |
 | `socialHeaders[].imageWidth` | string, optional |  |  | Custom icon width, any CSS size such as `3vw` or `32px`. |
 | `socialHeaders[].imageHeight` | string, optional |  |  | Custom icon height, any CSS size such as `3vh` or `32px`. |
@@ -176,10 +207,16 @@ Edit it in the [Config Builder](https://loadingscreen.4zam.dev/builder.html) und
 | `customPanels[].panelPosition` | number |  |  | Where the tab sits in the tab row; lower numbers come first. Defaults to the panel's position in the list. |
 | `customPanels[].uniqueId` | string |  |  | Unique id for the panel, such as `updates`. Must differ between panels. Defaults to `panel-<n>`. |
 | `customPanels[].buttonLabel` | string |  |  | Tab button text. |
-| `customPanels[].icon` | string |  |  | Tab icon: a preset icon name such as `gavel` or `bullhorn`, an `fa-` prefixed name, an image URL or path or an inline SVG string. |
+| `customPanels[].icon` | string | [41 preset names](#values-customPanels-icon) |  | Tab icon: a preset icon name (an `fa-` prefix and capitals are ignored) or an image. An image is any value ending in `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp` or `.svg`, or starting with `http://`, `https://`, `./`, `../` or `/`. Anything else shows the default megaphone icon. Inline SVG code is not supported. |
 | `customPanels[].cardHeaderLabel` | string |  |  | Heading at the top of the panel. |
 | `customPanels[].singularLabel` | string |  |  | Label for one entry, such as `Update` or `Tip`. |
 | `customPanels[].entries` | string[] |  |  | The list items, one string each. |
+
+### `customPanels[].icon` preset names { #values-customPanels-icon }
+
+Any of these names works, besides the other forms described above.
+
+Preset names: `"circle"`, `"bullhorn"`, `"users"`, `"image"`, `"star"`, `"shield"`, `"shield-halved"`, `"gavel"`, `"briefcase"`, `"wrench"`, `"screwdriver-wrench"`, `"tools"`, `"car"`, `"house"`, `"home"`, `"store"`, `"shop"`, `"gift"`, `"crown"`, `"music"`, `"newspaper"`, `"globe"`, `"handshake"`, `"trophy"`, `"flag"`, `"bolt"`, `"heart"`, `"bell"`, `"map"`, `"book"`, `"scroll"`, `"list"`, `"gear"`, `"cog"`, `"hammer"`, `"info"`, `"circle-info"`, `"clipboard"`, `"comments"`, `"phone"`, `"wallet"`.
 
 ## `gallery` { #gallery }
 
@@ -204,11 +241,15 @@ Edit it in the [Config Builder](https://loadingscreen.4zam.dev/builder.html) und
 | Key | Type | Allowed values | Default | Description |
 | --- | --- | --- | --- | --- |
 | `keyboardShortcuts.layout` | string, optional | `"ansi"`, `"iso"`, `"jis"` | `"ansi"` | Physical keyboard layout to draw. |
-| `keyboardShortcuts.locale` | string, optional |  |  | Locale for special key labels (`Shift`, `Enter`...), such as `de-DE`. When omitted, follows `language`. |
+| `keyboardShortcuts.locale` | string, optional |  |  | Locale for the key labels, such as `de-DE`. It translates special keys (`Shift`, `Enter`) and sets the letter layout: German shows QWERTZ, French AZERTY and everything else QWERTY. When omitted, follows `language`. |
 | `keyboardShortcuts.keys` | object[] |  |  | The highlighted keys. |
-| `keyboardShortcuts.keys[].key` | string |  |  | Key name as shown on the overlay, such as `M`, `G` or `Left Arrow`. |
+| `keyboardShortcuts.keys[].key` | string | [72 allowed values](#values-keyboardShortcuts-keys-key) |  | The key to highlight. Case does not matter (`Left Arrow` matches `LEFT ARROW`); letters and numbers are written as themselves. A key your `layout` does not draw is never highlighted. |
 | `keyboardShortcuts.keys[].onFoot` | string or null |  |  | Hint shown while on foot, or `null` for none. |
 | `keyboardShortcuts.keys[].inCar` | string or null |  |  | Hint shown while in a vehicle, or `null` for none. |
+
+### `keyboardShortcuts.keys[].key` allowed values { #values-keyboardShortcuts-keys-key }
+
+Allowed values: `"0"`, `"1"`, `"2"`, `"3"`, `"4"`, `"5"`, `"6"`, `"7"`, `"8"`, `"9"`, `` "`" ``, `"-"`, `"="` (ANSI and ISO layout only), `"BACKSPACE"`, `"TAB"`, `"Q"`, `"W"`, `"E"`, `"R"`, `"T"`, `"Y"`, `"U"`, `"I"`, `"O"`, `"P"`, `"["`, `"]"`, `"\\"`, `"CAPS LOCK"`, `"A"`, `"S"`, `"D"`, `"F"`, `"G"`, `"H"`, `"J"`, `"K"`, `"L"`, `";"`, `"'"` (ANSI and ISO layout only), `"ENTER"`, `"LSHIFT"`, `"Z"`, `"X"`, `"C"`, `"V"`, `"B"`, `"N"`, `"M"`, `","`, `"."`, `"/"`, `"UP ARROW"`, `"RSHIFT"`, `"LCTRL"`, `"WIN"`, `"LALT"`, `"SPACE"`, `"RALT"`, `"RCTRL"`, `"LEFT ARROW"`, `"DOWN ARROW"`, `"RIGHT ARROW"`, `"#"` (ISO layout only), `"ISO_EXTRA"` (ISO layout only), `"^"` (JIS layout only), `"@"` (JIS layout only), `":"` (JIS layout only), `"JIS_EXTRA"` (JIS layout only), `"~"` (same key as `), `"\\|"` (same key as ISO_EXTRA, ISO layout only), `"\\_"` (same key as JIS_EXTRA, JIS layout only).
 
 ## `music` { #music }
 
@@ -227,9 +268,11 @@ Edit it in the [Config Builder](https://loadingscreen.4zam.dev/builder.html) und
 
 ## `defaultVolume` { #defaultVolume }
 
-Starting player volume, from 0 to 100.
+Starting player volume in percent. Values outside the range are clamped.
 
 **Type:** number.
+
+**Range:** 0 to 100.
 
 **Default:** `100`.
 
