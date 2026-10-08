@@ -260,7 +260,7 @@
   <span class="md-ellipsis">
     
   
-    Config Builder
+    Build in the browser
   
 
     
@@ -314,7 +314,34 @@
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Install & update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
   
 
     
@@ -344,17 +371,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Customization
+    Customization guides
   
 
     
@@ -365,12 +392,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Customization
+    Customization guides
   
 
           </label>
@@ -817,14 +844,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../upgrade/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading
+    Troubleshooting & FAQ
   
 
     
@@ -1008,6 +1035,10 @@
 <h1 id="title-animation">✨ Title Animation<a class="headerlink" href="#title-animation" title="Permanent link">&para;</a></h1>
 <p>Control how the watermark <strong>title</strong> (your server name) animates, and toggle the sweeping sheen highlight over it.</p>
 <p>These options live inside <code>watermark.label</code>, right alongside the title text.</p>
+<div class="admonition tip">
+<p class="admonition-title">Quicker in the Config Builder</p>
+<p>The <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> sets all of this under <strong>Brand &amp; Color</strong> with a live preview, and <a href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a> can set it up from a plain description. Every field with its type and default is in the Config reference: <a href="../config-reference/#watermark"><code>watermark</code></a>.</p>
+</div>
 <hr />
 <h2 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;watermark&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1020,77 +1051,14 @@
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="field-breakdown">Field Breakdown<a class="headerlink" href="#field-breakdown" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>label.animation</code></td>
-<td>The animation preset applied to the title text. See the preset list below.</td>
-</tr>
-<tr>
-<td><code>label.sheen</code></td>
-<td>A sweeping light "sheen" that passes across the whole title. <code>true</code> by default.</td>
-</tr>
-</tbody>
-</table>
+<p><code>label.animation</code> picks the preset and <code>label.sheen</code> turns the sweeping light on or off (<code>true</code> by default). Both are in the <a href="../config-reference/#watermark">Config reference</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Defaults</p>
-<p>If <code>animation</code> is missing or set to a value that doesn't exist, the title falls back to <strong><code>wave</code></strong>. If <code>sheen</code> is omitted, the sheen is <strong>on</strong> — set <code>"sheen": false</code> to turn it off.</p>
+<p>If <code>animation</code> is missing or set to a value that doesn't exist, the title falls back to <strong><code>wave</code></strong>. If <code>sheen</code> is omitted, the sheen is <strong>on</strong>: set <code>"sheen": false</code> to turn it off.</p>
 </div>
 <hr />
 <h2 id="available-presets">Available Presets<a class="headerlink" href="#available-presets" title="Permanent link">&para;</a></h2>
-<p>Every preset is hand-tuned to look premium and animates smoothly without straining the FiveM UI.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Value</strong></th>
-<th><strong>Style</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>wave</code></td>
-<td>Each letter gently bobs up and down in sequence. <em>(Default)</em></td>
-</tr>
-<tr>
-<td><code>wave-reverse</code></td>
-<td>The same bob, staggered right-to-left.</td>
-</tr>
-<tr>
-<td><code>bounce</code></td>
-<td>A snappier, springier per-letter hop.</td>
-</tr>
-<tr>
-<td><code>ripple</code></td>
-<td>Letters scale-pop in sequence, like a travelling ripple.</td>
-</tr>
-<tr>
-<td><code>sway</code></td>
-<td>The whole title rocks gently left and right.</td>
-</tr>
-<tr>
-<td><code>reveal</code></td>
-<td>The title wipes in left-to-right, holds, then wipes out — on a loop.</td>
-</tr>
-<tr>
-<td><code>slam</code></td>
-<td>The title punches in with a sharp impact, repeating periodically.</td>
-</tr>
-<tr>
-<td><code>pulse</code></td>
-<td>The title thumps to a beat, with a synced underline glow.</td>
-</tr>
-<tr>
-<td><code>none</code></td>
-<td>No motion — the title appears and stays still.</td>
-</tr>
-</tbody>
-</table>
+<p>Every preset is hand-tuned to look premium and animates smoothly without straining the FiveM UI. The full list, with what each preset looks like, is generated from the code: see <a href="../config-reference/#values-watermark-label-animation">title animation presets</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Sheen layers on top</p>
 <p><code>sheen</code> is independent of <code>animation</code>. The sheen sweep runs <strong>over whichever preset you pick</strong>, so you can pair, for example, <code>wave</code> + sheen or <code>slam</code> + sheen.</p>

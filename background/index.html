@@ -260,7 +260,7 @@
   <span class="md-ellipsis">
     
   
-    Config Builder
+    Build in the browser
   
 
     
@@ -314,7 +314,34 @@
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Install & update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
   
 
     
@@ -344,17 +371,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Customization
+    Customization guides
   
 
     
@@ -365,12 +392,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Customization
+    Customization guides
   
 
           </label>
@@ -911,14 +938,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../upgrade/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading
+    Troubleshooting & FAQ
   
 
     
@@ -1198,6 +1225,10 @@
 <blockquote>
 <p>📁 <strong>Remember:</strong> Place any images or videos inside the <code>html/assets/</code> folder so they load correctly.</p>
 </blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Quicker in the Config Builder</p>
+<p>The <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> sets all of this under <strong>Background</strong> with a live preview, and <a href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a> can set it up from a plain description. Every field with its type and default is in the Config reference: <a href="../config-reference/#backgroundImage"><code>backgroundImage</code></a> and <a href="../config-reference/#backgroundVideo"><code>backgroundVideo</code></a> and <a href="../config-reference/#videoAsAudio"><code>videoAsAudio</code></a>.</p>
+</div>
 <hr />
 <h2 id="static-image-background">📷 Static Image Background<a class="headerlink" href="#static-image-background" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundImage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/path/to/background.png&quot;</span><span class="p">,</span>
@@ -1219,6 +1250,7 @@ Even static images receive subtle ambient movement and lighting effects for dept
 <p>Supported formats:</p>
 <ul>
 <li><code>.webm</code> (recommended)</li>
+<li><code>.mp4</code></li>
 </ul>
 <p>Place your files inside:</p>
 <div class="highlight"><pre><span></span><code>html/assets/
@@ -1297,24 +1329,11 @@ This completely bypasses YouTube’s restrictions.</p>
 </details>
 <hr />
 <h2 id="video-as-the-audio-source">Video as the Audio Source<a class="headerlink" href="#video-as-the-audio-source" title="Permanent link">&para;</a></h2>
-<p>A background video can either <strong>be the audio</strong> (the player controls it — play/pause, scrub, volume) or play as a <strong>silent, looping background</strong> while the <strong>music player</strong> provides the audio. The <code>videoAsAudio</code> flag controls this:</p>
+<p>A background video can either <strong>be the audio</strong> (the player controls it: play/pause, scrub, volume) or play as a <strong>silent, looping background</strong> while the <strong>music player</strong> provides the audio. The <code>videoAsAudio</code> flag controls this:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/webm/ambient.webm&quot;</span><span class="p">,</span>
 <span class="nt">&quot;videoAsAudio&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
 </code></pre></div>
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>videoAsAudio</code></td>
-<td><code>true</code>: the video is the audio source and the player controls it. <code>false</code>: the video plays muted in the background and the music playlist is the audio.</td>
-</tr>
-</tbody>
-</table>
+<p>Field details: <a href="../config-reference/#videoAsAudio"><code>videoAsAudio</code></a> in the Config reference.</p>
 <div class="admonition info">
 <p class="admonition-title">Smart default</p>
 <p>If you <strong>don't</strong> set <code>videoAsAudio</code>, the behavior depends on your config:</p>
@@ -1337,28 +1356,7 @@ This completely bypasses YouTube’s restrictions.</p>
 <span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/webm/skyline.webm&quot;</span><span class="w"> </span><span class="p">}</span>
 <span class="p">]</span>
 </code></pre></div>
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>url</code></td>
-<td>The video URL — a local file path or a YouTube link.</td>
-</tr>
-<tr>
-<td><code>title</code></td>
-<td>(Optional) Name shown in the player for this video.</td>
-</tr>
-<tr>
-<td><code>subtitle</code></td>
-<td>(Optional) Secondary line shown under the title.</td>
-</tr>
-</tbody>
-</table>
+<p>Each entry takes <code>url</code>, plus an optional <code>title</code> and <code>subtitle</code>: see <a href="../config-reference/#backgroundVideo"><code>backgroundVideo</code></a> in the Config reference.</p>
 <div class="admonition info">
 <p class="admonition-title">Backwards compatible</p>
 <p>A single string (<code>"backgroundVideo": "./assets/webm/bg.webm"</code>) still works exactly as before. The array form is only needed when you want more than one video.</p>
@@ -1371,7 +1369,7 @@ This completely bypasses YouTube’s restrictions.</p>
 <li><code>subtitle</code> → your watermark subheading (<code>watermark.subHeading</code>)</li>
 <li>cover art → your watermark logo (<code>watermark.logo</code>)</li>
 </ul>
-<p>Entries can also be plain URL strings (<code>["a.webm", "b.webm"]</code>) — those use these fallbacks for every field.</p>
+<p>Entries can also be plain URL strings (<code>["a.webm", "b.webm"]</code>): those use these fallbacks for every field.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">When a video fails</p>
@@ -1414,7 +1412,8 @@ This completely bypasses YouTube’s restrictions.</p>
 <ul>
 <li>Animate the <strong>title</strong> → <a href="../title-animation/">Title Animation</a> page  </li>
 <li>Configure the <strong>music player</strong> → <a href="../music-player/">Music Player</a> page  </li>
-<li>Back to the <strong>Customization Overview</strong> → <a href="../overview/">Overview</a> page  </li>
+<li>Back to the <strong>Customization Overview</strong> → <a href="../overview/">Overview</a> page</li>
+<li>Video problems → <a href="../troubleshooting/#video-tips">Troubleshooting</a> page</li>
 </ul>
 
 

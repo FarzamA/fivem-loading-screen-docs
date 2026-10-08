@@ -260,7 +260,7 @@
   <span class="md-ellipsis">
     
   
-    Config Builder
+    Build in the browser
   
 
     
@@ -314,7 +314,34 @@
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Install & update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
   
 
     
@@ -344,17 +371,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Customization
+    Customization guides
   
 
     
@@ -365,12 +392,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Customization
+    Customization guides
   
 
           </label>
@@ -924,15 +951,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-inline-svg-string" class="md-nav__link">
+  <a href="#4-inline-svg-string-no-longer-supported" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Inline SVG string
+        4. Inline SVG string (no longer supported)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Inline SVG string">
+    <nav class="md-nav" aria-label="4. Inline SVG string (no longer supported)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1101,14 +1128,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../upgrade/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading
+    Troubleshooting & FAQ
   
 
     
@@ -1458,15 +1485,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-inline-svg-string" class="md-nav__link">
+  <a href="#4-inline-svg-string-no-longer-supported" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Inline SVG string
+        4. Inline SVG string (no longer supported)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Inline SVG string">
+    <nav class="md-nav" aria-label="4. Inline SVG string (no longer supported)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1575,7 +1602,11 @@
 
 <h1 id="custom-panel-configuration">🧩 Custom Panel Configuration<a class="headerlink" href="#custom-panel-configuration" title="Permanent link">&para;</a></h1>
 <p>Custom panels let you add your own fully customizable tabs to the loading screen.<br />
-Use them for updates, server info, guides, economy details, jobs, starter tips, store links, whitelist info, or any other structured content you want players to see while loading in.</p>
+Use them for updates, server info, guides, economy details, jobs, starter tips, store links, whitelist info or any other structured content you want players to see while loading in.</p>
+<div class="admonition tip">
+<p class="admonition-title">Quicker in the Config Builder</p>
+<p>The <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> sets all of this under <strong>Custom Panels</strong> with a live preview, and <a href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a> can set it up from a plain description. Every field with its type and default is in the Config reference: <a href="../config-reference/#customPanels"><code>customPanels</code></a>.</p>
+</div>
 <hr />
 <h2 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;customPanels&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -1596,44 +1627,7 @@ Use them for updates, server info, guides, economy details, jobs, starter tips, 
 </code></pre></div>
 <hr />
 <h2 id="field-breakdown">Field Breakdown<a class="headerlink" href="#field-breakdown" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>panelPosition</code></td>
-<td>Determines where the custom panel button appears in the tab row. Lower numbers appear earlier.</td>
-</tr>
-<tr>
-<td><code>uniqueId</code></td>
-<td>Unique internal ID used to identify the panel. Must be different for every custom panel.</td>
-</tr>
-<tr>
-<td><code>buttonLabel</code></td>
-<td>Text shown on the panel button in the header.</td>
-</tr>
-<tr>
-<td><code>icon</code></td>
-<td>Icon used for the panel button. Can be a preset icon name, <code>fa-</code> prefixed icon name, image path, image URL, or inline SVG string.</td>
-</tr>
-<tr>
-<td><code>cardHeaderLabel</code></td>
-<td>Main heading shown at the top of the panel content.</td>
-</tr>
-<tr>
-<td><code>singularLabel</code></td>
-<td>Label used for each item in the panel list (for example <code>Update</code>, <code>Rule</code>, <code>Tip</code>, <code>Guide</code>).</td>
-</tr>
-<tr>
-<td><code>entries</code></td>
-<td>Array of strings displayed inside the panel body. Each string becomes one list item / content entry.</td>
-</tr>
-</tbody>
-</table>
+<p>Each panel takes <code>panelPosition</code>, <code>uniqueId</code>, <code>buttonLabel</code>, <code>icon</code>, <code>cardHeaderLabel</code>, <code>singularLabel</code> and <code>entries</code> (one string per list item). What each does, with types, is in the <a href="../config-reference/#customPanels">Config reference</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Multiple Custom Panels Supported</p>
 <p>You can add as many custom panels as you want by adding more objects to the <code>customPanels</code> array.</p>
@@ -1743,52 +1737,10 @@ Use them for updates, server info, guides, economy details, jobs, starter tips, 
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;icon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bullhorn&quot;</span>
 </code></pre></div>
 <h3 id="supported-preset-icon-names">Supported preset icon names<a class="headerlink" href="#supported-preset-icon-names" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>bullhorn</code></li>
-<li><code>users</code></li>
-<li><code>image</code></li>
-<li><code>circle</code></li>
-<li><code>star</code></li>
-<li><code>shield</code></li>
-<li><code>shield-halved</code></li>
-<li><code>gavel</code></li>
-<li><code>briefcase</code></li>
-<li><code>wrench</code></li>
-<li><code>screwdriver-wrench</code></li>
-<li><code>tools</code></li>
-<li><code>car</code></li>
-<li><code>house</code></li>
-<li><code>home</code></li>
-<li><code>store</code></li>
-<li><code>shop</code></li>
-<li><code>gift</code></li>
-<li><code>crown</code></li>
-<li><code>music</code></li>
-<li><code>newspaper</code></li>
-<li><code>globe</code></li>
-<li><code>handshake</code></li>
-<li><code>trophy</code></li>
-<li><code>flag</code></li>
-<li><code>bolt</code></li>
-<li><code>heart</code></li>
-<li><code>bell</code></li>
-<li><code>map</code></li>
-<li><code>book</code></li>
-<li><code>scroll</code></li>
-<li><code>list</code></li>
-<li><code>gear</code></li>
-<li><code>cog</code></li>
-<li><code>hammer</code></li>
-<li><code>info</code></li>
-<li><code>circle-info</code></li>
-<li><code>clipboard</code></li>
-<li><code>comments</code></li>
-<li><code>phone</code></li>
-<li><code>wallet</code></li>
-</ul>
+<p>The full list is generated from the icons the loading screen ships: see <a href="../config-reference/#values-customPanels-icon">icon preset names</a>. Names ignore capitals and an <code>fa-</code> prefix.</p>
 <div class="admonition note">
 <p class="admonition-title">Preset Icons Are Preferred</p>
-<p>Preset icon names are the easiest option to document, maintain, and style consistently.</p>
+<p>Preset icon names are the easiest option to document, maintain and style consistently.</p>
 </div>
 <hr />
 <h3 id="2-fa-prefixed-preset-names">2. <code>fa-</code> prefixed preset names<a class="headerlink" href="#2-fa-prefixed-preset-names" title="Permanent link">&para;</a></h3>
@@ -1822,18 +1774,14 @@ Use them for updates, server info, guides, economy details, jobs, starter tips, 
 <p>Custom icon images should be square or close to square for best visual results inside the header button.</p>
 </div>
 <hr />
-<h3 id="4-inline-svg-string">4. Inline SVG string<a class="headerlink" href="#4-inline-svg-string" title="Permanent link">&para;</a></h3>
-<p>Inline SVG is also supported.</p>
+<h3 id="4-inline-svg-string-no-longer-supported">4. Inline SVG string (no longer supported)<a class="headerlink" href="#4-inline-svg-string-no-longer-supported" title="Permanent link">&para;</a></h3>
+<p>Inline SVG code in <code>icon</code> is <strong>no longer rendered</strong>: it was removed because config-supplied SVG markup is a security risk. Save the icon as an <code>.svg</code> file and use its path or URL instead (option 3).</p>
 <h4 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;icon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;svg viewBox=&#39;0 0 24 24&#39; fill=&#39;currentColor&#39;&gt;&lt;path d=&#39;...&#39;/&gt;&lt;/svg&gt;&quot;</span>
 </code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Advanced Usage</p>
-<p>Inline SVG is intended for advanced users. Most server owners should use a preset icon name or image path instead.</p>
-</div>
 <hr />
 <h2 id="fallback-behavior">Fallback Behavior<a class="headerlink" href="#fallback-behavior" title="Permanent link">&para;</a></h2>
-<p>If the <code>icon</code> value is invalid or unsupported, the loading screen falls back to the default icon.</p>
+<p>If the <code>icon</code> value is invalid or unsupported, the loading screen falls back to the default icon (a megaphone).</p>
 <div class="admonition note">
 <p class="admonition-title">Fallback Icon</p>
 <p>Invalid panel icons automatically fall back to the default icon instead of breaking the UI.</p>

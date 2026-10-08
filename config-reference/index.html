@@ -1,0 +1,2514 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://farzama.github.io/fivem-loading-screen-docs/config-reference/">
+      
+      
+        <link rel="prev" href="../setup/">
+      
+      
+        <link rel="next" href="../overview/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Config reference - FiveM Loading Screen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom-admonitions.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#config-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div style="text-align:center; padding:0.15rem 0;">
+  <span style="margin-right:.5rem;">Build your loading screen, no code:</span>
+  <a class="md-button md-button--primary" style="margin:.2rem;"
+     href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a>
+  <a class="md-button md-button--primary" style="margin:.2rem;"
+     href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a>
+  <a class="md-button" style="margin:.2rem;"
+     href="https://loadingscreen.4zam.dev/">Live Preview</a>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FiveM Loading Screen" class="md-header__button md-logo" aria-label="FiveM Loading Screen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FiveM Loading Screen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Config reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FiveM Loading Screen" class="md-nav__button md-logo" aria-label="FiveM Loading Screen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FiveM Loading Screen
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://loadingscreen.4zam.dev/builder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build in the browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://loadingscreen.4zam.dev/ai.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build with AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install & update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fields-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields at a glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        language
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        language allowed values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mirrorLayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mirrorLayout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectedColor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        selectedColor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backgroundImage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        backgroundImage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backgroundVideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        backgroundVideo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videoUrl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        videoUrl
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videoAsAudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        videoAsAudio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watermark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        watermark
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="watermark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-watermark-label-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        watermark.label.animation allowed values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#socialHeaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        socialHeaders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teamMembers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        teamMembers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customPanels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        customPanels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="customPanels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-customPanels-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        customPanels[].icon preset names
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gallery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboardShortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        keyboardShortcuts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="keyboardShortcuts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-keyboardShortcuts-keys-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        keyboardShortcuts.keys[].key allowed values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        music
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defaultVolume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        defaultVolume
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customization guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Customization guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎨 Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../localization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 Language & RTL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎥 Background
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../watermark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏷️ Watermark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../title-animation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✨ Title Animation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../socials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧷 Social Headers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📜 Rules Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👥 Team Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖼️ Gallery Grid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 Custom Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard-overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ Keyboard Overlay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../music-player/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎵 Music Player
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting & FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://thevibe.4zam.dev/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Community
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://loadingscreen.4zam.dev/terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fields-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields at a glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        language
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        language allowed values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mirrorLayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mirrorLayout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectedColor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        selectedColor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backgroundImage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        backgroundImage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backgroundVideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        backgroundVideo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videoUrl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        videoUrl
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videoAsAudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        videoAsAudio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watermark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        watermark
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="watermark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-watermark-label-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        watermark.label.animation allowed values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#socialHeaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        socialHeaders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teamMembers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        teamMembers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customPanels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        customPanels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="customPanels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-customPanels-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        customPanels[].icon preset names
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gallery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboardShortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        keyboardShortcuts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="keyboardShortcuts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#values-keyboardShortcuts-keys-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        keyboardShortcuts.keys[].key allowed values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        music
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defaultVolume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        defaultVolume
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- Generated by `npm run docs:config` in the fivem-loading repo from origin/main (cb27643).
+     Do not edit by hand: change the JSDoc on the Config type and regenerate. -->
+
+<h1 id="config-reference">Config reference<a class="headerlink" href="#config-reference" title="Permanent link">&para;</a></h1>
+<p>Every option in <code>config.json</code>, generated from the loading screen's source code for the current release.</p>
+<p>You rarely need this page: the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> and <a href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a> write <code>config.json</code> for you and show a live preview. Use it when you edit the file by hand.</p>
+<p><code>config.json</code> lives at <code>html/config.json</code> inside the <code>4zam_loading</code> resource. Restart the resource after editing it. Images, videos and audio can be full URLs or paths inside the resource such as <code>./assets/bg.webm</code>. Values are shown the way you write them in JSON.</p>
+<h2 id="fields-at-a-glance">Fields at a glance<a class="headerlink" href="#fields-at-a-glance" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Builder</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#language"><code>language</code></a></td>
+<td>string</td>
+<td>Settings menu</td>
+<td>Language of the loading-screen text.</td>
+</tr>
+<tr>
+<td><a href="#mirrorLayout"><code>mirrorLayout</code></a></td>
+<td>boolean</td>
+<td>config.json only</td>
+<td>Mirror the whole layout right to left (panels and watermark swap sides).</td>
+</tr>
+<tr>
+<td><a href="#selectedColor"><code>selectedColor</code></a></td>
+<td>string</td>
+<td>Brand &amp; Color</td>
+<td>Accent color used across the screen (title highlight, buttons, cards).</td>
+</tr>
+<tr>
+<td><a href="#backgroundImage"><code>backgroundImage</code></a></td>
+<td>string</td>
+<td>Background</td>
+<td>Background image: a URL or a path inside the resource such as <code>./assets/bg.png</code>.</td>
+</tr>
+<tr>
+<td><a href="#backgroundVideo"><code>backgroundVideo</code></a></td>
+<td>string or (string or object)[] or null</td>
+<td>Background</td>
+<td>Background video.</td>
+</tr>
+<tr>
+<td><a href="#videoUrl"><code>videoUrl</code></a></td>
+<td>string</td>
+<td>config.json only</td>
+<td>Legacy single-video field from early versions, read only when <code>backgroundVideo</code> is absent.</td>
+</tr>
+<tr>
+<td><a href="#videoAsAudio"><code>videoAsAudio</code></a></td>
+<td>boolean</td>
+<td>Background</td>
+<td>Whether the background video is the audio source.</td>
+</tr>
+<tr>
+<td><a href="#watermark"><code>watermark</code></a></td>
+<td>object</td>
+<td>Brand &amp; Color</td>
+<td>The server name, subheading and logo shown in the corner of the screen.</td>
+</tr>
+<tr>
+<td><a href="#socialHeaders"><code>socialHeaders</code></a></td>
+<td>object[]</td>
+<td>Social Links</td>
+<td>Social and link cards in the header (Discord, store and so on).</td>
+</tr>
+<tr>
+<td><a href="#rules"><code>rules</code></a></td>
+<td>string[]</td>
+<td>Rules</td>
+<td>Server rules shown in the Rules panel, one string per rule.</td>
+</tr>
+<tr>
+<td><a href="#teamMembers"><code>teamMembers</code></a></td>
+<td>object[]</td>
+<td>Team</td>
+<td>Staff cards shown in the Team panel.</td>
+</tr>
+<tr>
+<td><a href="#customPanels"><code>customPanels</code></a></td>
+<td>object[]</td>
+<td>Custom Panels</td>
+<td>Extra tabs with your own list content (updates, guides, jobs and so on).</td>
+</tr>
+<tr>
+<td><a href="#gallery"><code>gallery</code></a></td>
+<td>object[]</td>
+<td>Gallery</td>
+<td>Images in the Gallery panel.</td>
+</tr>
+<tr>
+<td><a href="#keyboardShortcuts"><code>keyboardShortcuts</code></a></td>
+<td>object</td>
+<td>Keyboard</td>
+<td>Keybind hints shown on the on-screen keyboard.</td>
+</tr>
+<tr>
+<td><a href="#music"><code>music</code></a></td>
+<td>object[]</td>
+<td>Music</td>
+<td>Music playlist (<code>.mp3</code>).</td>
+</tr>
+<tr>
+<td><a href="#defaultVolume"><code>defaultVolume</code></a></td>
+<td>number</td>
+<td>Music</td>
+<td>Starting player volume in percent.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="language"><code>language</code><a class="headerlink" href="#language" title="Permanent link">&para;</a></h2>
+<p>Language of the loading-screen text. Arabic (<code>ar</code>) and Urdu (<code>ur</code>) render right to left. Missing or unknown values fall back to English.</p>
+<p><strong>Type:</strong> string, optional.</p>
+<p><strong>Allowed values:</strong> <a href="#values-language">12 allowed values</a>.</p>
+<p><strong>Default:</strong> <code>"en"</code>.</p>
+<p>Set for you: the builder writes the language you pick in its settings menu.</p>
+<h3 id="values-language"><code>language</code> allowed values<a class="headerlink" href="#values-language" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"en"</code></td>
+<td>English</td>
+</tr>
+<tr>
+<td><code>"en-GB"</code></td>
+<td>English (UK)</td>
+</tr>
+<tr>
+<td><code>"es"</code></td>
+<td>Español</td>
+</tr>
+<tr>
+<td><code>"de"</code></td>
+<td>Deutsch</td>
+</tr>
+<tr>
+<td><code>"fr"</code></td>
+<td>Français</td>
+</tr>
+<tr>
+<td><code>"it"</code></td>
+<td>Italiano</td>
+</tr>
+<tr>
+<td><code>"nl"</code></td>
+<td>Nederlands</td>
+</tr>
+<tr>
+<td><code>"pl"</code></td>
+<td>Polski</td>
+</tr>
+<tr>
+<td><code>"pt"</code></td>
+<td>Português</td>
+</tr>
+<tr>
+<td><code>"hi"</code></td>
+<td>हिन्दी</td>
+</tr>
+<tr>
+<td><code>"ar"</code></td>
+<td>العربية, right to left</td>
+</tr>
+<tr>
+<td><code>"ur"</code></td>
+<td>اردو, right to left</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mirrorLayout"><code>mirrorLayout</code><a class="headerlink" href="#mirrorLayout" title="Permanent link">&para;</a></h2>
+<p>Mirror the whole layout right to left (panels and watermark swap sides). Independent of <code>language</code>, which only changes text direction.</p>
+<p><strong>Type:</strong> boolean, optional.</p>
+<p><strong>Default:</strong> <code>false</code>.</p>
+<p>Not in the builder: set it in <code>config.json</code> by hand.</p>
+<h2 id="selectedColor"><code>selectedColor</code><a class="headerlink" href="#selectedColor" title="Permanent link">&para;</a></h2>
+<p>Accent color used across the screen (title highlight, buttons, cards). Hex (<code>#7C3AED</code>) or <code>rgb()</code>/<code>rgba()</code>/<code>hsl()</code>/<code>hsla()</code>. Anything else falls back to the default.</p>
+<p><strong>Type:</strong> string.</p>
+<p><strong>Default:</strong> <code>"#FF8A4D"</code>.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Brand &amp; Color</strong>.</p>
+<h2 id="backgroundImage"><code>backgroundImage</code><a class="headerlink" href="#backgroundImage" title="Permanent link">&para;</a></h2>
+<p>Background image: a URL or a path inside the resource such as <code>./assets/bg.png</code>. Shown when there is no video, or when every video fails.</p>
+<p><strong>Type:</strong> string.</p>
+<p><strong>Default:</strong> <code>""</code>.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Background</strong>.</p>
+<h2 id="backgroundVideo"><code>backgroundVideo</code><a class="headerlink" href="#backgroundVideo" title="Permanent link">&para;</a></h2>
+<p>Background video. Either one URL (a local <code>.webm</code>/<code>.mp4</code> path or a YouTube link) or a list of videos the player can skip between. A video takes priority over <code>backgroundImage</code>.</p>
+<p><strong>Type:</strong> string or (string or object)[] or null, optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Background</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backgroundVideo[].url</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Video URL: a local <code>.webm</code>/<code>.mp4</code> path or a YouTube link.</td>
+</tr>
+<tr>
+<td><code>backgroundVideo[].title</code></td>
+<td>string, optional</td>
+<td></td>
+<td></td>
+<td>Name shown in the player for this video. Falls back to the watermark title.</td>
+</tr>
+<tr>
+<td><code>backgroundVideo[].subtitle</code></td>
+<td>string, optional</td>
+<td></td>
+<td></td>
+<td>Line shown under the title. Falls back to the watermark subheading.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="videoUrl"><code>videoUrl</code><a class="headerlink" href="#videoUrl" title="Permanent link">&para;</a></h2>
+<p>Legacy single-video field from early versions, read only when <code>backgroundVideo</code> is absent. Use <code>backgroundVideo</code> instead.</p>
+<p><strong>Type:</strong> string, optional.</p>
+<p>Not in the builder: set it in <code>config.json</code> by hand.</p>
+<h2 id="videoAsAudio"><code>videoAsAudio</code><a class="headerlink" href="#videoAsAudio" title="Permanent link">&para;</a></h2>
+<p>Whether the background video is the audio source. <code>true</code>: the player controls the video (play, pause, scrub, volume). <code>false</code>: the video loops muted and the player drives the <code>music</code> playlist. When omitted, the video is the audio source only if there is no <code>music</code> playlist.</p>
+<p><strong>Type:</strong> boolean, optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Background</strong>.</p>
+<h2 id="watermark"><code>watermark</code><a class="headerlink" href="#watermark" title="Permanent link">&para;</a></h2>
+<p>The server name, subheading and logo shown in the corner of the screen.</p>
+<p><strong>Type:</strong> object.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Brand &amp; Color</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>watermark.label</code></td>
+<td>object</td>
+<td></td>
+<td></td>
+<td>The title line.</td>
+</tr>
+<tr>
+<td><code>watermark.label.text</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>The main title text, usually your server name.</td>
+</tr>
+<tr>
+<td><code>watermark.label.colorWordCount</code></td>
+<td>number</td>
+<td></td>
+<td><code>1</code></td>
+<td>How many words of <code>text</code>, counted from the start, get the accent color.</td>
+</tr>
+<tr>
+<td><code>watermark.label.animation</code></td>
+<td>string, optional</td>
+<td><a href="#values-watermark-label-animation">9 allowed values</a></td>
+<td><code>"wave"</code></td>
+<td>Title animation preset. Missing or unknown values use <code>wave</code>. The sheen (below) layers on top of any preset.</td>
+</tr>
+<tr>
+<td><code>watermark.label.sheen</code></td>
+<td>boolean, optional</td>
+<td></td>
+<td><code>true</code></td>
+<td>Sweeping light sheen across the title. Set <code>false</code> to turn it off.</td>
+</tr>
+<tr>
+<td><code>watermark.subHeading</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Smaller line shown under the title.</td>
+</tr>
+<tr>
+<td><code>watermark.logo</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Logo image: a URL or a path inside the resource.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="values-watermark-label-animation"><code>watermark.label.animation</code> allowed values<a class="headerlink" href="#values-watermark-label-animation" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"none"</code></td>
+<td>No motion: the title fades in and stays still.</td>
+</tr>
+<tr>
+<td><code>"wave"</code></td>
+<td>Each letter gently bobs up and down in sequence. The default.</td>
+</tr>
+<tr>
+<td><code>"wave-reverse"</code></td>
+<td>The same bob, staggered right to left.</td>
+</tr>
+<tr>
+<td><code>"bounce"</code></td>
+<td>A snappier, springier hop on each letter.</td>
+</tr>
+<tr>
+<td><code>"ripple"</code></td>
+<td>Letters scale-pop in sequence, like a travelling ripple.</td>
+</tr>
+<tr>
+<td><code>"sway"</code></td>
+<td>The whole title rocks gently left and right.</td>
+</tr>
+<tr>
+<td><code>"reveal"</code></td>
+<td>The title wipes in left to right, holds, then wipes out, on a loop.</td>
+</tr>
+<tr>
+<td><code>"slam"</code></td>
+<td>The title punches in with a sharp impact, repeating now and then.</td>
+</tr>
+<tr>
+<td><code>"pulse"</code></td>
+<td>The title thumps to a beat, with a synced underline glow.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="socialHeaders"><code>socialHeaders</code><a class="headerlink" href="#socialHeaders" title="Permanent link">&para;</a></h2>
+<p>Social and link cards in the header (Discord, store and so on). Cards with <code>enabled: false</code> are hidden.</p>
+<p><strong>Type:</strong> object[].</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Social Links</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>socialHeaders[].type</code></td>
+<td>string</td>
+<td><code>"discord"</code>, <code>"instagram"</code>, <code>"telegram"</code>, <code>"youtube"</code>, <code>"tiktok"</code>, <code>"custom"</code></td>
+<td></td>
+<td>Platform icon to show, lowercase and spelled exactly. Use <code>custom</code> to supply your own icon image.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].imagePath</code></td>
+<td>string, optional</td>
+<td></td>
+<td></td>
+<td>Custom icon image (URL or resource path). Used with <code>type: "custom"</code>.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].imageWidth</code></td>
+<td>string, optional</td>
+<td></td>
+<td></td>
+<td>Custom icon width, any CSS size such as <code>3vw</code> or <code>32px</code>.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].imageHeight</code></td>
+<td>string, optional</td>
+<td></td>
+<td></td>
+<td>Custom icon height, any CSS size such as <code>3vh</code> or <code>32px</code>.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].cardLabel</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Card title.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].cardInfo</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Short description under the card title.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].link</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>URL opened by the card button.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].buttonLabel</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Button text. When empty, a localized default such as "Join" is used.</td>
+</tr>
+<tr>
+<td><code>socialHeaders[].enabled</code></td>
+<td>boolean</td>
+<td></td>
+<td><code>true</code></td>
+<td>Show this card on the screen.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rules"><code>rules</code><a class="headerlink" href="#rules" title="Permanent link">&para;</a></h2>
+<p>Server rules shown in the Rules panel, one string per rule. Use <code>\n</code> for a line break. Five or six short rules read best.</p>
+<p><strong>Type:</strong> string[], optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Rules</strong>.</p>
+<h2 id="teamMembers"><code>teamMembers</code><a class="headerlink" href="#teamMembers" title="Permanent link">&para;</a></h2>
+<p>Staff cards shown in the Team panel.</p>
+<p><strong>Type:</strong> object[], optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Team</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>teamMembers[].name</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Display name.</td>
+</tr>
+<tr>
+<td><code>teamMembers[].role</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Role or position shown under the name.</td>
+</tr>
+<tr>
+<td><code>teamMembers[].discord</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Discord username, or any short label.</td>
+</tr>
+<tr>
+<td><code>teamMembers[].image</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Avatar image (URL or resource path); square images look best.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customPanels"><code>customPanels</code><a class="headerlink" href="#customPanels" title="Permanent link">&para;</a></h2>
+<p>Extra tabs with your own list content (updates, guides, jobs and so on).</p>
+<p><strong>Type:</strong> object[], optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Custom Panels</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>customPanels[].panelPosition</code></td>
+<td>number</td>
+<td></td>
+<td></td>
+<td>Where the tab sits in the tab row; lower numbers come first. Defaults to the panel's position in the list.</td>
+</tr>
+<tr>
+<td><code>customPanels[].uniqueId</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Unique id for the panel, such as <code>updates</code>. Must differ between panels. Defaults to <code>panel-&lt;n&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>customPanels[].buttonLabel</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Tab button text.</td>
+</tr>
+<tr>
+<td><code>customPanels[].icon</code></td>
+<td>string</td>
+<td><a href="#values-customPanels-icon">41 preset names</a></td>
+<td></td>
+<td>Tab icon: a preset icon name (an <code>fa-</code> prefix and capitals are ignored) or an image. An image is any value ending in <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.gif</code>, <code>.webp</code> or <code>.svg</code>, or starting with <code>http://</code>, <code>https://</code>, <code>./</code>, <code>../</code> or <code>/</code>. Anything else shows the default megaphone icon. Inline SVG code is not supported.</td>
+</tr>
+<tr>
+<td><code>customPanels[].cardHeaderLabel</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Heading at the top of the panel.</td>
+</tr>
+<tr>
+<td><code>customPanels[].singularLabel</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Label for one entry, such as <code>Update</code> or <code>Tip</code>.</td>
+</tr>
+<tr>
+<td><code>customPanels[].entries</code></td>
+<td>string[]</td>
+<td></td>
+<td></td>
+<td>The list items, one string each.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="values-customPanels-icon"><code>customPanels[].icon</code> preset names<a class="headerlink" href="#values-customPanels-icon" title="Permanent link">&para;</a></h3>
+<p>Any of these names works, besides the other forms described above.</p>
+<p>Preset names: <code>"circle"</code>, <code>"bullhorn"</code>, <code>"users"</code>, <code>"image"</code>, <code>"star"</code>, <code>"shield"</code>, <code>"shield-halved"</code>, <code>"gavel"</code>, <code>"briefcase"</code>, <code>"wrench"</code>, <code>"screwdriver-wrench"</code>, <code>"tools"</code>, <code>"car"</code>, <code>"house"</code>, <code>"home"</code>, <code>"store"</code>, <code>"shop"</code>, <code>"gift"</code>, <code>"crown"</code>, <code>"music"</code>, <code>"newspaper"</code>, <code>"globe"</code>, <code>"handshake"</code>, <code>"trophy"</code>, <code>"flag"</code>, <code>"bolt"</code>, <code>"heart"</code>, <code>"bell"</code>, <code>"map"</code>, <code>"book"</code>, <code>"scroll"</code>, <code>"list"</code>, <code>"gear"</code>, <code>"cog"</code>, <code>"hammer"</code>, <code>"info"</code>, <code>"circle-info"</code>, <code>"clipboard"</code>, <code>"comments"</code>, <code>"phone"</code>, <code>"wallet"</code>.</p>
+<h2 id="gallery"><code>gallery</code><a class="headerlink" href="#gallery" title="Permanent link">&para;</a></h2>
+<p>Images in the Gallery panel. Players can open one and browse with the arrow keys.</p>
+<p><strong>Type:</strong> object[], optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Gallery</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gallery[].path</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Image URL or resource path; landscape images look best.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="keyboardShortcuts"><code>keyboardShortcuts</code><a class="headerlink" href="#keyboardShortcuts" title="Permanent link">&para;</a></h2>
+<p>Keybind hints shown on the on-screen keyboard.</p>
+<p><strong>Type:</strong> object.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Keyboard</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>keyboardShortcuts.layout</code></td>
+<td>string, optional</td>
+<td><code>"ansi"</code>, <code>"iso"</code>, <code>"jis"</code></td>
+<td><code>"ansi"</code></td>
+<td>Physical keyboard layout to draw.</td>
+</tr>
+<tr>
+<td><code>keyboardShortcuts.locale</code></td>
+<td>string, optional</td>
+<td></td>
+<td></td>
+<td>Locale for the key labels, such as <code>de-DE</code>. It translates special keys (<code>Shift</code>, <code>Enter</code>) and sets the letter layout: German shows QWERTZ, French AZERTY and everything else QWERTY. When omitted, follows <code>language</code>.</td>
+</tr>
+<tr>
+<td><code>keyboardShortcuts.keys</code></td>
+<td>object[]</td>
+<td></td>
+<td></td>
+<td>The highlighted keys.</td>
+</tr>
+<tr>
+<td><code>keyboardShortcuts.keys[].key</code></td>
+<td>string</td>
+<td><a href="#values-keyboardShortcuts-keys-key">72 allowed values</a></td>
+<td></td>
+<td>The key to highlight. Case does not matter (<code>Left Arrow</code> matches <code>LEFT ARROW</code>); letters and numbers are written as themselves. A key your <code>layout</code> does not draw is never highlighted.</td>
+</tr>
+<tr>
+<td><code>keyboardShortcuts.keys[].onFoot</code></td>
+<td>string or null</td>
+<td></td>
+<td></td>
+<td>Hint shown while on foot, or <code>null</code> for none.</td>
+</tr>
+<tr>
+<td><code>keyboardShortcuts.keys[].inCar</code></td>
+<td>string or null</td>
+<td></td>
+<td></td>
+<td>Hint shown while in a vehicle, or <code>null</code> for none.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="values-keyboardShortcuts-keys-key"><code>keyboardShortcuts.keys[].key</code> allowed values<a class="headerlink" href="#values-keyboardShortcuts-keys-key" title="Permanent link">&para;</a></h3>
+<p>Allowed values: <code>"0"</code>, <code>"1"</code>, <code>"2"</code>, <code>"3"</code>, <code>"4"</code>, <code>"5"</code>, <code>"6"</code>, <code>"7"</code>, <code>"8"</code>, <code>"9"</code>, <code>"`"</code>, <code>"-"</code>, <code>"="</code> (ANSI and ISO layout only), <code>"BACKSPACE"</code>, <code>"TAB"</code>, <code>"Q"</code>, <code>"W"</code>, <code>"E"</code>, <code>"R"</code>, <code>"T"</code>, <code>"Y"</code>, <code>"U"</code>, <code>"I"</code>, <code>"O"</code>, <code>"P"</code>, <code>"["</code>, <code>"]"</code>, <code>"\\"</code>, <code>"CAPS LOCK"</code>, <code>"A"</code>, <code>"S"</code>, <code>"D"</code>, <code>"F"</code>, <code>"G"</code>, <code>"H"</code>, <code>"J"</code>, <code>"K"</code>, <code>"L"</code>, <code>";"</code>, <code>"'"</code> (ANSI and ISO layout only), <code>"ENTER"</code>, <code>"LSHIFT"</code>, <code>"Z"</code>, <code>"X"</code>, <code>"C"</code>, <code>"V"</code>, <code>"B"</code>, <code>"N"</code>, <code>"M"</code>, <code>","</code>, <code>"."</code>, <code>"/"</code>, <code>"UP ARROW"</code>, <code>"RSHIFT"</code>, <code>"LCTRL"</code>, <code>"WIN"</code>, <code>"LALT"</code>, <code>"SPACE"</code>, <code>"RALT"</code>, <code>"RCTRL"</code>, <code>"LEFT ARROW"</code>, <code>"DOWN ARROW"</code>, <code>"RIGHT ARROW"</code>, <code>"#"</code> (ISO layout only), <code>"ISO_EXTRA"</code> (ISO layout only), <code>"^"</code> (JIS layout only), <code>"@"</code> (JIS layout only), <code>":"</code> (JIS layout only), <code>"JIS_EXTRA"</code> (JIS layout only), <code>"~"</code> (same key as `), <code>"\\|"</code> (same key as ISO_EXTRA, ISO layout only), <code>"\\_"</code> (same key as JIS_EXTRA, JIS layout only).</p>
+<h2 id="music"><code>music</code><a class="headerlink" href="#music" title="Permanent link">&para;</a></h2>
+<p>Music playlist (<code>.mp3</code>). Tracks play in order. With no tracks and no video audio, the player is hidden.</p>
+<p><strong>Type:</strong> object[], optional.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Music</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Allowed values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>music[].path</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Audio file URL or resource path (<code>.mp3</code>).</td>
+</tr>
+<tr>
+<td><code>music[].title</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Track title.</td>
+</tr>
+<tr>
+<td><code>music[].artist</code></td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Artist name.</td>
+</tr>
+<tr>
+<td><code>music[].image</code></td>
+<td>string or null</td>
+<td></td>
+<td></td>
+<td>Cover art (URL or resource path), or <code>null</code> for none.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="defaultVolume"><code>defaultVolume</code><a class="headerlink" href="#defaultVolume" title="Permanent link">&para;</a></h2>
+<p>Starting player volume in percent. Values outside the range are clamped.</p>
+<p><strong>Type:</strong> number.</p>
+<p><strong>Range:</strong> 0 to 100.</p>
+<p><strong>Default:</strong> <code>100</code>.</p>
+<p>Edit it in the <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> under <strong>Music</strong>.</p>
+<h2 id="full-example">Full example<a class="headerlink" href="#full-example" title="Permanent link">&para;</a></h2>
+<p>The stock <code>config.json</code> that ships with this release (the one behind the live preview).</p>
+<details class="example">
+<summary>Stock config.json</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;selectedColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#7C3AED&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;backgroundImage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/supra16x9.png&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;backgroundVideo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/videos/mp4/fivem_intro.mp4&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;videoAsAudio&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;watermark&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Vibe RP&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;colorWordCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;animation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wave&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sheen&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;subHeading&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Loading Screen&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/vibe-logo.png&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;socialHeaders&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;discord&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Discord Server&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Join the discord to keep up with the latest on the FiveM server!&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://discord.gg/BetjMuDbC2&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;instagram&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Instagram Page&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Follow the instagram page for more content!&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://instagram.com/FakalMate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;telegram&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Telegram Channel&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Join the telegram channel for more news and updates!&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://telegram.com&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;youtube&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Youtube Channel&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Subscribe to the youtube channel for more updates!&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://youtube.com/FakalMate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tiktok&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Tik Tok Channel&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Follow us on tik tok for more content!&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.tiktok.com/@fakal.mate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Tebex Store&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Purchase perks and content through our Tebex store!&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://the-vibe-store.tebex.io/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;buttonLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Shop Now&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;imagePath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./assets/jpg/tebex.jpg&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;imageWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3vw&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;imageHeight&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3vh&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;customPanels&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;panelPosition&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;uniqueId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;updates&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;buttonLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Updates&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;icon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gavel&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cardHeaderLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Latest City Updates&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;singularLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Update&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;entries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Daily job based quests with reward system&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Loot boxes with provable fairness and security&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;New 200+ lore friendly vehicles added with more on the way&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Vehicle rarity system with discord webhook integrations&quot;</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;No griefing or trolling other players.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Respect all admins and staff decisions.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;No hacking, exploiting, or modding\nin unfair ways.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Keep your behavior mature\nand respectful at all times.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Do not spam the chat\nor use slurs or hate speech.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;teamMembers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GucciFlipFlops&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Head Developer&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;discord&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fakal.mate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/fakalheadshot.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HerGTR&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Founding Member&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;discord&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dwboutit&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/gatorheadshot.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mitch&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Founding Member&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;discord&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;builtlikemitch&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/mitchheadshot.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GucciFlipFlops&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Marketing Manager&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;discord&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fakal.mate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/fakalheadshot.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GucciFlipFlops&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sales Director&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;discord&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fakal.mate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/fakalheadshot.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GucciFlipFlops&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Community Manager&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;discord&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fakal.mate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/fakalheadshot.png&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;gallery&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/fivemsupranrcisist.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/sunsetsupraitsugsik.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/midiguess.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/hellcatdurangoitsugsik.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/IMG_2135.jpeg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/oldies2.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/oldies1.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/supra6.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/supra5.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/mitch-donk1.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/mitch-donk2.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/mitch-donk3.jpg&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/supra3.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/supra4.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/bluebmw.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/headshot.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/png/supra2.png&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/jpg/rarri_lol.jpg&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;keyboardShortcuts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;layout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ansi&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;`&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Point&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Put on seatbelt&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Left Arrow&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Left Indicator&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Right Arrow&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Right Indicator&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Up Arrow&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hazard Lights&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;M&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pull out phone&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lock vehicle&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;G&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Toggle vehicle engine on/off&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;J&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Park vehicle&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Z&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Open radial menu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hands up&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Vehicle controller&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LALT&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;onFoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Third eye view&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;inCar&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;music&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/mp3/1008gs.mp3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1008 Grams&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;artist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OT7 Quanny&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/mp3/free_g.mp3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Free G&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;artist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDot Go&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/mp3/gta.mp3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GTA&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;artist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Future, Metro Boomin&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/mp3/like_that.mp3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Like That&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;artist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Future, Metro Boomin&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/mp3/stop_me.mp3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Stop Me When I&#39;m Lyin&#39;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;artist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RX Papi&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://dl.4zam.dev/images/mp3/type_shi.mp3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Type Shit&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;artist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Future, Metro Boomin&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;defaultVolume&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

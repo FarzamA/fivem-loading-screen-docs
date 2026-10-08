@@ -14,7 +14,7 @@
         <link rel="prev" href="../keyboard-overlay/">
       
       
-        <link rel="next" href="../upgrade/">
+        <link rel="next" href="../troubleshooting/">
       
       
         
@@ -260,7 +260,7 @@
   <span class="md-ellipsis">
     
   
-    Config Builder
+    Build in the browser
   
 
     
@@ -314,7 +314,34 @@
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Install & update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
   
 
     
@@ -344,17 +371,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Customization
+    Customization guides
   
 
     
@@ -365,12 +392,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Customization
+    Customization guides
   
 
           </label>
@@ -828,14 +855,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../upgrade/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading
+    Troubleshooting & FAQ
   
 
     
@@ -1028,8 +1055,12 @@
 
 
 <h1 id="music-player-configuration">🎵 Music Player Configuration<a class="headerlink" href="#music-player-configuration" title="Permanent link">&para;</a></h1>
-<p>The Music Player plays a rotating playlist during the loading screen, complete with track titles, artist names, and optional cover art.</p>
+<p>The Music Player plays a rotating playlist during the loading screen, complete with track titles, artist names and optional cover art.</p>
 <p>Customize your music experience by modifying the <code>music</code> array in your configuration file.</p>
+<div class="admonition tip">
+<p class="admonition-title">Quicker in the Config Builder</p>
+<p>The <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> sets all of this under <strong>Music</strong> with a live preview, and <a href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a> can set it up from a plain description. Every field with its type and default is in the Config reference: <a href="../config-reference/#music"><code>music</code></a> and <a href="../config-reference/#defaultVolume"><code>defaultVolume</code></a>.</p>
+</div>
 <hr />
 <h2 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;music&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -1042,47 +1073,22 @@
 <span class="p">]</span>
 </code></pre></div>
 <h2 id="field-breakdown">Field Breakdown<a class="headerlink" href="#field-breakdown" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>path</code></td>
-<td>Path to the <code>.mp3</code> audio file to be played</td>
-</tr>
-<tr>
-<td><code>title</code></td>
-<td>Display title for the track (shown in the UI)</td>
-</tr>
-<tr>
-<td><code>artist</code></td>
-<td>Display artist name</td>
-</tr>
-<tr>
-<td><code>image</code></td>
-<td>(Optional) Path to an image or album art to show for this track (set to <code>null</code> if unused)</td>
-</tr>
-</tbody>
-</table>
+<p>Each track takes <code>path</code> (the <code>.mp3</code> file), <code>title</code>, <code>artist</code> and an optional <code>image</code> for cover art (<code>null</code> when unused). Types are in the <a href="../config-reference/#music">Config reference</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Audio Format Support</p>
 <p>Only .mp3 files are supported at this time. Make sure all audio files are properly encoded and placed under assets/mp3/.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Track Rotation</p>
-<p>Tracks rotate automatically in order. The player includes play, pause, skip, and volume control functionality.</p>
+<p>Tracks rotate automatically in order. The player includes play, pause, skip and volume control functionality.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Playlist Counter</p>
 <p>When more than one track is configured, a small position counter (e.g. <code>2 / 5</code>) appears at the top-right of the player card.</p>
 </div>
 <h2 id="doubles-as-the-video-controller">Doubles as the Video Controller<a class="headerlink" href="#doubles-as-the-video-controller" title="Permanent link">&para;</a></h2>
-<p>When a background video is set with <code>videoAsAudio</code> enabled (the default), this same player controls the <strong>video</strong> instead of the mp3 playlist — play/pause, scrub, and volume all drive the video, and the "now playing" text comes from each video's <code>title</code> / <code>subtitle</code>. With multiple videos, the forward/back buttons and the position counter work just like the music playlist.</p>
-<p>See <a href="../overview/">Background Options</a> for how to configure single or multiple background videos and the <code>videoAsAudio</code> toggle.</p>
+<p>When a background video is the audio source (<code>videoAsAudio: true</code>, or left out with no <code>music</code> playlist), this same player controls the <strong>video</strong> instead of the mp3 playlist: play/pause, scrub and volume all drive the video, and the "now playing" text comes from each video's <code>title</code> / <code>subtitle</code>. With multiple videos, the forward/back buttons and the position counter work just like the music playlist.</p>
+<p>See <a href="../background/">Background</a> for how to configure single or multiple background videos and the <code>videoAsAudio</code> toggle.</p>
 <div class="admonition info">
 <p class="admonition-title">When does the player show?</p>
 <p>The player appears when there is an mp3 playlist <strong>or</strong> a video acting as the audio source. In muted-ambient mode (<code>videoAsAudio: false</code>) the player controls the mp3 playlist while the video loops silently behind it.</p>

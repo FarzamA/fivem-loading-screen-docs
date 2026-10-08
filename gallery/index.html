@@ -260,7 +260,7 @@
   <span class="md-ellipsis">
     
   
-    Config Builder
+    Build in the browser
   
 
     
@@ -314,7 +314,34 @@
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Install & update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config reference
   
 
     
@@ -344,17 +371,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Customization
+    Customization guides
   
 
     
@@ -365,12 +392,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Customization
+    Customization guides
   
 
           </label>
@@ -812,14 +839,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../upgrade/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading
+    Troubleshooting & FAQ
   
 
     
@@ -996,8 +1023,12 @@
 
 
 <h1 id="gallery-panel-configuration">🖼️ Gallery Panel Configuration<a class="headerlink" href="#gallery-panel-configuration" title="Permanent link">&para;</a></h1>
-<p>The Gallery Panel appears on the loading screen and allows you to showcase images such as cars, team highlights, banners, or community events.</p>
+<p>The Gallery Panel appears on the loading screen and allows you to showcase images such as cars, team highlights, banners or community events.</p>
 <p>You can customize the images shown by editing the <code>gallery</code> array in your configuration file.</p>
+<div class="admonition tip">
+<p class="admonition-title">Quicker in the Config Builder</p>
+<p>The <a href="https://loadingscreen.4zam.dev/builder.html">Config Builder</a> sets all of this under <strong>Gallery</strong> with a live preview, and <a href="https://loadingscreen.4zam.dev/ai.html">Build with AI</a> can set it up from a plain description. Every field with its type and default is in the Config reference: <a href="../config-reference/#gallery"><code>gallery</code></a>.</p>
+</div>
 <hr />
 <h2 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;gallery&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -1010,20 +1041,7 @@
 <span class="p">]</span>
 </code></pre></div>
 <h3 id="field-breakdown">Field Breakdown<a class="headerlink" href="#field-breakdown" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>path</code></td>
-<td>The file path to your image asset (relative to your loading screen <code>assets/</code>)</td>
-</tr>
-</tbody>
-</table>
+<p>Each image takes one field, <code>path</code>: a URL or a path inside the resource such as <code>./assets/png/headshot.png</code> (files go in <code>html/assets/</code>). See <a href="../config-reference/#gallery"><code>gallery</code></a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Recommended Image Format</p>
 <p>Use .png or .jpg images in landscape orientation for best visual balance.</p>
@@ -1035,18 +1053,18 @@
 <h2 id="viewing-images-lightbox">Viewing Images (Lightbox)<a class="headerlink" href="#viewing-images-lightbox" title="Permanent link">&para;</a></h2>
 <p>Clicking any thumbnail opens the image in a full-size lightbox. From there you can move through the gallery:</p>
 <ul>
-<li><strong>On-screen arrows</strong> — left/right arrows on the sides of the image jump to the previous/next picture.</li>
-<li><strong>Keyboard</strong> — the <strong>←</strong> and <strong>→</strong> arrow keys navigate, and <strong>Esc</strong> closes the lightbox.</li>
+<li><strong>On-screen arrows</strong>: left/right arrows on the sides of the image jump to the previous/next picture.</li>
+<li><strong>Keyboard</strong>: the <strong>←</strong> and <strong>→</strong> arrow keys navigate, and <strong>Esc</strong> closes the lightbox.</li>
 </ul>
 <p>Navigation <strong>wraps around</strong>: going back from the first image shows the last, and forward from the last returns to the first.</p>
 <div class="admonition info">
 <p class="admonition-title">Single image</p>
-<p>The navigation arrows only appear when the gallery has more than one image. No extra configuration is needed — navigation works over your existing <code>gallery</code> array.</p>
+<p>The navigation arrows only appear when the gallery has more than one image. No extra configuration is needed: navigation works over your existing <code>gallery</code> array.</p>
 </div>
 <details class="note" open="open">
 <summary>Lightbox Preview</summary>
 <p><div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-    <img src="./../media/png/gallery-lightbox.png" alt="Gallery lightbox with side arrows, position dots, and a keyboard hint" style="max-width: 100%; border-radius: 12px;" />
+    <img src="./../media/png/gallery-lightbox.png" alt="Gallery lightbox with side arrows, position dots and a keyboard hint" style="max-width: 100%; border-radius: 12px;" />
 </div></p>
 </details>
 <details class="note" open="open">
