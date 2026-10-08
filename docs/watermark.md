@@ -2,6 +2,9 @@
 
 Customize the watermark that appears in the top-left corner of the loading screen.
 
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Brand & Color** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`watermark`](config-reference.md#watermark).
+
 ---
 
 ## JSON Structure
@@ -16,14 +19,7 @@ Customize the watermark that appears in the top-left corner of the loading scree
 
 ## Field Breakdown
 
-| **Field**              | **Description**                                                           |
-|------------------------|---------------------------------------------------------------------------|
-| `label.text`           | The main title text shown in the watermark                              |
-| `label.colorWordCount` | How many words get the `selectedColor` highlight from the start         |
-| `label.animation`      | (Optional) Title animation preset — see [Title Animation](title-animation.md). Defaults to `wave`. |
-| `label.sheen`          | (Optional) Sweeping sheen highlight over the title. On by default.       |
-| `subHeading`           | The text shown underneath the title                                     |
-| `logo`                 | File path to your logo image                     |
+Every field (`label.text`, `label.colorWordCount`, `label.animation`, `label.sheen`, `subHeading`, `logo`) with its type and default is in the [Config reference](config-reference.md#watermark). The logo can be a URL or a path inside the resource such as `./assets/png/logo.png`.
 
 !!! tip "Animating the title"
     `label.animation` and `label.sheen` control how the title moves and shines. See the [Title Animation](title-animation.md) page for the full preset list.

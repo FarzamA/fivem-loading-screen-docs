@@ -1,8 +1,11 @@
 # 🖼️ Gallery Panel Configuration
 
-The Gallery Panel appears on the loading screen and allows you to showcase images such as cars, team highlights, banners, or community events.
+The Gallery Panel appears on the loading screen and allows you to showcase images such as cars, team highlights, banners or community events.
 
 You can customize the images shown by editing the `gallery` array in your configuration file.
+
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Gallery** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`gallery`](config-reference.md#gallery).
 
 ---
 
@@ -21,9 +24,7 @@ You can customize the images shown by editing the `gallery` array in your config
 
 ### Field Breakdown
 
-| **Field** | **Description**                                                               |
-| --------- | ----------------------------------------------------------------------------- |
-| `path`    | The file path to your image asset (relative to your loading screen `assets/`) |
+Each image takes one field, `path`: a URL or a path inside the resource such as `./assets/png/headshot.png` (files go in `html/assets/`). See [`gallery`](config-reference.md#gallery).
 
 !!! info "Recommended Image Format"
     Use .png or .jpg images in landscape orientation for best visual balance.
@@ -35,17 +36,17 @@ You can customize the images shown by editing the `gallery` array in your config
 
 Clicking any thumbnail opens the image in a full-size lightbox. From there you can move through the gallery:
 
-- **On-screen arrows** — left/right arrows on the sides of the image jump to the previous/next picture.
-- **Keyboard** — the **←** and **→** arrow keys navigate, and **Esc** closes the lightbox.
+- **On-screen arrows**: left/right arrows on the sides of the image jump to the previous/next picture.
+- **Keyboard**: the **←** and **→** arrow keys navigate, and **Esc** closes the lightbox.
 
 Navigation **wraps around**: going back from the first image shows the last, and forward from the last returns to the first.
 
 !!! info "Single image"
-    The navigation arrows only appear when the gallery has more than one image. No extra configuration is needed — navigation works over your existing `gallery` array.
+    The navigation arrows only appear when the gallery has more than one image. No extra configuration is needed: navigation works over your existing `gallery` array.
 
 ???+ note "Lightbox Preview"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <img src="./../media/png/gallery-lightbox.png" alt="Gallery lightbox with side arrows, position dots, and a keyboard hint" style="max-width: 100%; border-radius: 12px;" />
+        <img src="./../media/png/gallery-lightbox.png" alt="Gallery lightbox with side arrows, position dots and a keyboard hint" style="max-width: 100%; border-radius: 12px;" />
     </div>
 
 ???+ note "Gallery Panel Preview"

@@ -4,6 +4,9 @@ Your loading screen background can be a **static image** or a **video**. If both
 
 > 📁 **Remember:** Place any images or videos inside the `html/assets/` folder so they load correctly.
 
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Background** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`backgroundImage`](config-reference.md#backgroundImage) and [`backgroundVideo`](config-reference.md#backgroundVideo) and [`videoAsAudio`](config-reference.md#videoAsAudio).
+
 ---
 
 ## 📷 Static Image Background
@@ -31,6 +34,7 @@ Your loading screen background can be a **static image** or a **video**. If both
 Supported formats:
 
 - `.webm` (recommended)
+- `.mp4`
 
 Place your files inside:
 
@@ -51,7 +55,7 @@ html/assets/
 
 ---
 
-## ⚠️ YouTube Embed Requirements & Error Handling
+## ⚠️ YouTube Embed Requirements & Error Handling { #youtube-embed-requirements-error-handling }
 
 !!! success "Error 153 is fixed in v1.3.0"
     FiveM loads loading screens from `nui://`, which sends no Referer, so YouTube used to reject
@@ -77,7 +81,7 @@ Make sure your video has:
 
 If any of these are missing, YouTube will block the embed request and the screen falls back as described above.
 
-### How to Fix YouTube Videos That Won't Play
+### How to Fix YouTube Videos That Won't Play { #how-to-fix-youtube-videos-that-wont-play }
 
 1. Open **YouTube Studio**
 2. Click **Content**
@@ -132,16 +136,14 @@ This ensures the loading screen remains usable even during media failures.
 
 ## Video as the Audio Source
 
-A background video can either **be the audio** (the player controls it — play/pause, scrub, volume) or play as a **silent, looping background** while the **music player** provides the audio. The `videoAsAudio` flag controls this:
+A background video can either **be the audio** (the player controls it: play/pause, scrub, volume) or play as a **silent, looping background** while the **music player** provides the audio. The `videoAsAudio` flag controls this:
 
 ```json
 "backgroundVideo": "./assets/webm/ambient.webm",
 "videoAsAudio": false
 ```
 
-| **Field**      | **Description**                                                                                  |
-|----------------|-------------------------------------------------------------------------------------------------|
-| `videoAsAudio` | `true`: the video is the audio source and the player controls it. `false`: the video plays muted in the background and the music playlist is the audio. |
+Field details: [`videoAsAudio`](config-reference.md#videoAsAudio) in the Config reference.
 
 !!! info "Smart default"
     If you **don't** set `videoAsAudio`, the behavior depends on your config:
@@ -168,11 +170,7 @@ A background video can either **be the audio** (the player controls it — play/
 ]
 ```
 
-| **Field**   | **Description**                                                                 |
-|-------------|---------------------------------------------------------------------------------|
-| `url`       | The video URL — a local file path or a YouTube link.                            |
-| `title`     | (Optional) Name shown in the player for this video.                              |
-| `subtitle`  | (Optional) Secondary line shown under the title.                                 |
+Each entry takes `url`, plus an optional `title` and `subtitle`: see [`backgroundVideo`](config-reference.md#backgroundVideo) in the Config reference.
 
 !!! info "Backwards compatible"
     A single string (`"backgroundVideo": "./assets/webm/bg.webm"`) still works exactly as before. The array form is only needed when you want more than one video.
@@ -184,7 +182,7 @@ A background video can either **be the audio** (the player controls it — play/
     - `subtitle` → your watermark subheading (`watermark.subHeading`)
     - cover art → your watermark logo (`watermark.logo`)
 
-    Entries can also be plain URL strings (`["a.webm", "b.webm"]`) — those use these fallbacks for every field.
+    Entries can also be plain URL strings (`["a.webm", "b.webm"]`): those use these fallbacks for every field.
 
 !!! warning "When a video fails"
     If a video in the list fails to load, it is skipped to the next one. If **every** video fails, the screen falls back to the music player (or the animated image background).
@@ -208,4 +206,5 @@ A background video can either **be the audio** (the player controls it — play/
 
 - Animate the **title** → [Title Animation](title-animation.md) page  
 - Configure the **music player** → [Music Player](music-player.md) page  
-- Back to the **Customization Overview** → [Overview](overview.md) page  
+- Back to the **Customization Overview** → [Overview](overview.md) page
+- Video problems → [Troubleshooting](troubleshooting.md#video-tips) page

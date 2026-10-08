@@ -1,22 +1,15 @@
 # 🌐 Language & Right-to-Left (RTL)
 
-The loading screen, the in-browser **Config Builder**, and the **Build with AI** assistant are fully localized. Pick the language your community speaks and the whole experience follows, including full right-to-left layout for Arabic and Urdu.
+The loading screen, the in-browser **Config Builder** and the **Build with AI** assistant are fully localized. Pick the language your community speaks and the whole experience follows, including right-to-left text for Arabic and Urdu.
+
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`language`](config-reference.md#language).
 
 ---
 
 ## Supported languages
 
-| Code | Language | Direction |
-|------|----------|-----------|
-| `en` | English (US) — default | LTR |
-| `en-GB` | English (UK) | LTR |
-| `es` | Español (Spanish) | LTR |
-| `de` | Deutsch (German) | LTR |
-| `fr` | Français (French) | LTR |
-| `ar` | العربية (Arabic) | RTL |
-| `ur` | اردو (Urdu) | RTL |
-
-English (US) is the default and the fallback: if a translation is ever missing, the English text is shown rather than a blank or a raw key.
+The full list of language codes, with each language's name and text direction, is generated from the code in the [Config reference](config-reference.md#language).
 
 ---
 
@@ -32,9 +25,9 @@ Add a top-level `language` field to your `config.json`. Every player connecting 
 }
 ```
 
-- Set it to any code from the table above.
-- For `ar` or `ur` the screen automatically switches to **right-to-left** layout.
-- If `language` is missing or not recognized, the screen stays **English (LTR)** — so existing configs from older versions keep working unchanged.
+- Set it to any code from the [language list](config-reference.md#language).
+- For `ar` or `ur` the text automatically renders **right to left** (see below).
+- If `language` is missing or not recognized, the screen stays **English (LTR)**: so existing configs from older versions keep working unchanged.
 
 !!! tip "Building in the Config Builder?"
     You usually do not need to edit this by hand. The builder sets `language` for you (see below).
@@ -47,7 +40,7 @@ Open the [Config Builder](https://loadingscreen.4zam.dev/builder.html) or [Build
 
 - The interface **auto-detects your browser language** on first visit.
 - A **Language** option in the settings (gear) menu lets you switch at any time, and your choice is remembered.
-- The **AI assistant replies in your language** — describe your server in Arabic, Spanish, German, etc. and it answers in kind.
+- The **AI assistant replies in your language**: describe your server in Arabic, Spanish, German, etc. and it answers in kind.
 - Every field has a localized **help hint**: click the small **ℹ️ info icon** next to a label to reveal a short "how to fill this" explanation inline, in your language. Click again to hide it.
 - When you **export**, the language you are building in is written into your `config.json` automatically, so the loading screen ships in the same language. You can always change the `language` field afterward.
 
@@ -81,11 +74,11 @@ If you ever want to pin a specific key-cap language regardless of `language`, th
 
 ## What is and isn't translated
 
-- **Translated:** all of the product's own interface text — buttons, labels, status text, dialogs, the AI assistant's replies.
-- **Not translated:** the content *you* write — your server rules, team member names and roles, social card text, track titles, panel entries. Those stay exactly as you enter them (and display correctly in RTL).
+- **Translated:** all of the product's own interface text: buttons, labels, status text, dialogs, the AI assistant's replies.
+- **Not translated:** the content *you* write: your server rules, team member names and roles, social card text, track titles, panel entries. Those stay exactly as you enter them (and display correctly in RTL).
 
 ---
 
 ## Adding a language
 
-The architecture is built so a new language is a single file. If you would like to contribute one (or request one), reach out on the [community hub](https://thevibe.4zam.dev/) — a new locale is one translation file plus one line in the locale registry, with no other code changes.
+The architecture is built so a new language is a single file. If you would like to contribute one (or request one), reach out on the [community hub](https://thevibe.4zam.dev/): a new locale is one translation file plus one line in the locale registry, with no other code changes.

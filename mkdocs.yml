@@ -19,10 +19,11 @@ markdown_extensions:
       alternate_style: true
 nav:
   - Home: index.md
-  - Config Builder: https://loadingscreen.4zam.dev/builder.html
+  - Build in the browser: https://loadingscreen.4zam.dev/builder.html
   - Build with AI: https://loadingscreen.4zam.dev/ai.html
-  - Getting Started: setup.md
-  - Customization:
+  - Install & update: setup.md
+  - Config reference: config-reference.md
+  - Customization guides:
     - 🎨 Overview: overview.md
     - 🌐 Language & RTL: localization.md
     - 🎥 Background: background.md
@@ -35,10 +36,14 @@ nav:
     - 🧩 Custom Panel: custom-panel.md
     - ⌨️ Keyboard Overlay: keyboard-overlay.md
     - 🎵 Music Player: music-player.md
-  # - FAQ: faq.md
-  - Upgrading: upgrade.md
+  - Troubleshooting & FAQ: troubleshooting.md
   - Changelog: changelog.md
   - Community: https://thevibe.4zam.dev/
   - Terms: https://loadingscreen.4zam.dev/terms.html
+# upgrade.md stays as a short stub outside the nav (its content moved to
+# setup.md#updating) so old links keep working. overview.md keeps the anchor
+# the in-game error notice links to (#youtube-embed-requirements-error-handling).
+validation:
+  anchors: warn
 extra_css:
   - stylesheets/custom-admonitions.css

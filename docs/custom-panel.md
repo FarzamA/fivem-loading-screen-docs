@@ -1,7 +1,10 @@
 # 🧩 Custom Panel Configuration
 
 Custom panels let you add your own fully customizable tabs to the loading screen.  
-Use them for updates, server info, guides, economy details, jobs, starter tips, store links, whitelist info, or any other structured content you want players to see while loading in.
+Use them for updates, server info, guides, economy details, jobs, starter tips, store links, whitelist info or any other structured content you want players to see while loading in.
+
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Custom Panels** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`customPanels`](config-reference.md#customPanels).
 
 ---
 
@@ -29,15 +32,7 @@ Use them for updates, server info, guides, economy details, jobs, starter tips, 
 
 ## Field Breakdown
 
-| **Field**          | **Description** |
-|-------------------|-----------------|
-| `panelPosition`   | Determines where the custom panel button appears in the tab row. Lower numbers appear earlier. |
-| `uniqueId`        | Unique internal ID used to identify the panel. Must be different for every custom panel. |
-| `buttonLabel`     | Text shown on the panel button in the header. |
-| `icon`            | Icon used for the panel button. Can be a preset icon name, `fa-` prefixed icon name, image path, image URL, or inline SVG string. |
-| `cardHeaderLabel` | Main heading shown at the top of the panel content. |
-| `singularLabel`   | Label used for each item in the panel list (for example `Update`, `Rule`, `Tip`, `Guide`). |
-| `entries`         | Array of strings displayed inside the panel body. Each string becomes one list item / content entry. |
+Each panel takes `panelPosition`, `uniqueId`, `buttonLabel`, `icon`, `cardHeaderLabel`, `singularLabel` and `entries` (one string per list item). What each does, with types, is in the [Config reference](config-reference.md#customPanels).
 
 !!! info "Multiple Custom Panels Supported"
     You can add as many custom panels as you want by adding more objects to the `customPanels` array.
@@ -166,50 +161,10 @@ These are the easiest to use and are the best option for most servers.
 
 ### Supported preset icon names
 
-- `bullhorn`
-- `users`
-- `image`
-- `circle`
-- `star`
-- `shield`
-- `shield-halved`
-- `gavel`
-- `briefcase`
-- `wrench`
-- `screwdriver-wrench`
-- `tools`
-- `car`
-- `house`
-- `home`
-- `store`
-- `shop`
-- `gift`
-- `crown`
-- `music`
-- `newspaper`
-- `globe`
-- `handshake`
-- `trophy`
-- `flag`
-- `bolt`
-- `heart`
-- `bell`
-- `map`
-- `book`
-- `scroll`
-- `list`
-- `gear`
-- `cog`
-- `hammer`
-- `info`
-- `circle-info`
-- `clipboard`
-- `comments`
-- `phone`
-- `wallet`
+The full list is generated from the icons the loading screen ships: see [icon preset names](config-reference.md#values-customPanels-icon). Names ignore capitals and an `fa-` prefix.
 
 !!! note "Preset Icons Are Preferred"
-    Preset icon names are the easiest option to document, maintain, and style consistently.
+    Preset icon names are the easiest option to document, maintain and style consistently.
 
 ---
 
@@ -261,9 +216,9 @@ Supported image formats include:
 
 ---
 
-### 4. Inline SVG string
+### 4. Inline SVG string (no longer supported)
 
-Inline SVG is also supported.
+Inline SVG code in `icon` is **no longer rendered**: it was removed because config-supplied SVG markup is a security risk. Save the icon as an `.svg` file and use its path or URL instead (option 3).
 
 #### Example
 
@@ -271,14 +226,11 @@ Inline SVG is also supported.
 "icon": "<svg viewBox='0 0 24 24' fill='currentColor'><path d='...'/></svg>"
 ```
 
-!!! warning "Advanced Usage"
-    Inline SVG is intended for advanced users. Most server owners should use a preset icon name or image path instead.
-
 ---
 
 ## Fallback Behavior
 
-If the `icon` value is invalid or unsupported, the loading screen falls back to the default icon.
+If the `icon` value is invalid or unsupported, the loading screen falls back to the default icon (a megaphone).
 
 !!! note "Fallback Icon"
     Invalid panel icons automatically fall back to the default icon instead of breaking the UI.

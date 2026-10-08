@@ -1,6 +1,9 @@
 # ⌨️ Keyboard Overlay Configuration
 
-The keyboard overlay appears on the loading screen and visually highlights keybinds to help new players learn essential controls. You can customize the compact keyboard layout, displayed language, and individual shortcuts using the `keyboardShortcuts` configuration.
+The keyboard overlay appears on the loading screen and visually highlights keybinds to help new players learn essential controls. You can customize the compact keyboard layout, displayed language and individual shortcuts using the `keyboardShortcuts` configuration.
+
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Keyboard** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`keyboardShortcuts`](config-reference.md#keyboardShortcuts).
 
 ---
 
@@ -62,14 +65,11 @@ The keyboard overlay appears on the loading screen and visually highlights keybi
 
 ## Field Breakdown
 
-| **Field** | **Description** |
-|---------|-----------------|
-| `layout` | Optional. Controls which compact keyboard layout is rendered. Supported values: `ansi`, `iso`, `jis`. |
-| `locale` | Optional. Controls how special key labels are displayed in the overlay. Example values: `en-US`, `de-DE`, `fr-FR`, `es-ES`, `pt-BR`, `ar`, `zh-CN`, `ja-JP`. |
-| `keys` | Array of keybind entries to highlight on the keyboard. |
-| `key` | The key to highlight on the keyboard. Use the key label shown in the overlay preview or one of the standard names listed below. |
-| `onFoot` | Tooltip text shown when the player is **on foot**. |
-| `inCar` | Tooltip text shown when the player is **in a vehicle**. |
+- `layout` (optional): which compact keyboard is drawn, `ansi`, `iso` or `jis`.
+- `locale` (optional): how special key labels are shown, for example `en-US`, `de-DE`, `fr-FR`, `es-ES`, `pt-BR`, `ar`, `zh-CN` or `ja-JP`. When omitted it follows `language`.
+- `keys`: the keybinds to highlight. Each has a `key`, plus `onFoot` and `inCar` tooltip text (`null` for none).
+
+Types and defaults are in the [Config reference](config-reference.md#keyboardShortcuts).
 
 !!! info "Multiple Contexts"
     You can define different behaviors for the same key depending on whether the player is on foot or in a vehicle.
@@ -88,7 +88,7 @@ The loading screen uses a compact keyboard overlay and supports multiple layout 
 | `jis` | Japanese-style compact keyboard layout |
 
 !!! note "What layout changes"
-    The selected layout affects how symbol keys are displayed in the overlay. It does **not** change your server's actual game keybinds — it only changes the visual keyboard preview.
+    The selected layout affects how symbol keys are displayed in the overlay. It does **not** change your server's actual game keybinds: it only changes the visual keyboard preview.
 
 ## Locale / Language Display
 
@@ -122,7 +122,7 @@ This would render the keyboard using the ISO layout and German-style special key
 
 ## Accepted Key Names
 
-For best results, use the exact key label shown in the keyboard overlay preview.
+For best results, use the exact key label shown in the keyboard overlay preview. Case does not matter. The complete list of names every layout accepts is generated from the overlay itself: see [keyboard key names](config-reference.md#values-keyboardShortcuts-keys-key).
 
 ### Standard Named Keys
 

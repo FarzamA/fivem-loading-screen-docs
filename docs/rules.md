@@ -4,6 +4,9 @@ The rules panel appears on the right-hand side of the loading screen and display
 
 You can fully customize these rules by modifying the `rules` array in your config file.
 
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Rules** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`rules`](config-reference.md#rules).
+
 ---
 
 ## JSON Structure

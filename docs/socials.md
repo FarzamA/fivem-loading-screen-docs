@@ -1,6 +1,9 @@
 # 🧷 Social Header Configuration
 
-You can customize the social header cards that appear at the top of the loading screen. These cards allow users to quickly join your Discord, visit your Instagram, or check out other platforms.
+You can customize the social header cards that appear at the top of the loading screen. These cards allow users to quickly join your Discord, visit your Instagram or check out other platforms.
+
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Social Links** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`socialHeaders`](config-reference.md#socialHeaders).
 
 ---
 
@@ -21,32 +24,17 @@ You can customize the social header cards that appear at the top of the loading 
 
 ## Field Breakdown
 
-| **Field**     | **Description**                                            |
-| ------------- | ---------------------------------------------------------- |
-| `type`        | Platform type used to display a built-in social icon. Use `custom` to supply your own image icon. |
-| `cardLabel`   | The card's main title/header text                          |
-| `cardInfo`    | Description shown below the header                         |
-| `link`        | URL that opens when the "Join" or action button is clicked |
-| `buttonLabel` | Label of "Join" or action button                           |
-| `enabled`     | Whether to show this social card on the loading screen     |
+Each card takes `type`, `cardLabel`, `cardInfo`, `link`, `buttonLabel` and `enabled`: types and details are in the [Config reference](config-reference.md#socialHeaders). The `link` opens when the card button is clicked. Leave `buttonLabel` empty to use the default "Join" text.
 
 !!! info "Multiple Platforms Supported"
     You can include multiple social cards by adding more objects to the socialHeaders array.
 
 ## Supported `type` values
 
-- discord
-- instagram
-- telegram
-- youtube
-- tiktok
-
-Custom (your own icon):
-
-- custom
+The built-in platforms plus `custom` (your own icon) are listed under `socialHeaders[].type` in the [Config reference](config-reference.md#socialHeaders).
 
 !!! warning "Spelling Matters"
-    The type value must be lowercase and spelled exactly as shown above to display the correct icon.
+    The type value must be lowercase and spelled exactly as listed in the [Config reference](config-reference.md#socialHeaders) to display the correct icon.
 
 ???+ note "Social Media Card Preview"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
@@ -60,7 +48,7 @@ Custom (your own icon):
         </video>
     </div>
 
-## Custom Icon Support
+## Custom Icon Support { #custom-icon-support }
 
 You can use your own icon instead of the built-in ones by setting type to "custom" and providing an image path in the config.
 
@@ -93,11 +81,10 @@ You can use your own icon instead of the built-in ones by setting type to "custo
 
 ### Custom Icon Fields
 
-| **Field**     | **Type** | **Required** | **Description**                                                                   |
-| ------------- | -------- | ------------ | --------------------------------------------------------------------------------- |
-| `imagePath`   | string   | yes        | Path to your custom icon image (relative to your NUI resource folder).            |
-| `imageWidth`  | string   | optional   | Width of the icon. Accepts **any valid CSS size** (`px`, `vw`, `vh`, `%`, etc.).  |
-| `imageHeight`  | string   | optional   | Height of the icon. Accepts **any valid CSS size** (`px`, `vw`, `vh`, `%`, etc.). |
+- `imagePath`: your icon image, a URL or a path inside the resource. Needed for `custom`.
+- `imageWidth` and `imageHeight`: optional, any valid CSS size (`px`, `vw`, `vh`, `%` and so on).
+
+Types are in the [Config reference](config-reference.md#socialHeaders).
 
 ### Why `imageWidth` and `imageHeight` are exposed
 

@@ -4,6 +4,9 @@ The Team Panel appears on the right-hand side of the loading screen and showcase
 
 You can fully customize each member by editing the `teamMembers` array in your configuration file.
 
+!!! tip "Quicker in the Config Builder"
+    The [Config Builder](https://loadingscreen.4zam.dev/builder.html) sets all of this under **Team** with a live preview, and [Build with AI](https://loadingscreen.4zam.dev/ai.html) can set it up from a plain description. Every field with its type and default is in the Config reference: [`teamMembers`](config-reference.md#teamMembers).
+
 ---
 
 ## JSON Structure
@@ -16,12 +19,7 @@ You can fully customize each member by editing the `teamMembers` array in your c
 
 ## Field Breakdown
 
-| **Field** | **Description**                                                                         |
-| --------- | --------------------------------------------------------------------------------------- |
-| `name`    | The display name for the team member (shown prominently)                                |
-| `role`    | A smaller subheading to indicate their position or responsibility                       |
-| `discord` | Optional field — usually a Discord username, but can be any text or label               |
-| `image`   | Path to the avatar or profile picture to be shown in a circle (recommended: 1:1 aspect) |
+Each member takes `name` (shown prominently), `role` (a smaller line under it), `discord` (usually a Discord username, but any short label works) and `image` (shown in a circle, so a square 1:1 picture looks best). Types are in the [Config reference](config-reference.md#teamMembers).
 
 !!! info "Adding More Members"
     To add more team members, simply add more objects inside the teamMembers array.
