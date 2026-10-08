@@ -1,41 +1,8 @@
 # 👥 Team Panel Configuration
 
-The Team Panel appears on the right-hand side of the loading screen and showcases your server staff or contributors.
+The Team panel shows your staff with their roles and avatars. The [Config Builder](https://loadingscreen.4zam.dev/builder.html) does this for you under **Team**, with a live preview of the real loading screen.
 
-You can fully customize each member by editing the `teamMembers` array in your configuration file.
+[Open the Config Builder](https://loadingscreen.4zam.dev/builder.html){ .md-button .md-button--primary }
+[Build with AI](https://loadingscreen.4zam.dev/ai.html){ .md-button }
 
----
-
-## JSON Structure
-
-```json
-"teamMembers": [
-    { "name": "GucciFlipFlops", "role": "Head Developer", "discord": "pakinextdoor", "image": "./assets/png/fakalheadshot.png" }
-]
-```
-
-## Field Breakdown
-
-| **Field** | **Description**                                                                         |
-| --------- | --------------------------------------------------------------------------------------- |
-| `name`    | The display name for the team member (shown prominently)                                |
-| `role`    | A smaller subheading to indicate their position or responsibility                       |
-| `discord` | Optional field — usually a Discord username, but can be any text or label               |
-| `image`   | Path to the avatar or profile picture to be shown in a circle (recommended: 1:1 aspect) |
-
-!!! info "Adding More Members"
-    To add more team members, simply add more objects inside the teamMembers array.
-
-???+ note "Team Panel Preview"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/TeamDemo.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div>
-
----
+Editing `config.json` by hand? Every option is in the Config reference: [`teamMembers`](config-reference.md#teamMembers).
